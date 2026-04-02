@@ -1,0 +1,36 @@
+{
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/home", "destination": "/index.html" },
+    { "source": "/studio", "destination": "/studio.html" },
+    { "source": "/journal", "destination": "/journal.html" },
+    { "source": "/contact", "destination": "/contact.html" },
+    { "source": "/glossary", "destination": "/glossary.html" },
+    { "source": "/what-is-aucitya", "destination": "/what-is-aucitya.html" },
+    { "source": "/journal/aucitya-meaning", "destination": "/j-aucitya-meaning.html" },
+    { "source": "/journal/vastu-aucitya", "destination": "/j-vastu-aucitya.html" },
+    { "source": "/journal/rasa-theory", "destination": "/j-rasa-theory.html" },
+    { "source": "/journal/indian-homes", "destination": "/j-indian-homes.html" },
+    { "source": "/journal/five-elements", "destination": "/j-five-elements.html" },
+    { "source": "/journal/light-philosophy", "destination": "/j-light-philosophy.html" },
+    { "source": "/journal/photographer-designer", "destination": "/j-photographer-designer.html" },
+    { "source": "/journal/design-trends", "destination": "/j-design-trends.html" }
+  ],
+  "redirects": [
+    { "source": "/index.html", "destination": "/", "permanent": true },
+    { "source": "/studio.html", "destination": "/studio", "permanent": true },
+    { "source": "/journal.html", "destination": "/journal", "permanent": true },
+    { "source": "/contact.html", "destination": "/contact", "permanent": true },
+    { "source": "/glossary.html", "destination": "/glossary", "permanent": true },
+    { "source": "/what-is-aucitya.html", "destination": "/what-is-aucitya", "permanent": true }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "X-Frame-Options", "value": "SAMEORIGIN" }
+      ]
+    }
+  ]
+}

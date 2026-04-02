@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://aucitya.com/</loc><priority>1.0</priority></url>
-  <url><loc>https://aucitya.com/studio.html</loc><priority>0.9</priority></url>
-  <url><loc>https://aucitya.com/journal.html</loc><priority>0.9</priority></url>
-  <url><loc>https://aucitya.com/contact.html</loc><priority>0.9</priority></url>
-  <url><loc>https://aucitya.com/glossary.html</loc><priority>0.7</priority></url>
-  <url><loc>https://aucitya.com/what-is-aucitya.html</loc><priority>0.7</priority></url>
-  <url><loc>https://aucitya.com/j-aucitya-meaning.html</loc><priority>0.7</priority></url>
-  <url><loc>https://aucitya.com/j-vastu-aucitya.html</loc><priority>0.7</priority></url>
-  <url><loc>https://aucitya.com/j-rasa-theory.html</loc><priority>0.7</priority></url>
-  <url><loc>https://aucitya.com/j-indian-homes.html</loc><priority>0.7</priority></url>
-  <url><loc>https://aucitya.com/j-five-elements.html</loc><priority>0.7</priority></url>
-  <url><loc>https://aucitya.com/j-light-philosophy.html</loc><priority>0.7</priority></url>
-  <url><loc>https://aucitya.com/j-photographer-designer.html</loc><priority>0.7</priority></url>
-  <url><loc>https://aucitya.com/j-design-trends.html</loc><priority>0.7</priority></url>
+  <url><loc>https://aucitya.com/</loc><priority>1.0</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://aucitya.com/studio</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://aucitya.com/journal</loc><priority>0.9</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://aucitya.com/contact</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://aucitya.com/glossary</loc><priority>0.7</priority><changefreq>yearly</changefreq></url>
+  <url><loc>https://aucitya.com/what-is-aucitya</loc><priority>0.8</priority><changefreq>yearly</changefreq></url>
+  <url><loc>https://aucitya.com/journal/aucitya-meaning</loc><priority>0.7</priority></url>
+  <url><loc>https://aucitya.com/journal/vastu-aucitya</loc><priority>0.7</priority></url>
+  <url><loc>https://aucitya.com/journal/rasa-theory</loc><priority>0.7</priority></url>
+  <url><loc>https://aucitya.com/journal/indian-homes</loc><priority>0.7</priority></url>
+  <url><loc>https://aucitya.com/journal/five-elements</loc><priority>0.7</priority></url>
+  <url><loc>https://aucitya.com/journal/light-philosophy</loc><priority>0.7</priority></url>
+  <url><loc>https://aucitya.com/journal/photographer-designer</loc><priority>0.7</priority></url>
+  <url><loc>https://aucitya.com/journal/design-trends</loc><priority>0.7</priority></url>
 </urlset>

@@ -2,6 +2,9 @@
 <html lang="en-IN">
 <head>
 <meta charset="UTF-8"/>
+<link rel="icon" type="image/png" href="/favicon.png"/>
+<link rel="shortcut icon" href="/favicon.png"/>
+<link rel="apple-touch-icon" href="/favicon.png"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Studio | Aucitya — About, Philosophy, Mission & Team</title>
 <meta name="description" content="About Aucitya Studio — our philosophy, mission, vision, and team. Founded by Surbhi Kaushik. Luxury interior design rooted in Sanskrit aesthetic philosophy."/>
@@ -9,7 +12,7 @@
 <meta name="robots" content="index, follow"/>
 <meta name="geo.region" content="IN"/>
 <meta name="author" content="Surbhi Kaushik, Aucitya Studio"/>
-<link rel="canonical" href="https://aucitya.com/studio.html"/>
+<link rel="canonical" href="https://aucitya.com/studio"/>
 <meta property="og:type" content="website"/>
 <meta property="og:url" content="https://aucitya.com/studio.html"/>
 <meta property="og:title" content="Studio | Aucitya — About, Philosophy, Mission & Team"/>
@@ -115,6 +118,7 @@ nav{
 }
 .nav-dd-menu a:last-child{border-bottom:none}
 .nav-dd-menu a:hover{color:#c4bdb2;padding-left:26px}
+@media(pointer:fine){.nav-dd:hover .nav-dd-menu{display:block}}
 /* Hamburger */
 .nav-toggle{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;
   padding:8px;min-width:44px;min-height:44px;align-items:center;justify-content:center}
@@ -266,7 +270,7 @@ footer{background:var(--nav-bg);padding:52px var(--pad-x) 28px}
 <body>
 <div id="cur"></div><div id="cur-r"></div>
 <nav id="nav">
-  <a href="index.html" class="nav-logo">
+  <a href="/home" class="nav-logo">
     <div class="nav-logo-icon"><svg viewBox="230 230 340 340" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;display:block;">
   <style>.nl-s{fill:none;stroke:#c4bdb2;stroke-miterlimit:10;}.nl-s2{stroke-width:2px;}.nl-s3{stroke-width:6px;}.nl-f{fill:#c4bdb2;}</style>
   <g id="AU">
@@ -282,29 +286,29 @@ footer{background:var(--nav-bg);padding:52px var(--pad-x) 28px}
     </div>
   </a>
   <ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
+    <li><a href="/home">Home</a></li>
     <li class="nav-dd">
-      <a href="studio.html"class='active'>Studio</a>
+      <a href="/studio"class='active'>Studio</a>
       <div class="nav-dd-menu"><a href="studio.html#about">About Us</a><a href="studio.html#philosophy">Philosophy</a><a href="studio.html#mission">Mission &amp; Vision</a><a href="studio.html#team">Team</a></div>
     </li>
-    <li><a href="journal.html">Journal</a></li>
-    <li><a href="contact.html" class="nav-cta">Begin</a></li>
+    <li><a href="/journal">Journal</a></li>
+    <li><a href="/contact" class="nav-cta">Begin</a></li>
   </ul>
   <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
 </nav>
 <div class="nav-drawer" id="navDrawer">
-  <a href="index.html" class="drw-link">Home</a>
-  <a href="studio.html" class="drw-link active">Studio</a>
-  <a href="journal.html" class="drw-link">Journal</a>
+  <a href="/home" class="drw-link">Home</a>
+  <a href="/studio" class="drw-link active">Studio</a>
+  <a href="/journal" class="drw-link">Journal</a>
   <hr/>
-  <a href="contact.html" class="drw-link" style="color:var(--accent)">Begin</a>
+  <a href="/contact" class="drw-link" style="color:var(--accent)">Begin</a>
 </div>
 
 <section class="page-hero">
   <div class="reveal">
     <span class="sec-label">The Studio</span>
     <h1 class="sec-title">A practice built on attention.</h1>
-    <p class="sec-sub">Aucitya Studio was founded from a conviction that the finest spaces share a quality almost impossible to name. We design toward that quality, and nothing else.</p>
+    <p class="sec-sub">Aucitya Studio is founded on a singular conviction: that the most profound environments possess an effortless, inevitable cohesion. Our work is a dedicated study of that harmony, ensuring that every element within a space is intentional, balanced, and exactly right.</p>
   </div>
 </section>
 
@@ -411,6 +415,11 @@ footer{background:var(--nav-bg);padding:52px var(--pad-x) 28px}
   </div>
 </section>
 
+<section style="padding:60px var(--pad-x);background:var(--bg-warm);text-align:center;">
+  <p style="font-family:var(--jost);font-size:10px;font-weight:400;letter-spacing:.38em;color:var(--accent);text-transform:uppercase;margin-bottom:16px">Begin</p>
+  <p style="font-family:var(--trajan);font-size:clamp(20px,2.5vw,30px);color:var(--text);margin-bottom:24px;letter-spacing:.04em;">Ready to start a conversation?</p>
+  <a href="/contact" style="font-family:var(--jost);font-size:10px;font-weight:400;letter-spacing:.38em;color:var(--bg);background:var(--text);text-decoration:none;padding:13px 32px;text-transform:uppercase;display:inline-block;transition:background .3s" onmouseover="this.style.background='#6d322f'" onmouseout="this.style.background='#2d2422'">Commission Enquiry</a>
+</section>
 <footer>
   <div class="ft-grid">
     <div class="ft-logo-area">
@@ -430,10 +439,10 @@ footer{background:var(--nav-bg);padding:52px var(--pad-x) 28px}
     <div>
       <p class="ft-col-title">Navigate</p>
       <div class="ft-col-links">
-        <a href="index.html">Home</a>
-        <a href="studio.html">Studio</a>
-        <a href="journal.html">Journal</a>
-        <a href="contact.html">Begin</a>
+        <a href="/home">Home</a>
+        <a href="/studio">Studio</a>
+        <a href="/journal">Journal</a>
+        <a href="/contact">Begin</a>
       </div>
     </div>
     <div>
@@ -454,8 +463,8 @@ footer{background:var(--nav-bg);padding:52px var(--pad-x) 28px}
   </div>
   <div class="ft-bottom">
     <div class="ft-resources">
-      <a href="glossary.html">Sanskrit &amp; Vedic Glossary</a>
-      <a href="what-is-aucitya.html">What is Aucitya?</a>
+      <a href="/glossary">Sanskrit &amp; Vedic Glossary</a>
+      <a href="/what-is-aucitya">What is Aucitya?</a>
     </div>
     <span class="ft-copy">&copy; 2026 Aucitya Studio. All rights reserved.</span>
   </div>
@@ -473,7 +482,7 @@ if(window.matchMedia('(pointer:fine)').matches){
 const ddItem=document.querySelector('.nav-dd');
 if(ddItem){
   const ddLink=ddItem.querySelector(':scope > a');
-  ddLink.addEventListener('click',e=>{e.preventDefault();ddItem.classList.toggle('open');});
+  /* dropdown via CSS hover on desktop */
   document.addEventListener('click',e=>{if(!ddItem.contains(e.target))ddItem.classList.remove('open');});
 }
 /* Hamburger */
