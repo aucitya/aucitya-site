@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Sanskrit &amp; Vedic Design Glossary | Aucitya Studio</title>
+<meta name="description" content="A comprehensive glossary of Sanskrit and Vedic concepts applied to interior design: Aucitya (Auchitya), Rasa, Vastu Shastra, Pañcabhūta, Ākāśa, Dhvani, Prakāśa and more."/>
+<meta name="keywords" content="Aucitya meaning, Auchitya meaning, Sanskrit design glossary, Vedic design philosophy, Vastu Shastra, what does Aucitya mean, Auchityam"/>
+<meta name="robots" content="index, follow"/>
+<link rel="canonical" href="https://aucitya.com/glossary.html"/>
+<meta property="og:title" content="Sanskrit &amp; Vedic Design Glossary | Aucitya Studio"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"DefinedTermSet","name":"Sanskrit and Vedic Design Philosophy Glossary","url":"https://aucitya.com/glossary.html"}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300&family=Noto+Serif+Devanagari:wght@300;400&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://use.typekit.net/soz3uyt.css"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#F5F2EE;--bg-warm:#EEE9E1;--bg-section:#EDEBE6;
+  --nav-bg:#2d2422;
+  --text:#2d2422;--text-mid:#8b816b;--text-light:#afa785;
+  --accent:#c1734b;--accent-deep:#6d322f;
+  --rule:#c4bdb2;--rule-light:rgba(196,189,178,0.35);
+  --jost:'Jost','Helvetica Neue',sans-serif;
+  --trajan:'trajan-pro-3',serif;
+  --deva:'Noto Serif Devanagari',serif;
+  --pad-x:80px;--pad-y:100px;
+  --nav-h:72px;
+}
+html{scroll-behavior:smooth}
+body{font-family:var(--jost);background:var(--bg);color:var(--text);font-weight:300;font-size:16px;line-height:1.75;overflow-x:hidden}
+/* Grain */
+body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:900;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
+  background-size:200px;opacity:0.5}
+/* Cursor */
+#cur,#cur-r{position:fixed;top:0;left:0;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);display:none}
+#cur{width:6px;height:6px;background:var(--accent);border-radius:50%}
+#cur-r{width:26px;height:26px;border:1px solid var(--accent);border-radius:50%;opacity:0.35}
+@media(pointer:fine){body{cursor:none}#cur,#cur-r{display:block}}
+
+/* ═══ NAV ════════════════════════════════════════════════════════════════ */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:700;
+  height:var(--nav-h);
+  padding:0 var(--pad-x);
+  display:flex;align-items:center;justify-content:space-between;
+  background:var(--nav-bg);
+  border-bottom:1px solid rgba(196,189,178,0.12);
+}
+.nav-logo{text-decoration:none;display:flex;align-items:center;gap:12px;flex-shrink:0}
+.nav-logo-icon{width:36px;height:36px;flex-shrink:0}
+.nav-logo-text{display:flex;flex-direction:column;gap:0}
+.nav-logo-word{font-family:var(--trajan);font-size:13px;font-weight:600;
+  letter-spacing:.22em;color:#c4bdb2;line-height:1;text-transform:uppercase}
+.nav-logo-sub{font-family:var(--jost);font-size:9px;font-weight:300;
+  letter-spacing:.5em;color:rgba(196,189,178,0.55);text-transform:uppercase;margin-top:4px}
+/* Nav links */
+.nav-links{display:flex;gap:36px;list-style:none;align-items:center}
+.nav-links > li > a{
+  font-family:var(--jost);font-size:10px;font-weight:400;letter-spacing:.22em;
+  color:rgba(196,189,178,0.65);text-decoration:none;text-transform:uppercase;
+  transition:color .3s;position:relative;padding:8px 0;display:block
+}
+.nav-links > li > a::after{
+  content:'';position:absolute;bottom:4px;left:0;width:0;height:1px;
+  background:var(--rule);transition:width .4s
+}
+.nav-links > li > a:hover,.nav-links > li > a.active{color:#c4bdb2}
+.nav-links > li > a:hover::after,.nav-links > li > a.active::after{width:100%}
+.nav-cta{color:var(--accent)!important;border-bottom:1px solid rgba(193,115,75,0.5)!important;padding-bottom:2px!important}
+.nav-cta::after{display:none!important}
+/* Dropdown — JS-controlled */
+.nav-dd{position:relative}
+.nav-dd-menu{
+  position:absolute;top:100%;left:-16px;
+  background:var(--nav-bg);
+  border:1px solid rgba(196,189,178,0.15);border-top:none;
+  min-width:190px;
+  display:none;z-index:800;
+}
+.nav-dd.open .nav-dd-menu{display:block}
+.nav-dd-menu a{
+  display:block;padding:11px 20px;
+  font-family:var(--jost);font-size:9.5px;font-weight:300;letter-spacing:.18em;
+  color:rgba(196,189,178,0.6);text-decoration:none;text-transform:uppercase;
+  border-bottom:1px solid rgba(196,189,178,0.08);transition:color .25s,padding-left .25s
+}
+.nav-dd-menu a:last-child{border-bottom:none}
+.nav-dd-menu a:hover{color:#c4bdb2;padding-left:26px}
+/* Hamburger */
+.nav-toggle{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;
+  padding:8px;min-width:44px;min-height:44px;align-items:center;justify-content:center}
+.nav-toggle span{display:block;width:22px;height:1px;background:var(--rule);transition:all .3s}
+.nav-toggle.open span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.nav-toggle.open span:nth-child(2){opacity:0}
+.nav-toggle.open span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+/* Drawer */
+.nav-drawer{position:fixed;top:0;left:0;right:0;bottom:0;background:var(--nav-bg);z-index:600;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:28px;opacity:0;pointer-events:none;transition:opacity .35s}
+.nav-drawer.open{opacity:1;pointer-events:all}
+.nav-drawer a{font-family:var(--jost);font-size:clamp(20px,5vw,28px);
+  color:rgba(196,189,178,0.8);text-decoration:none;letter-spacing:.12em;
+  font-weight:300;text-transform:uppercase;transition:color .3s}
+.nav-drawer a:hover,.nav-drawer a.active{color:#c4bdb2}
+.nav-drawer hr{width:32px;height:1px;background:rgba(196,189,178,0.2);border:none}
+
+/* ═══ SHARED ATOMS ═══════════════════════════════════════════════════════ */
+.reveal{opacity:0;transform:translateY(14px);transition:opacity .8s ease,transform .8s ease}
+.reveal.on{opacity:1;transform:translateY(0)}
+.sec-label{font-family:var(--jost);font-size:9.5px;font-weight:400;letter-spacing:.45em;
+  color:var(--accent);text-transform:uppercase;display:block;margin-bottom:18px}
+.sec-title{font-family:var(--trajan);font-size:clamp(26px,3vw,40px);font-weight:400;
+  color:var(--text);line-height:1.18;letter-spacing:.04em;margin-bottom:20px}
+.sec-sub{font-family:var(--jost);font-size:16px;font-weight:300;line-height:1.85;color:var(--text-mid)}
+.body-p{font-family:var(--jost);font-size:15.5px;font-weight:300;line-height:1.85;
+  color:var(--text);opacity:0.82;margin-bottom:18px}
+.body-p em{color:var(--accent-deep);font-style:italic}
+.body-p strong{font-weight:400;color:var(--text)}
+.rule-line{display:block;width:36px;height:1px;background:var(--rule);margin-bottom:32px}
+/* Page hero — accounts for fixed nav */
+.page-hero{padding:calc(var(--nav-h) + 64px) var(--pad-x) 72px;background:var(--bg-warm)}
+.page-hero .sec-title{font-size:clamp(28px,3.5vw,46px)}
+
+/* ═══ FOOTER ═════════════════════════════════════════════════════════════ */
+footer{background:var(--nav-bg);padding:52px var(--pad-x) 28px}
+.ft-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:40px;
+  padding-bottom:32px;border-bottom:1px solid rgba(196,189,178,0.1)}
+.ft-logo-area{display:flex;flex-direction:column;gap:0}
+.ft-logo-icon{width:44px;height:44px;margin-bottom:12px}
+.ft-wordmark{font-family:var(--trajan);font-size:13px;font-weight:600;
+  letter-spacing:.22em;color:#c4bdb2;text-transform:uppercase}
+.ft-deva{font-family:var(--deva);font-size:17px;letter-spacing:.05em;
+  color:rgba(196,189,178,0.55);display:block;margin-top:5px}
+.ft-tagline{font-family:var(--jost);font-size:11px;font-weight:200;
+  letter-spacing:.14em;color:rgba(196,189,178,0.35);margin-top:14px;font-style:italic}
+.ft-col-title{font-family:var(--jost);font-size:9px;font-weight:400;letter-spacing:.4em;
+  color:rgba(196,189,178,0.35);text-transform:uppercase;margin-bottom:14px}
+.ft-col-links{display:flex;flex-direction:column;gap:10px}
+.ft-col-links a{font-family:var(--jost);font-size:12px;font-weight:300;letter-spacing:.1em;
+  color:rgba(196,189,178,0.6);text-decoration:none;transition:color .3s}
+.ft-col-links a:hover{color:#c4bdb2}
+.ft-contact-link{display:flex;align-items:center;gap:9px;font-family:var(--jost);
+  font-size:12px;font-weight:300;color:rgba(196,189,178,0.6);text-decoration:none;
+  margin-bottom:9px;letter-spacing:.05em;transition:color .3s}
+.ft-contact-link:hover{color:#c4bdb2}
+.ft-contact-link svg{flex-shrink:0;opacity:0.45}
+.ft-bottom{padding-top:20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.ft-copy{font-family:var(--jost);font-size:9px;font-weight:200;letter-spacing:.18em;
+  color:rgba(196,189,178,0.28);text-transform:uppercase}
+.ft-resources{display:flex;gap:18px;flex-wrap:wrap}
+.ft-resources a{font-family:var(--jost);font-size:9px;font-weight:300;letter-spacing:.2em;
+  color:rgba(196,189,178,0.35);text-decoration:none;text-transform:uppercase;transition:color .3s}
+.ft-resources a:hover{color:rgba(196,189,178,0.7)}
+/* Back to top */
+#btt{position:fixed;bottom:28px;right:28px;z-index:500;width:38px;height:38px;
+  background:var(--text);border:none;color:var(--bg);border-radius:50%;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;
+  transition:opacity .35s,background .3s}
+#btt:hover{background:var(--accent-deep)}
+/* Keyframes */
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+@keyframes pulse{0%,100%{opacity:.4}50%{opacity:1}}
+/* ═══ RESPONSIVE ═════════════════════════════════════════════════════════ */
+@media(max-width:1100px){
+  :root{--pad-x:52px;--pad-y:80px}
+  nav{padding:0 52px}
+  .nav-links{gap:24px}
+  .ft-grid{grid-template-columns:1fr 1fr}
+  .ft-col-links:last-child{grid-column:1/-1}
+}
+@media(max-width:900px){
+  :root{--pad-x:32px}
+  .nav-links{display:none}
+  .nav-toggle{display:flex}
+  nav{padding:0 32px}
+}
+@media(max-width:600px){
+  :root{--pad-x:24px;--pad-y:64px}
+  nav{padding:0 24px}
+  footer{padding:44px 24px 24px}
+  .ft-grid{grid-template-columns:1fr}
+  .ft-bottom{flex-direction:column;align-items:flex-start}
+  .page-hero{padding:calc(var(--nav-h) + 44px) var(--pad-x) 56px}
+}
+
+.gls-hero{padding:calc(var(--nav-h)+56px) var(--pad-x) 52px;background:var(--bg-warm);}
+.gls-intro-text{font-family:var(--jost);font-size:15.5px;font-weight:300;line-height:1.85;
+  color:var(--text-mid);max-width:640px;margin-top:18px}
+#gls-main{padding:40px var(--pad-x) var(--pad-y);background:var(--bg);}
+/* 3-col grid — gap creates lines, bg of grid = bg of page (not highlighted) */
+.gls-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;
+  background:rgba(196,189,178,0.3);}
+.gls-card{background:var(--bg);cursor:pointer;transition:background .3s;}
+.gls-card:hover{background:var(--bg-warm)}
+.gls-hdr{padding:22px 22px 18px;border-bottom:1px solid transparent;transition:border-color .3s}
+.gls-card.open .gls-hdr{border-color:rgba(196,189,178,0.5)}
+.gls-sk{font-family:var(--trajan);font-size:18px;color:var(--text);letter-spacing:.04em;margin-bottom:2px}
+.gls-deva{font-family:var(--deva);font-size:13px;color:var(--accent);opacity:0.65;display:block;margin-bottom:6px}
+.gls-en{font-family:var(--jost);font-size:8.5px;font-weight:400;letter-spacing:.38em;
+  color:var(--text-mid);text-transform:uppercase;margin-bottom:8px;display:block}
+.gls-hint{font-family:var(--jost);font-size:8px;font-weight:300;letter-spacing:.28em;
+  color:var(--text-light);text-transform:uppercase;opacity:0.7}
+.gls-card.open .gls-hint{opacity:0}
+.gls-def{display:none;padding:0 22px 22px}
+.gls-card.open .gls-def{display:block}
+.gls-def p{font-family:var(--jost);font-size:13.5px;font-weight:300;line-height:1.8;color:var(--text-mid)}
+.gls-def p em{color:var(--accent-deep);font-style:italic}
+@media(max-width:1100px){.gls-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.gls-grid{grid-template-columns:1fr}.gls-hero,#gls-main{padding-left:var(--pad-x);padding-right:var(--pad-x)}}
+</style>
+</head>
+<body>
+<div id="cur"></div><div id="cur-r"></div>
+<nav id="nav">
+  <a href="index.html" class="nav-logo">
+    <div class="nav-logo-icon"><svg viewBox="230 230 340 340" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;display:block;">
+  <style>.nl-s{fill:none;stroke:#c4bdb2;stroke-miterlimit:10;}.nl-s2{stroke-width:2px;}.nl-s3{stroke-width:6px;}.nl-f{fill:#c4bdb2;}</style>
+  <g id="AU">
+    <path class="nl-f" d="M324.47,415.89c-.66,0-.92.26-1.19,1.05l-7.11,18.83c-1.32,3.29-1.98,6.45-1.98,8.03,0,2.37,1.19,4.08,5.27,4.08h1.97c1.58,0,1.98.26,1.98,1.05,0,1.05-.79,1.32-2.24,1.32-4.21,0-9.88-.39-13.96-.39-1.45,0-8.69.39-15.54.39-1.71,0-2.5-.26-2.5-1.32,0-.79.79-1.05,1.84-1.05,1.19,0,2.77-.13,3.82-.26,6.06-.79,8.56-5.27,11.19-11.85l33.05-82.7c1.58-3.82,2.5-5.27,3.69-5.27,1.05,0,1.98,1.19,3.29,4.21,3.16,7.24,24.23,60.97,32.66,80.99,5,11.85,8.82,13.7,11.59,14.35,1.98.39,3.95.53,5.53.53,1.05,0,1.71.26,1.71,1.05,0,1.05-1.18,1.32-6.06,1.32s-15.27,0-25.81-.26c-2.37-.13-3.03-.26-3.03-1.05,0-.66.53-1.05,1.84-1.19.92-.26,1.84-1.45,1.19-3.03l-10.54-27.92c-.26-.66-.66-.92-1.32-.92h-29.37.03ZM351.43,408.89c.67,0,.8-.4.67-.8l-12-32.92c-.4-1.2-.93-1.6-1.47,0l-12.26,32.78c-.13.53,0,.93.53.93h24.53Z"/>
+    <path class="nl-f" d="M421.13,406.93c0,19.26,3.85,27.36,10.36,32.67,5.98,4.91,12.09,5.45,16.6,5.45,5.84,0,13.02-1.86,18.33-7.17,7.3-7.31,7.71-19.26,7.71-32.94v-16.05c0-20.97,0-24.83-.28-29.25-.27-4.69-1.38-6.9-5.93-7.86-1.1-.28-3.45-.42-4.97-.42s-2.34-.27-2.34-1.24.97-1.24,2.9-1.24c7.04,0,15.73.41,15.87.41,1.65,0,10.35-.41,15.73-.41,1.93,0,2.9.27,2.9,1.24s-.83,1.24-2.48,1.24c-1.52,0-2.34.14-4,.42-3.72.69-4.83,3.03-5.11,7.86-.27,4.41-.27,8.28-.27,29.25v13.53c0,14.83-1.47,30.58-12.69,40.2-9.48,8.15-19.1,9.61-27.78,9.61-7.08,0-19.9-.4-29.65-9.21-6.81-6.14-11.89-16.03-11.89-35.39v-19.48c0-20.19,0-23.9-.27-28.15-.26-4.52-1.33-6.64-5.71-7.57-1.06-.27-3.32-.4-5.18-.4-1.46,0-2.26-.26-2.26-1.2s.93-1.19,2.92-1.19c7.04,0,15.4.4,19.39.4,3.19,0,11.55-.4,16.33-.4,1.99,0,2.92.26,2.92,1.19s-.8,1.2-2.12,1.2c-1.46,0-2.26.13-3.85.4-3.59.66-4.65,2.92-4.92,7.57-.26,4.25-.26,7.97-.26,28.15v18.79h0Z"/>
+    <circle id="Inner_Circle" class="nl-s nl-s2" cx="399.1" cy="399.35" r="149.5"/>
+    <circle id="Outer_Circle" class="nl-s nl-s3" cx="399.1" cy="399.35" r="166"/>
+  </g>
+</svg></div>
+    <div class="nav-logo-text">
+      <span class="nav-logo-word">Aucitya</span>
+      <span class="nav-logo-sub">Studio</span>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li class="nav-dd">
+      <a href="studio.html">Studio</a>
+      <div class="nav-dd-menu"><a href="studio.html#about">About Us</a><a href="studio.html#philosophy">Philosophy</a><a href="studio.html#mission">Mission &amp; Vision</a><a href="studio.html#team">Team</a></div>
+    </li>
+    <li><a href="journal.html">Journal</a></li>
+    <li><a href="contact.html" class="nav-cta">Begin</a></li>
+  </ul>
+  <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<div class="nav-drawer" id="navDrawer">
+  <a href="index.html" class="drw-link">Home</a>
+  <a href="studio.html" class="drw-link">Studio</a>
+  <a href="journal.html" class="drw-link">Journal</a>
+  <hr/>
+  <a href="contact.html" class="drw-link" style="color:var(--accent)">Begin</a>
+</div>
+
+<section class="gls-hero">
+  <span class="sec-label">Sanskrit &amp; Vedic Design</span>
+  <h1 class="sec-title" style="font-size:clamp(26px,3.2vw,42px);">A Glossary of Spatial Philosophy</h1>
+  <p class="gls-intro-text">India has one of the world&rsquo;s oldest and most sophisticated traditions of spatial philosophy. Long before the words &ldquo;interior design&rdquo; existed, Sanskrit and Vedic texts were exploring how built space affects human experience. Click any term to expand.</p>
+</section>
+<section id="gls-main">
+  <div class="gls-grid">
+    <div class="gls-card" id="aucitya" onclick="toggleGls(this)">
+      <div class="gls-hdr">
+        <div class="gls-sk">Aucitya</div><span class="gls-deva">औचित्य</span>
+        <span class="gls-en">Appropriateness &middot; The exact rightness of things</span><span class="gls-hint">Expand</span>
+      </div>
+      <div class="gls-def"><p>The central concept of this studio. Aucitya describes the quality of every element being precisely right &mdash; not merely beautiful or fashionable, but fitting. Kshemendra called it the <em>j&#x12B;vita</em> (life-force) of good work. Also written: Auchitya, Auchityam, Oucitya.</p></div>
+    </div>
+    <div class="gls-card" onclick="toggleGls(this)">
+      <div class="gls-hdr">
+        <div class="gls-sk">Rasa</div><span class="gls-deva">रस</span>
+        <span class="gls-en">Essence &middot; Emotional flavour of a space</span><span class="gls-hint">Expand</span>
+      </div>
+      <div class="gls-def"><p>The nine Rasas describe fundamental emotional states any well-made thing can evoke. For residential design: <em>Śānta</em> (serenity) and <em>Śṛṅgāra</em> (love and beauty) are most sought. Designing with Rasa consciousness asks: what should a person feel when they enter this space?</p></div>
+    </div>
+    <div class="gls-card" onclick="toggleGls(this)">
+      <div class="gls-hdr">
+        <div class="gls-sk">Vastu Shastra</div><span class="gls-deva">वास्तु शास्त्र</span>
+        <span class="gls-en">The science of sacred dwelling</span><span class="gls-hint">Expand</span>
+      </div>
+      <div class="gls-def"><p>The ancient Indian system of spatial arrangement, addressing orientation, proportion, room placement, and the flow of energy through a building. One of the world&rsquo;s most complete systems of environmental design.</p></div>
+    </div>
+    <div class="gls-card" onclick="toggleGls(this)">
+      <div class="gls-hdr">
+        <div class="gls-sk">Sthāpatya Veda</div><span class="gls-deva">स्थापत्य वेद</span>
+        <span class="gls-en">The Vedic science of architecture</span><span class="gls-hint">Expand</span>
+      </div>
+      <div class="gls-def"><p>One of the four Upavedas, Sthāpatya Veda encompasses the complete philosophy of sacred construction &mdash; from town planning to the proportions of a single room. It describes the relationship between cosmic order, human proportion, and built form.</p></div>
+    </div>
+    <div class="gls-card" onclick="toggleGls(this)">
+      <div class="gls-hdr">
+        <div class="gls-sk">Pañcabhūta</div><span class="gls-deva">पञ्चभूत</span>
+        <span class="gls-en">The five elements</span><span class="gls-hint">Expand</span>
+      </div>
+      <div class="gls-def"><p>Earth (Pṛthvī), Water (Jala), Fire (Agni), Air (Vāyu), and Space (Ākāśa). In Vedic design, a well-made space honours all five in its materials, proportions, light, and spatial flow.</p></div>
+    </div>
+    <div class="gls-card" onclick="toggleGls(this)">
+      <div class="gls-hdr">
+        <div class="gls-sk">Prāṇa</div><span class="gls-deva">प्राण</span>
+        <span class="gls-en">Life force &middot; Vital energy in space</span><span class="gls-hint">Expand</span>
+      </div>
+      <div class="gls-def"><p>The animating energy flowing through living things and well-designed spaces. A room with good Prana feels alive. Created by natural light, cross-ventilation, natural materials that breathe, and spatial proportions that do not compress the body.</p></div>
+    </div>
+    <div class="gls-card" onclick="toggleGls(this)">
+      <div class="gls-hdr">
+        <div class="gls-sk">Ākāśa</div><span class="gls-deva">आकाश</span>
+        <span class="gls-en">Space &middot; The void &middot; Negative space as presence</span><span class="gls-hint">Expand</span>
+      </div>
+      <div class="gls-def"><p>The fifth of the Pañcabhūta. In design it represents the philosophy of negative space: what you remove from a room is as important as what you add. A room without Ākāśa cannot breathe.</p></div>
+    </div>
+    <div class="gls-card" onclick="toggleGls(this)">
+      <div class="gls-hdr">
+        <div class="gls-sk">Dhvani</div><span class="gls-deva">ध्वनि</span>
+        <span class="gls-en">Resonance &middot; What a space implies beyond what it shows</span><span class="gls-hint">Expand</span>
+      </div>
+      <div class="gls-def"><p>In Sanskrit aesthetic theory, Dhvani describes the quality of implication &mdash; what is communicated beyond the literal. A room with great Dhvani creates a feeling that the furniture alone cannot explain.</p></div>
+    </div>
+    <div class="gls-card" onclick="toggleGls(this)">
+      <div class="gls-hdr">
+        <div class="gls-sk">Prakāśa</div><span class="gls-deva">प्रकाश</span>
+        <span class="gls-en">Luminosity &middot; Light as design and philosophy</span><span class="gls-hint">Expand</span>
+      </div>
+      <div class="gls-def"><p>Both the physical phenomenon of light and its spiritual dimension. In Vedic philosophy, the direction light enters, the quality of its warmth, and the way it moves across surfaces through the day are design decisions of the highest order.</p></div>
+    </div>
+    <div class="gls-card" onclick="toggleGls(this)">
+      <div class="gls-hdr">
+        <div class="gls-sk">Chāyā</div><span class="gls-deva">छाया</span>
+        <span class="gls-en">Shadow &middot; Shade as deliberate design element</span><span class="gls-hint">Expand</span>
+      </div>
+      <div class="gls-def"><p>The companion concept to Prakāśa. Chāyā acknowledges that shadow is not the absence of light but a design element in its own right. Indian architectural tradition uses shadow deliberately to create coolness, mystery, depth, and contrast.</p></div>
+    </div>
+    <div class="gls-card" onclick="toggleGls(this)">
+      <div class="gls-hdr">
+        <div class="gls-sk">Māna</div><span class="gls-deva">मान</span>
+        <span class="gls-en">Sacred measure &middot; Proportion in space</span><span class="gls-hint">Expand</span>
+      </div>
+      <div class="gls-def"><p>The system of sacred measure in Vedic architecture &mdash; specific ratios between dimensions create harmony between built space, the human body, and cosmic order.</p></div>
+    </div>
+    <div class="gls-card" onclick="toggleGls(this)">
+      <div class="gls-hdr">
+        <div class="gls-sk">Tāla</div><span class="gls-deva">ताल</span>
+        <span class="gls-en">Rhythm &middot; Visual cadence in design</span><span class="gls-hint">Expand</span>
+      </div>
+      <div class="gls-def"><p>In music, Tāla is the rhythmic cycle. In spatial design, it describes the rhythm created by repeated elements &mdash; columns, windows, arches, patterns in textile or stone.</p></div>
+    </div>
+    <div class="gls-card" onclick="toggleGls(this)">
+      <div class="gls-hdr">
+        <div class="gls-sk">Maṇḍala</div><span class="gls-deva">मण्डल</span>
+        <span class="gls-en">Sacred diagram &middot; Spatial ordering principle</span><span class="gls-hint">Expand</span>
+      </div>
+      <div class="gls-def"><p>A geometric representation of the cosmos used as the underlying planning grid in Vedic architecture. Every space has a centre, a threshold, a zone of activity and a zone of rest.</p></div>
+    </div>
+    <div class="gls-card" onclick="toggleGls(this)">
+      <div class="gls-hdr">
+        <div class="gls-sk">Svabhāva</div><span class="gls-deva">स्वभाव</span>
+        <span class="gls-en">Natural essence &middot; Inherent character</span><span class="gls-hint">Expand</span>
+      </div>
+      <div class="gls-def"><p>The essential nature of a thing. Applied to materials: stone looking like stone, wood showing its grain. Applied to spaces: understanding the essential character of a room before imposing anything onto it.</p></div>
+    </div>
+    <div class="gls-card" onclick="toggleGls(this)">
+      <div class="gls-hdr">
+        <div class="gls-sk">Śobhā</div><span class="gls-deva">शोभा</span>
+        <span class="gls-en">Radiance &middot; Beauty that gives outward</span><span class="gls-hint">Expand</span>
+      </div>
+      <div class="gls-def"><p>A quality of beauty that radiates outward. A room with Śobhā does not just look good; it gives something to everyone who enters it. An active, generous quality of beauty.</p></div>
+    </div>
+    <div class="gls-card" onclick="toggleGls(this)">
+      <div class="gls-hdr">
+        <div class="gls-sk">Anurūpa</div><span class="gls-deva">अनुरूप</span>
+        <span class="gls-en">Congruence &middot; Harmony between all parts</span><span class="gls-hint">Expand</span>
+      </div>
+      <div class="gls-def"><p>Fitting, conforming, in keeping with. In design, the condition in which all elements are in harmony with each other and with the purpose of the space.</p></div>
+    </div>
+    <div class="gls-card" onclick="toggleGls(this)">
+      <div class="gls-hdr">
+        <div class="gls-sk">Alaṃkāra</div><span class="gls-deva">अलंकार</span>
+        <span class="gls-en">Ornamentation &middot; The philosophy of embellishment</span><span class="gls-hint">Expand</span>
+      </div>
+      <div class="gls-def"><p>Not decoration as superficial addition, but the art of enhancing the essential nature of a thing. Does this embellishment serve the thing it adorns?</p></div>
+    </div>
+    <div class="gls-card" onclick="toggleGls(this)">
+      <div class="gls-hdr">
+        <div class="gls-sk">Kṣetra</div><span class="gls-deva">क्षेत्र</span>
+        <span class="gls-en">Sacred field &middot; Space as living entity</span><span class="gls-hint">Expand</span>
+      </div>
+      <div class="gls-def"><p>Vedic tradition holds that certain spaces accumulate qualities over time. The designer&rsquo;s role is to honour and enhance the essential nature of the Kṣetra, not override it.</p></div>
+    </div>
+    <div class="gls-card" onclick="toggleGls(this)">
+      <div class="gls-hdr">
+        <div class="gls-sk">Śraddhā</div><span class="gls-deva">श्रद्धा</span>
+        <span class="gls-en">Devotion &middot; Wholehearted commitment</span><span class="gls-hint">Expand</span>
+      </div>
+      <div class="gls-def"><p>The quality of bringing one&rsquo;s whole self to a task. The difference between a room that is correct and one that is loved.</p></div>
+    </div>
+    <div class="gls-card" onclick="toggleGls(this)">
+      <div class="gls-hdr">
+        <div class="gls-sk">Viveka</div><span class="gls-deva">विवेक</span>
+        <span class="gls-en">Discernment &middot; Clear seeing</span><span class="gls-hint">Expand</span>
+      </div>
+      <div class="gls-def"><p>The capacity to distinguish between what is essential and what is merely pleasant, between what serves the space and what serves the designer&rsquo;s ego.</p></div>
+    </div>
+    <div class="gls-card" onclick="toggleGls(this)">
+      <div class="gls-hdr">
+        <div class="gls-sk">Sūkṣhma</div><span class="gls-deva">सूक्ष्म</span>
+        <span class="gls-en">Subtlety &middot; Attention to what cannot be seen</span><span class="gls-hint">Expand</span>
+      </div>
+      <div class="gls-def"><p>The quality of attention given to what cannot be immediately seen but will always be felt &mdash; the finish on the back of a cabinet door, the exact reveal around a window.</p></div>
+    </div>
+    <div class="gls-card" onclick="toggleGls(this)">
+      <div class="gls-hdr">
+        <div class="gls-sk">Tapas</div><span class="gls-deva">तपस्</span>
+        <span class="gls-en">Discipline &middot; Creative heat</span><span class="gls-hint">Expand</span>
+      </div>
+      <div class="gls-def"><p>Sustained creative discipline &mdash; the willingness to do what the work requires even when uncomfortable. Have we done everything this project demands, or only what was easy?</p></div>
+    </div>
+    <div class="gls-card" onclick="toggleGls(this)">
+      <div class="gls-hdr">
+        <div class="gls-sk">Prasāda</div><span class="gls-deva">प्रसाद</span>
+        <span class="gls-en">Grace &middot; The quality of blessing</span><span class="gls-hint">Expand</span>
+      </div>
+      <div class="gls-def"><p>Grace, clarity, a gift given freely. A room with Prasāda does not announce itself, does not work to impress. It simply makes everything that happens within it slightly better.</p></div>
+    </div>
+<div class="gls-card" style="background:var(--bg);cursor:default;pointer-events:none;border:none;"></div>
+  </div>
+</section>
+
+<footer>
+  <div class="ft-grid">
+    <div class="ft-logo-area">
+      <div class="ft-logo-icon"><svg viewBox="230 230 340 340" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;display:block;">
+  <style>.nl-s{fill:none;stroke:#c4bdb2;stroke-miterlimit:10;}.nl-s2{stroke-width:2px;}.nl-s3{stroke-width:6px;}.nl-f{fill:#c4bdb2;}</style>
+  <g id="AU">
+    <path class="nl-f" d="M324.47,415.89c-.66,0-.92.26-1.19,1.05l-7.11,18.83c-1.32,3.29-1.98,6.45-1.98,8.03,0,2.37,1.19,4.08,5.27,4.08h1.97c1.58,0,1.98.26,1.98,1.05,0,1.05-.79,1.32-2.24,1.32-4.21,0-9.88-.39-13.96-.39-1.45,0-8.69.39-15.54.39-1.71,0-2.5-.26-2.5-1.32,0-.79.79-1.05,1.84-1.05,1.19,0,2.77-.13,3.82-.26,6.06-.79,8.56-5.27,11.19-11.85l33.05-82.7c1.58-3.82,2.5-5.27,3.69-5.27,1.05,0,1.98,1.19,3.29,4.21,3.16,7.24,24.23,60.97,32.66,80.99,5,11.85,8.82,13.7,11.59,14.35,1.98.39,3.95.53,5.53.53,1.05,0,1.71.26,1.71,1.05,0,1.05-1.18,1.32-6.06,1.32s-15.27,0-25.81-.26c-2.37-.13-3.03-.26-3.03-1.05,0-.66.53-1.05,1.84-1.19.92-.26,1.84-1.45,1.19-3.03l-10.54-27.92c-.26-.66-.66-.92-1.32-.92h-29.37.03ZM351.43,408.89c.67,0,.8-.4.67-.8l-12-32.92c-.4-1.2-.93-1.6-1.47,0l-12.26,32.78c-.13.53,0,.93.53.93h24.53Z"/>
+    <path class="nl-f" d="M421.13,406.93c0,19.26,3.85,27.36,10.36,32.67,5.98,4.91,12.09,5.45,16.6,5.45,5.84,0,13.02-1.86,18.33-7.17,7.3-7.31,7.71-19.26,7.71-32.94v-16.05c0-20.97,0-24.83-.28-29.25-.27-4.69-1.38-6.9-5.93-7.86-1.1-.28-3.45-.42-4.97-.42s-2.34-.27-2.34-1.24.97-1.24,2.9-1.24c7.04,0,15.73.41,15.87.41,1.65,0,10.35-.41,15.73-.41,1.93,0,2.9.27,2.9,1.24s-.83,1.24-2.48,1.24c-1.52,0-2.34.14-4,.42-3.72.69-4.83,3.03-5.11,7.86-.27,4.41-.27,8.28-.27,29.25v13.53c0,14.83-1.47,30.58-12.69,40.2-9.48,8.15-19.1,9.61-27.78,9.61-7.08,0-19.9-.4-29.65-9.21-6.81-6.14-11.89-16.03-11.89-35.39v-19.48c0-20.19,0-23.9-.27-28.15-.26-4.52-1.33-6.64-5.71-7.57-1.06-.27-3.32-.4-5.18-.4-1.46,0-2.26-.26-2.26-1.2s.93-1.19,2.92-1.19c7.04,0,15.4.4,19.39.4,3.19,0,11.55-.4,16.33-.4,1.99,0,2.92.26,2.92,1.19s-.8,1.2-2.12,1.2c-1.46,0-2.26.13-3.85.4-3.59.66-4.65,2.92-4.92,7.57-.26,4.25-.26,7.97-.26,28.15v18.79h0Z"/>
+    <circle id="Inner_Circle" class="nl-s nl-s2" cx="399.1" cy="399.35" r="149.5"/>
+    <circle id="Outer_Circle" class="nl-s nl-s3" cx="399.1" cy="399.35" r="166"/>
+  </g>
+</svg></div>
+      <span class="ft-wordmark">Aucitya Studio</span>
+      <span class="ft-deva">औचित्य</span>
+      <p class="ft-tagline">Every element, exactly right.</p>
+    </div>
+    <div>
+      <p class="ft-col-title">Navigate</p>
+      <div class="ft-col-links">
+        <a href="index.html">Home</a>
+        <a href="studio.html">Studio</a>
+        <a href="journal.html">Journal</a>
+        <a href="contact.html">Begin</a>
+      </div>
+    </div>
+    <div>
+      <p class="ft-col-title">Contact</p>
+      <a href="mailto:hello@aucitya.com" class="ft-contact-link">
+        <svg width="13" height="13" viewBox="0 0 18 18" fill="none"><rect x="2" y="4" width="14" height="10" rx="1" stroke="rgba(196,189,178,0.6)" stroke-width="1.2"/><path d="M2 5l7 5 7-5" stroke="rgba(196,189,178,0.6)" stroke-width="1.2"/></svg>
+        hello@aucitya.com
+      </a>
+      <a href="tel:+918088961185" class="ft-contact-link">
+        <svg width="13" height="13" viewBox="0 0 18 18" fill="none"><path d="M15.5 12.5l-3-1-1.5 1.5C9.5 12.5 5.5 8.5 5 7l1.5-1.5L5.5 2.5H2.5C2.5 10.5 7.5 15.5 15.5 15.5V12.5Z" stroke="rgba(196,189,178,0.6)" stroke-width="1.2"/></svg>
+        +91 80889 61185
+      </a>
+      <a href="https://instagram.com/aucitya" target="_blank" rel="noopener" class="ft-contact-link">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" stroke="rgba(196,189,178,0.6)" stroke-width="1.5"/><circle cx="12" cy="12" r="4.5" stroke="rgba(196,189,178,0.6)" stroke-width="1.5"/><circle cx="18" cy="6" r="1" fill="rgba(196,189,178,0.6)"/></svg>
+        @aucitya
+      </a>
+    </div>
+  </div>
+  <div class="ft-bottom">
+    <div class="ft-resources">
+      <a href="glossary.html">Sanskrit &amp; Vedic Glossary</a>
+      <a href="what-is-aucitya.html">What is Aucitya?</a>
+    </div>
+    <span class="ft-copy">&copy; 2026 Aucitya Studio. All rights reserved.</span>
+  </div>
+</footer>
+<button id="btt" aria-label="Back to top"><svg width="12" height="12" viewBox="0 0 14 14" fill="none"><path d="M7 10V3M7 3L3.5 6.5M7 3L10.5 6.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+<script>
+/* Cursor */
+const cr=document.getElementById('cur'),crr=document.getElementById('cur-r');
+if(window.matchMedia('(pointer:fine)').matches){
+  let mx=0,my=0,rx=0,ry=0;
+  document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;cr.style.left=mx+'px';cr.style.top=my+'px';});
+  (function t(){rx+=(mx-rx)*.12;ry+=(my-ry)*.12;crr.style.left=rx+'px';crr.style.top=ry+'px';requestAnimationFrame(t);})();
+}
+/* Studio dropdown — click-based, closes on outside click */
+const ddItem=document.querySelector('.nav-dd');
+if(ddItem){
+  const ddLink=ddItem.querySelector(':scope > a');
+  ddLink.addEventListener('click',e=>{e.preventDefault();ddItem.classList.toggle('open');});
+  document.addEventListener('click',e=>{if(!ddItem.contains(e.target))ddItem.classList.remove('open');});
+}
+/* Hamburger */
+const tog=document.getElementById('navToggle'),drw=document.getElementById('navDrawer');
+if(tog){tog.addEventListener('click',()=>{const o=tog.classList.toggle('open');drw.classList.toggle('open',o);document.body.style.overflow=o?'hidden':'';});}
+document.querySelectorAll('.drw-link').forEach(a=>a.addEventListener('click',()=>{tog&&tog.classList.remove('open');drw&&drw.classList.remove('open');document.body.style.overflow='';}));
+/* Reveal */
+if('IntersectionObserver' in window){
+  const obs=new IntersectionObserver(e=>{e.forEach(en=>{if(en.isIntersecting){en.target.classList.add('on');obs.unobserve(en.target);}});},{threshold:0.06});
+  document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+}else document.querySelectorAll('.reveal').forEach(el=>el.classList.add('on'));
+/* Back to top */
+const btt=document.getElementById('btt');
+if(btt){
+  window.addEventListener('scroll',()=>{const s=scrollY>500;btt.style.opacity=s?'1':'0';btt.style.pointerEvents=s?'all':'none';},{passive:true});
+  btt.addEventListener('click',()=>scrollTo({top:0,behavior:'smooth'}));
+}
+function toggleGls(c){const o=c.classList.contains("open");document.querySelectorAll(".gls-card.open").forEach(x=>x.classList.remove("open"));if(!o)c.classList.add("open");}</script>
+</body>
+</html>
