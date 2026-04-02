@@ -1,7 +1,5 @@
 {
-  "cleanUrls": true,
   "rewrites": [
-    { "source": "/home", "destination": "/index.html" },
     { "source": "/studio", "destination": "/studio.html" },
     { "source": "/journal", "destination": "/journal.html" },
     { "source": "/contact", "destination": "/contact.html" },
@@ -17,20 +15,12 @@
     { "source": "/journal/design-trends", "destination": "/j-design-trends.html" }
   ],
   "redirects": [
+    { "source": "/home", "destination": "/", "permanent": true },
     { "source": "/index.html", "destination": "/", "permanent": true },
     { "source": "/studio.html", "destination": "/studio", "permanent": true },
     { "source": "/journal.html", "destination": "/journal", "permanent": true },
     { "source": "/contact.html", "destination": "/contact", "permanent": true },
     { "source": "/glossary.html", "destination": "/glossary", "permanent": true },
     { "source": "/what-is-aucitya.html", "destination": "/what-is-aucitya", "permanent": true }
-  ],
-  "headers": [
-    {
-      "source": "/(.*)",
-      "headers": [
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "X-Frame-Options", "value": "SAMEORIGIN" }
-      ]
-    }
   ]
 }

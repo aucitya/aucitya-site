@@ -295,7 +295,13 @@ footer{background:var(--nav-bg);padding:52px var(--pad-x) 28px}
 .jnl-row:hover .jnl-read::after{width:36px}
 
 @media(max-width:900px){.jnl-col{max-width:100%}.journal-hero .jnl-inner{max-width:100%}}
-@media(max-width:600px){.jnl-row{padding:32px 0}}
+@media(max-width:767px){
+  .journal-hero{padding:calc(var(--nav-h) + 56px) 24px 48px}
+  #jnl-list{padding:0 24px 64px}
+  .jnl-row{padding:28px 0}
+  .jnl-num{margin-bottom:10px}
+  .jnl-title{font-size:18px}
+}
 </style>
 </head>
 <body>
