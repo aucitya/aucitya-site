@@ -2,16 +2,19 @@
 <html lang="en-IN">
 <head>
 <meta charset="UTF-8"/>
+<link rel="icon" type="image/png" href="/favicon.png"/>
+<link rel="shortcut icon" href="/favicon.png"/>
+<link rel="apple-touch-icon" href="/favicon.png"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Journal | Aucitya — Essays on Design & Sanskrit Philosophy</title>
+<title>Journal | Aucitya Studio</title>
 <meta name="description" content="Eight essays on interior design, Sanskrit philosophy, Rasa theory, Vastu Shastra, light, material and how a photographer sees space. By Aucitya Studio."/>
 <meta name="keywords" content="Aucitya, Auchitya, Auchityam, luxury interior design India, interior design Bangalore, interior design Mumbai, interior design Delhi, Sanskrit design philosophy, Vedic interior design, Surbhi Kaushik"/>
 <meta name="robots" content="index, follow"/>
 <meta name="geo.region" content="IN"/>
 <meta name="author" content="Surbhi Kaushik, Aucitya Studio"/>
-<link rel="canonical" href="https://aucitya.com/journal.html"/>
+<link rel="canonical" href="https://aucitya.com/journal"/>
 <meta property="og:type" content="website"/>
-<meta property="og:url" content="https://aucitya.com/journal.html"/>
+<meta property="og:url" content="https://aucitya.com/journal"/>
 <meta property="og:title" content="Journal | Aucitya — Essays on Design & Sanskrit Philosophy"/>
 <meta property="og:description" content="Eight essays on interior design, Sanskrit philosophy, Rasa theory, Vastu Shastra, light, material and how a photographer sees space. By Aucitya Studio."/>
 <meta property="og:image" content="https://aucitya.com/og-image.jpg"/>
@@ -115,6 +118,7 @@ nav{
 }
 .nav-dd-menu a:last-child{border-bottom:none}
 .nav-dd-menu a:hover{color:#c4bdb2;padding-left:26px}
+@media(pointer:fine){.nav-dd:hover .nav-dd-menu{display:block}}
 /* Hamburger */
 .nav-toggle{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;
   padding:8px;min-width:44px;min-height:44px;align-items:center;justify-content:center}
@@ -214,33 +218,90 @@ footer{background:var(--nav-bg);padding:52px var(--pad-x) 28px}
   .page-hero{padding:calc(var(--nav-h) + 44px) var(--pad-x) 56px}
 }
 
-.journal-hero{padding:calc(var(--nav-h)+56px) var(--pad-x) 60px;background:var(--bg-warm);}
-#jnl-list{padding:0 var(--pad-x) var(--pad-y);background:var(--bg);}
-.jnl-item{border-bottom:1px solid var(--rule-light);}
-.jnl-item:first-child{border-top:1px solid var(--rule-light)}
-.jnl-row{display:grid;grid-template-columns:110px 1fr 70px;gap:0;align-items:start;
-  padding:34px 0;text-decoration:none;transition:background .25s;display:grid}
-.jnl-row:hover{background:rgba(238,233,225,0.45);margin:0 -12px;padding:34px 12px}
-.jnl-cat{font-family:var(--jost);font-size:9px;font-weight:400;letter-spacing:.4em;
-  color:var(--accent);text-transform:uppercase;padding-top:4px}
-.jnl-meta{padding-right:48px}
-.jnl-title{font-family:var(--trajan);font-size:clamp(16px,2vw,24px);
-  color:var(--text);line-height:1.25;letter-spacing:.03em;margin-bottom:8px;font-weight:400}
-.jnl-ex{font-family:var(--jost);font-size:13px;font-weight:300;line-height:1.7;
-  color:var(--text-mid);font-style:italic;max-width:560px}
-.jnl-arrow{font-family:var(--jost);font-size:9px;font-weight:400;letter-spacing:.3em;
-  color:var(--accent);text-transform:uppercase;padding-top:5px;
-  display:flex;align-items:center;gap:6px}
-.jnl-arrow span{display:inline-block;width:14px;height:1px;background:var(--accent);transition:width .4s}
-.jnl-row:hover .jnl-arrow span{width:28px}
-@media(max-width:900px){.jnl-row{grid-template-columns:80px 1fr}.jnl-arrow{display:none}}
-@media(max-width:600px){.jnl-row{grid-template-columns:1fr;gap:8px;padding:24px 0}.jnl-cat{padding-top:0}}
+/* ── JOURNAL PAGE ────────────────────────────────────────────────────── */
+.journal-hero{
+  padding:calc(var(--nav-h) + 80px) var(--pad-x) 64px;
+  background:var(--bg-warm);
+}
+.journal-hero .jnl-inner{max-width:760px;margin:0 auto}
+
+#jnl-list{
+  background:var(--bg);
+  padding:0 var(--pad-x) var(--pad-y);
+}
+.jnl-col{
+  max-width:760px;
+  margin:0 auto;
+}
+
+/* Each entry */
+.jnl-item{
+  border-bottom:1px solid var(--rule-light);
+}
+.jnl-item:first-child{
+  border-top:1px solid var(--rule-light);
+}
+.jnl-row{
+  display:block;
+  padding:44px 0;
+  text-decoration:none;
+  transition:padding-left .3s;
+  position:relative;
+}
+.jnl-row:hover{
+  padding-left:8px;
+}
+
+/* Entry number */
+.jnl-num{
+  font-family:var(--trajan);
+  font-size:11px;font-weight:400;
+  color:rgba(193,115,75,0.4);
+  letter-spacing:.15em;
+  display:block;
+  margin-bottom:14px;
+}
+/* Category tag */
+.jnl-cat{
+  font-family:var(--jost);font-size:9px;font-weight:400;
+  letter-spacing:.42em;color:var(--accent);text-transform:uppercase;
+  display:inline-block;margin-bottom:12px;
+}
+/* Title */
+.jnl-title{
+  font-family:var(--trajan);
+  font-size:clamp(18px,2.2vw,27px);
+  color:var(--text);line-height:1.25;letter-spacing:.03em;
+  margin-bottom:14px;font-weight:400;
+  display:block;
+}
+/* Excerpt */
+.jnl-ex{
+  font-family:var(--jost);font-size:14.5px;font-weight:300;
+  line-height:1.75;color:var(--text-mid);font-style:italic;
+  display:block;margin-bottom:20px;
+  max-width:580px;
+}
+/* Read link */
+.jnl-read{
+  font-family:var(--jost);font-size:9px;font-weight:400;
+  letter-spacing:.35em;color:var(--accent);text-transform:uppercase;
+  display:inline-flex;align-items:center;gap:8px;
+}
+.jnl-read::after{
+  content:'';display:inline-block;width:18px;height:1px;
+  background:var(--accent);transition:width .4s;
+}
+.jnl-row:hover .jnl-read::after{width:36px}
+
+@media(max-width:900px){.jnl-col{max-width:100%}.journal-hero .jnl-inner{max-width:100%}}
+@media(max-width:600px){.jnl-row{padding:32px 0}}
 </style>
 </head>
 <body>
 <div id="cur"></div><div id="cur-r"></div>
 <nav id="nav">
-  <a href="index.html" class="nav-logo">
+  <a href="/home" class="nav-logo">
     <div class="nav-logo-icon"><svg viewBox="230 230 340 340" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;display:block;">
   <style>.nl-s{fill:none;stroke:#c4bdb2;stroke-miterlimit:10;}.nl-s2{stroke-width:2px;}.nl-s3{stroke-width:6px;}.nl-f{fill:#c4bdb2;}</style>
   <g id="AU">
@@ -256,105 +317,120 @@ footer{background:var(--nav-bg);padding:52px var(--pad-x) 28px}
     </div>
   </a>
   <ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
+    <li><a href="/home">Home</a></li>
     <li class="nav-dd">
-      <a href="studio.html">Studio</a>
+      <a href="/studio">Studio</a>
       <div class="nav-dd-menu"><a href="studio.html#about">About Us</a><a href="studio.html#philosophy">Philosophy</a><a href="studio.html#mission">Mission &amp; Vision</a><a href="studio.html#team">Team</a></div>
     </li>
-    <li><a href="journal.html" class="active">Journal</a></li>
-    <li><a href="contact.html" class="nav-cta">Begin</a></li>
+    <li><a href="/journal" class="active">Journal</a></li>
+    <li><a href="/contact" class="nav-cta">Begin</a></li>
   </ul>
   <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
 </nav>
 <div class="nav-drawer" id="navDrawer">
-  <a href="index.html" class="drw-link">Home</a>
-  <a href="studio.html" class="drw-link">Studio</a>
-  <a href="journal.html" class="drw-link active">Journal</a>
+  <a href="/home" class="drw-link">Home</a>
+  <a href="/studio" class="drw-link">Studio</a>
+  <a href="/journal" class="drw-link active">Journal</a>
   <hr/>
-  <a href="contact.html" class="drw-link" style="color:var(--accent)">Begin</a>
+  <a href="/contact" class="drw-link" style="color:var(--accent)">Begin</a>
 </div>
-<section class="journal-hero"><div class="reveal"><span class="sec-label">The Journal</span><h1 class="sec-title">The Intersection of life and design.</h1><p class="sec-sub">Eight essays on space, philosophy, material and the question that started it all.</p></div></section>
+<section class="journal-hero">
+  <div class="jnl-inner reveal">
+    <span class="sec-label">The Journal</span>
+    <h1 class="sec-title">The Intersection of<br/>life and design.</h1>
+    <p class="sec-sub">Eight essays on space, philosophy, material and the question that started it all.</p>
+  </div>
+</section>
+
 <section id="jnl-list">
-  <div class="jnl-item reveal">
-    <a href="j-aucitya-meaning.html" class="jnl-row">
-      <span class="jnl-cat">On Philosophy</span>
-      <div class="jnl-meta">
-        <h2 class="jnl-title">What does Aucitya mean? The Sanskrit concept Western design forgot</h2>
-        <p class="jnl-ex">There is a feeling you know but probably cannot name. Sanskrit has a precise word for it.</p>
-      </div>
-      <span class="jnl-arrow">Read <span></span></span>
-    </a>
+  <div class="jnl-col">
+
+    <div class="jnl-item reveal">
+      <a href="/journal/aucitya-meaning" class="jnl-row">
+        <span class="jnl-num">01</span>
+        <span class="jnl-cat">On Philosophy</span>
+        <span class="jnl-title">What does Aucitya mean? The Sanskrit concept Western design forgot</span>
+        <span class="jnl-ex">There is a feeling you know but probably cannot name. Sanskrit has a precise word for it.</span>
+        <span class="jnl-read">Read essay</span>
+      </a>
+    </div>
+
+    <div class="jnl-item reveal">
+      <a href="/journal/vastu-aucitya" class="jnl-row">
+        <span class="jnl-num">02</span>
+        <span class="jnl-cat">On Philosophy</span>
+        <span class="jnl-title">Vastu Shastra and Aucitya &mdash; two philosophies of sacred space</span>
+        <span class="jnl-ex">India&rsquo;s design tradition is not one thing. Understanding the difference clarifies something essential.</span>
+        <span class="jnl-read">Read essay</span>
+      </a>
+    </div>
+
+    <div class="jnl-item reveal">
+      <a href="/journal/rasa-theory" class="jnl-row">
+        <span class="jnl-num">03</span>
+        <span class="jnl-cat">On Emotion</span>
+        <span class="jnl-title">Rasa theory &mdash; how to design a room that makes people feel something</span>
+        <span class="jnl-ex">Indian aesthetic philosophy has a sophisticated answer to the question Western design rarely asks.</span>
+        <span class="jnl-read">Read essay</span>
+      </a>
+    </div>
+
+    <div class="jnl-item reveal">
+      <a href="/journal/indian-homes" class="jnl-row">
+        <span class="jnl-num">04</span>
+        <span class="jnl-cat">On Tradition</span>
+        <span class="jnl-title">Why Indian homes feel different &mdash; and what the Vedas knew about it</span>
+        <span class="jnl-ex">Anyone who has spent time in old Indian homes will notice something difficult to put into words.</span>
+        <span class="jnl-read">Read essay</span>
+      </a>
+    </div>
+
+    <div class="jnl-item reveal">
+      <a href="/journal/five-elements" class="jnl-row">
+        <span class="jnl-num">05</span>
+        <span class="jnl-cat">On Elements</span>
+        <span class="jnl-title">The five elements in interior design &mdash; Pa&#xF1;cabh&#x16B;ta and how to apply them</span>
+        <span class="jnl-ex">Every material you choose for a room is a decision about which element you are inviting in.</span>
+        <span class="jnl-read">Read essay</span>
+      </a>
+    </div>
+
+    <div class="jnl-item reveal">
+      <a href="/journal/light-philosophy" class="jnl-row">
+        <span class="jnl-num">06</span>
+        <span class="jnl-cat">On Light</span>
+        <span class="jnl-title">Light as philosophy &mdash; Prak&#x101;&#x15B;a and Ch&#x101;y&#x101; in modern interiors</span>
+        <span class="jnl-ex">The four o&rsquo;clock test. What Sanskrit concepts of luminosity and shadow reveal.</span>
+        <span class="jnl-read">Read essay</span>
+      </a>
+    </div>
+
+    <div class="jnl-item reveal">
+      <a href="/journal/photographer-designer" class="jnl-row">
+        <span class="jnl-num">07</span>
+        <span class="jnl-cat">On Seeing</span>
+        <span class="jnl-title">How a photographer designs rooms differently</span>
+        <span class="jnl-ex">The first thing a photographer learns is not composition or colour &mdash; it is how to see light.</span>
+        <span class="jnl-read">Read essay</span>
+      </a>
+    </div>
+
+    <div class="jnl-item reveal">
+      <a href="/journal/design-trends" class="jnl-row">
+        <span class="jnl-num">08</span>
+        <span class="jnl-cat">On Standards</span>
+        <span class="jnl-title">The problem with interior design trends</span>
+        <span class="jnl-ex">Every few years a visual language becomes dominant. Then it passes. The spaces that last were designed to a different standard.</span>
+        <span class="jnl-read">Read essay</span>
+      </a>
+    </div>
+
   </div>
-  <div class="jnl-item reveal">
-    <a href="j-vastu-aucitya.html" class="jnl-row">
-      <span class="jnl-cat">On Philosophy</span>
-      <div class="jnl-meta">
-        <h2 class="jnl-title">Vastu Shastra and Aucitya &mdash; two philosophies of sacred space</h2>
-        <p class="jnl-ex">India's design tradition is not one thing. Understanding the difference clarifies something essential.</p>
-      </div>
-      <span class="jnl-arrow">Read <span></span></span>
-    </a>
-  </div>
-  <div class="jnl-item reveal">
-    <a href="j-rasa-theory.html" class="jnl-row">
-      <span class="jnl-cat">On Emotion</span>
-      <div class="jnl-meta">
-        <h2 class="jnl-title">Rasa theory &mdash; how to design a room that makes people feel something</h2>
-        <p class="jnl-ex">Indian aesthetic philosophy has a sophisticated answer to the question Western design rarely asks.</p>
-      </div>
-      <span class="jnl-arrow">Read <span></span></span>
-    </a>
-  </div>
-  <div class="jnl-item reveal">
-    <a href="j-indian-homes.html" class="jnl-row">
-      <span class="jnl-cat">On Tradition</span>
-      <div class="jnl-meta">
-        <h2 class="jnl-title">Why Indian homes feel different &mdash; and what the Vedas knew about it</h2>
-        <p class="jnl-ex">Anyone who has spent time in old Indian homes will notice something difficult to put into words.</p>
-      </div>
-      <span class="jnl-arrow">Read <span></span></span>
-    </a>
-  </div>
-  <div class="jnl-item reveal">
-    <a href="j-five-elements.html" class="jnl-row">
-      <span class="jnl-cat">On Elements</span>
-      <div class="jnl-meta">
-        <h2 class="jnl-title">The five elements in interior design &mdash; Pañcabhūta and how to apply them</h2>
-        <p class="jnl-ex">Every material you choose for a room is a decision about which element you are inviting in.</p>
-      </div>
-      <span class="jnl-arrow">Read <span></span></span>
-    </a>
-  </div>
-  <div class="jnl-item reveal">
-    <a href="j-light-philosophy.html" class="jnl-row">
-      <span class="jnl-cat">On Light</span>
-      <div class="jnl-meta">
-        <h2 class="jnl-title">Light as philosophy &mdash; Prakāśa and Chāyā in modern interiors</h2>
-        <p class="jnl-ex">The four o'clock test. What Sanskrit concepts of luminosity and shadow reveal.</p>
-      </div>
-      <span class="jnl-arrow">Read <span></span></span>
-    </a>
-  </div>
-  <div class="jnl-item reveal">
-    <a href="j-photographer-designer.html" class="jnl-row">
-      <span class="jnl-cat">On Seeing</span>
-      <div class="jnl-meta">
-        <h2 class="jnl-title">How a photographer designs rooms differently</h2>
-        <p class="jnl-ex">The first thing a photographer learns is not composition or colour &mdash; it is how to see light.</p>
-      </div>
-      <span class="jnl-arrow">Read <span></span></span>
-    </a>
-  </div>
-  <div class="jnl-item reveal">
-    <a href="j-design-trends.html" class="jnl-row">
-      <span class="jnl-cat">On Standards</span>
-      <div class="jnl-meta">
-        <h2 class="jnl-title">The problem with interior design trends</h2>
-        <p class="jnl-ex">Every few years a visual language becomes dominant. Then it passes. The spaces that last were designed to a different standard.</p>
-      </div>
-      <span class="jnl-arrow">Read <span></span></span>
-    </a>
-  </div>
+</section>
+<section style="padding:60px var(--pad-x);background:var(--bg-warm);text-align:center;">
+  <p style="font-family:var(--jost);font-size:10px;font-weight:400;letter-spacing:.38em;color:var(--accent);text-transform:uppercase;margin-bottom:16px">Begin</p>
+  <p style="font-family:var(--trajan);font-size:clamp(20px,2.5vw,30px);color:var(--text);margin-bottom:24px;letter-spacing:.04em;">Ready to start a conversation?</p>
+  <a href="/contact" style="font-family:var(--jost);font-size:10px;font-weight:400;letter-spacing:.38em;color:var(--bg);background:var(--text);text-decoration:none;padding:13px 32px;text-transform:uppercase;display:inline-block;transition:background .3s" onmouseover="this.style.background='#6d322f'" onmouseout="this.style.background='#2d2422'">Commission Enquiry</a>
 </section>
 <footer>
   <div class="ft-grid">
@@ -375,10 +451,10 @@ footer{background:var(--nav-bg);padding:52px var(--pad-x) 28px}
     <div>
       <p class="ft-col-title">Navigate</p>
       <div class="ft-col-links">
-        <a href="index.html">Home</a>
-        <a href="studio.html">Studio</a>
-        <a href="journal.html">Journal</a>
-        <a href="contact.html">Begin</a>
+        <a href="/home">Home</a>
+        <a href="/studio">Studio</a>
+        <a href="/journal">Journal</a>
+        <a href="/contact">Begin</a>
       </div>
     </div>
     <div>
@@ -399,8 +475,8 @@ footer{background:var(--nav-bg);padding:52px var(--pad-x) 28px}
   </div>
   <div class="ft-bottom">
     <div class="ft-resources">
-      <a href="glossary.html">Sanskrit &amp; Vedic Glossary</a>
-      <a href="what-is-aucitya.html">What is Aucitya?</a>
+      <a href="/glossary">Sanskrit &amp; Vedic Glossary</a>
+      <a href="/what-is-aucitya">What is Aucitya?</a>
     </div>
     <span class="ft-copy">&copy; 2026 Aucitya Studio. All rights reserved.</span>
   </div>
@@ -418,7 +494,7 @@ if(window.matchMedia('(pointer:fine)').matches){
 const ddItem=document.querySelector('.nav-dd');
 if(ddItem){
   const ddLink=ddItem.querySelector(':scope > a');
-  ddLink.addEventListener('click',e=>{e.preventDefault();ddItem.classList.toggle('open');});
+  /* dropdown via CSS hover on desktop */
   document.addEventListener('click',e=>{if(!ddItem.contains(e.target))ddItem.classList.remove('open');});
 }
 /* Hamburger */
