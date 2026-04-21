@@ -1,26 +1,105 @@
 {
   "rewrites": [
-    { "source": "/studio", "destination": "/studio.html" },
-    { "source": "/journal", "destination": "/journal.html" },
-    { "source": "/contact", "destination": "/contact.html" },
-    { "source": "/glossary", "destination": "/glossary.html" },
-    { "source": "/what-is-aucitya", "destination": "/what-is-aucitya.html" },
-    { "source": "/journal/aucitya-meaning", "destination": "/j-aucitya-meaning.html" },
-    { "source": "/journal/vastu-aucitya", "destination": "/j-vastu-aucitya.html" },
-    { "source": "/journal/rasa-theory", "destination": "/j-rasa-theory.html" },
-    { "source": "/journal/indian-homes", "destination": "/j-indian-homes.html" },
-    { "source": "/journal/five-elements", "destination": "/j-five-elements.html" },
-    { "source": "/journal/light-philosophy", "destination": "/j-light-philosophy.html" },
-    { "source": "/journal/photographer-designer", "destination": "/j-photographer-designer.html" },
-    { "source": "/journal/design-trends", "destination": "/j-design-trends.html" }
+    {
+      "source": "/studio",
+      "destination": "/studio.html"
+    },
+    {
+      "source": "/journal",
+      "destination": "/journal.html"
+    },
+    {
+      "source": "/contact",
+      "destination": "/contact.html"
+    },
+    {
+      "source": "/glossary",
+      "destination": "/glossary.html"
+    },
+    {
+      "source": "/what-is-aucitya",
+      "destination": "/what-is-aucitya.html"
+    },
+    {
+      "source": "/journal/aucitya-meaning",
+      "destination": "/j-aucitya-meaning.html"
+    },
+    {
+      "source": "/journal/vastu-aucitya",
+      "destination": "/j-vastu-aucitya.html"
+    },
+    {
+      "source": "/journal/rasa-theory",
+      "destination": "/j-rasa-theory.html"
+    },
+    {
+      "source": "/journal/indian-homes",
+      "destination": "/j-indian-homes.html"
+    },
+    {
+      "source": "/journal/five-elements",
+      "destination": "/j-five-elements.html"
+    },
+    {
+      "source": "/journal/light-philosophy",
+      "destination": "/j-light-philosophy.html"
+    },
+    {
+      "source": "/journal/photographer-designer",
+      "destination": "/j-photographer-designer.html"
+    },
+    {
+      "source": "/journal/design-trends",
+      "destination": "/j-design-trends.html"
+    },
+    {
+      "source": "/journal/empty-space",
+      "destination": "/j-empty-space.html"
+    },
+    {
+      "source": "/journal/natural-materials",
+      "destination": "/j-natural-materials.html"
+    },
+    {
+      "source": "/journal/client-brief",
+      "destination": "/j-client-brief.html"
+    }
   ],
   "redirects": [
-    { "source": "/home", "destination": "/", "permanent": true },
-    { "source": "/index.html", "destination": "/", "permanent": true },
-    { "source": "/studio.html", "destination": "/studio", "permanent": true },
-    { "source": "/journal.html", "destination": "/journal", "permanent": true },
-    { "source": "/contact.html", "destination": "/contact", "permanent": true },
-    { "source": "/glossary.html", "destination": "/glossary", "permanent": true },
-    { "source": "/what-is-aucitya.html", "destination": "/what-is-aucitya", "permanent": true }
+    {
+      "source": "/home",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/studio.html",
+      "destination": "/studio",
+      "permanent": true
+    },
+    {
+      "source": "/journal.html",
+      "destination": "/journal",
+      "permanent": true
+    },
+    {
+      "source": "/contact.html",
+      "destination": "/contact",
+      "permanent": true
+    },
+    {
+      "source": "/glossary.html",
+      "destination": "/glossary",
+      "permanent": true
+    },
+    {
+      "source": "/what-is-aucitya.html",
+      "destination": "/what-is-aucitya",
+      "permanent": true
+    }
   ]
 }

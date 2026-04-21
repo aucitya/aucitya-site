@@ -2,21 +2,18 @@
 <html lang="en-IN">
 <head>
 <meta charset="UTF-8"/>
-<link rel="icon" type="image/png" href="/favicon.png"/>
-<link rel="shortcut icon" href="/favicon.png"/>
-<link rel="apple-touch-icon" href="/favicon.png"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Journal | Aucitya Studio</title>
-<meta name="description" content="Eight essays on interior design, Sanskrit philosophy, Rasa theory, Vastu Shastra, light, material and how a photographer sees space. By Aucitya Studio."/>
+<title>The art of empty space — designing with silence | Aucitya Studio Journal</title>
+<meta name="description" content="The most considered rooms are not the fullest ones. What Indian spatial philosophy understands about restraint. An essay from the Aucitya Studio Journal."/>
 <meta name="keywords" content="Aucitya, Auchitya, Auchityam, luxury interior design India, interior design Bangalore, interior design Mumbai, interior design Delhi, Sanskrit design philosophy, Vedic interior design, Surbhi Kaushik"/>
 <meta name="robots" content="index, follow"/>
 <meta name="geo.region" content="IN"/>
 <meta name="author" content="Surbhi Kaushik, Aucitya Studio"/>
-<link rel="canonical" href="https://aucitya.com/journal"/>
+<link rel="canonical" href="https://aucitya.com/journal/empty-space"/>
 <meta property="og:type" content="website"/>
-<meta property="og:url" content="https://aucitya.com/journal"/>
-<meta property="og:title" content="Journal | Aucitya — Essays on Design & Sanskrit Philosophy"/>
-<meta property="og:description" content="Eight essays on interior design, Sanskrit philosophy, Rasa theory, Vastu Shastra, light, material and how a photographer sees space. By Aucitya Studio."/>
+<meta property="og:url" content="https://aucitya.com/journal/empty-space"/>
+<meta property="og:title" content="The art of empty space — designing with silence | Aucitya Studio Journal"/>
+<meta property="og:description" content="There is a feeling you know but probably cannot name. Sanskrit has a precise word for it. An essay from the Aucitya Studio Journal on interior design and Sanskrit philosophy."/>
 <meta property="og:image" content="https://aucitya.com/og-image.jpg"/>
 <meta property="og:locale" content="en_IN"/>
 <script type="application/ld+json">
@@ -118,7 +115,6 @@ nav{
 }
 .nav-dd-menu a:last-child{border-bottom:none}
 .nav-dd-menu a:hover{color:#c4bdb2;padding-left:26px}
-@media(pointer:fine){.nav-dd:hover .nav-dd-menu{display:block}}
 /* Hamburger */
 .nav-toggle{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;
   padding:8px;min-width:44px;min-height:44px;align-items:center;justify-content:center}
@@ -218,96 +214,45 @@ footer{background:var(--nav-bg);padding:52px var(--pad-x) 28px}
   .page-hero{padding:calc(var(--nav-h) + 44px) var(--pad-x) 56px}
 }
 
-/* ── JOURNAL PAGE ────────────────────────────────────────────────────── */
-.journal-hero{
-  padding:calc(var(--nav-h) + 80px) var(--pad-x) 64px;
-  background:var(--bg-warm);
-}
-.journal-hero .jnl-inner{max-width:760px;margin:0 auto}
-
-#jnl-list{
-  background:var(--bg);
-  padding:0 var(--pad-x) var(--pad-y);
-}
-.jnl-col{
-  max-width:760px;
-  margin:0 auto;
-}
-
-/* Each entry */
-.jnl-item{
-  border-bottom:1px solid var(--rule-light);
-}
-.jnl-item:first-child{
-  border-top:1px solid var(--rule-light);
-}
-.jnl-row{
-  display:block;
-  padding:44px 0;
-  text-decoration:none;
-  transition:padding-left .3s;
-  position:relative;
-}
-.jnl-row:hover{
-  padding-left:8px;
-}
-
-/* Entry number */
-.jnl-num{
-  font-family:var(--trajan);
-  font-size:11px;font-weight:400;
-  color:rgba(193,115,75,0.4);
-  letter-spacing:.15em;
-  display:block;
-  margin-bottom:14px;
-}
-/* Category tag */
-.jnl-cat{
-  font-family:var(--jost);font-size:9px;font-weight:400;
-  letter-spacing:.42em;color:var(--accent);text-transform:uppercase;
-  display:inline-block;margin-bottom:12px;
-}
-/* Title */
-.jnl-title{
-  font-family:var(--trajan);
-  font-size:clamp(18px,2.2vw,27px);
-  color:var(--text);line-height:1.25;letter-spacing:.03em;
-  margin-bottom:14px;font-weight:400;
-  display:block;
-}
-/* Excerpt */
-.jnl-ex{
-  font-family:var(--jost);font-size:14.5px;font-weight:300;
-  line-height:1.75;color:var(--text-mid);font-style:italic;
-  display:block;margin-bottom:20px;
-  max-width:580px;
-}
-/* Read link */
-.jnl-read{
-  font-family:var(--jost);font-size:9px;font-weight:400;
-  letter-spacing:.35em;color:var(--accent);text-transform:uppercase;
-  display:inline-flex;align-items:center;gap:8px;
-}
-.jnl-read::after{
-  content:'';display:inline-block;width:18px;height:1px;
-  background:var(--accent);transition:width .4s;
-}
-.jnl-row:hover .jnl-read::after{width:36px}
-
-@media(max-width:900px){.jnl-col{max-width:100%}.journal-hero .jnl-inner{max-width:100%}}
+.article-hero{padding:calc(var(--nav-h) + 56px) var(--pad-x) 52px;background:var(--bg-warm);}
+.article-back{font-family:var(--jost);font-size:9.5px;font-weight:400;letter-spacing:.3em;
+  color:var(--text-mid);text-decoration:none;text-transform:uppercase;
+  display:inline-flex;align-items:center;gap:8px;margin-bottom:32px;
+  transition:color .3s;opacity:0.7}
+.article-back::before{content:'←';font-size:13px}
+.article-back:hover{color:var(--accent);opacity:1}
+.article-cat{font-family:var(--jost);font-size:9px;font-weight:400;letter-spacing:.45em;
+  color:var(--accent);text-transform:uppercase;display:block;margin-bottom:14px}
+.article-title{font-family:var(--trajan);font-size:clamp(26px,3.2vw,42px);
+  color:var(--text);line-height:1.18;letter-spacing:.04em;margin-bottom:0;font-weight:400}
+.article-body{padding:var(--pad-y) var(--pad-x);background:var(--bg);}
+.article-inner{max-width:680px;}
+.art-p{font-family:var(--jost);font-size:16px;font-weight:300;line-height:1.9;
+  color:var(--text);opacity:0.84;margin-bottom:20px}
+.art-p em{color:var(--accent-deep);font-style:italic}
+.art-p strong{font-weight:400;color:var(--text)}
+.art-h3{font-family:var(--trajan);font-size:19px;color:var(--text);
+  margin:32px 0 14px;letter-spacing:.04em}
+.art-pull{font-family:var(--trajan);font-size:clamp(16px,1.7vw,21px);
+  color:var(--accent-deep);font-style:italic;line-height:1.55;
+  border-left:2px solid var(--accent);padding-left:22px;margin:36px 0}
+.art-nav{padding:40px var(--pad-x);background:var(--bg-section);
+  display:flex;align-items:center;justify-content:space-between;
+  border-top:1px solid var(--rule-light)}
+.art-nav-link{font-family:var(--jost);font-size:10px;font-weight:400;letter-spacing:.28em;
+  color:var(--text-mid);text-decoration:none;text-transform:uppercase;transition:color .3s}
+.art-nav-link:hover{color:var(--accent)}
+.art-nav-link.all{font-size:9.5px;letter-spacing:.35em}
 @media(max-width:767px){
-  .journal-hero{padding:calc(var(--nav-h) + 56px) 24px 48px}
-  #jnl-list{padding:0 24px 64px}
-  .jnl-row{padding:28px 0}
-  .jnl-num{margin-bottom:10px}
-  .jnl-title{font-size:18px}
+  .article-hero,.article-body,.art-nav{padding-left:var(--pad-x);padding-right:var(--pad-x)}
+  .art-nav{flex-direction:column;gap:16px;align-items:flex-start}
 }
 </style>
 </head>
 <body>
 <div id="cur"></div><div id="cur-r"></div>
 <nav id="nav">
-  <a href="/home" class="nav-logo">
+  <a href="index.html" class="nav-logo">
     <div class="nav-logo-icon"><svg viewBox="230 230 340 340" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;display:block;">
   <style>.nl-s{fill:none;stroke:#c4bdb2;stroke-miterlimit:10;}.nl-s2{stroke-width:2px;}.nl-s3{stroke-width:6px;}.nl-f{fill:#c4bdb2;}</style>
   <g id="AU">
@@ -323,151 +268,46 @@ footer{background:var(--nav-bg);padding:52px var(--pad-x) 28px}
     </div>
   </a>
   <ul class="nav-links">
-    <li><a href="/home">Home</a></li>
+    <li><a href="index.html">Home</a></li>
     <li class="nav-dd">
-      <a href="/studio">Studio</a>
+      <a href="studio.html">Studio</a>
       <div class="nav-dd-menu"><a href="studio.html#about">About Us</a><a href="studio.html#philosophy">Philosophy</a><a href="studio.html#mission">Mission &amp; Vision</a><a href="studio.html#team">Team</a></div>
     </li>
-    <li><a href="/journal" class="active">Journal</a></li>
-    <li><a href="/contact" class="nav-cta">Begin</a></li>
+    <li><a href="journal.html" class="active">Journal</a></li>
+    <li><a href="contact.html" class="nav-cta">Begin</a></li>
   </ul>
   <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
 </nav>
 <div class="nav-drawer" id="navDrawer">
-  <a href="/home" class="drw-link">Home</a>
-  <a href="/studio" class="drw-link">Studio</a>
-  <a href="/journal" class="drw-link active">Journal</a>
+  <a href="index.html" class="drw-link">Home</a>
+  <a href="studio.html" class="drw-link">Studio</a>
+  <a href="journal.html" class="drw-link active">Journal</a>
   <hr/>
-  <a href="/contact" class="drw-link" style="color:var(--accent)">Begin</a>
+  <a href="contact.html" class="drw-link" style="color:var(--accent)">Begin</a>
 </div>
-<section class="journal-hero">
-  <div class="jnl-inner reveal">
-    <span class="sec-label">The Journal</span>
-    <h1 class="sec-title">The Intersection of<br/>life and design.</h1>
-    <p class="sec-sub">Eleven essays on space, philosophy, material and the question that started it all.</p>
+<section class="article-hero">
+  <a href="/journal" class="article-back">Journal</a>
+  <span class="article-cat">On Space</span>
+  <h1 class="article-title">The art of empty space &mdash; designing with silence</h1>
+</section>
+<section class="article-body">
+  <div class="article-inner">
+    <p class="art-p">There is a particular kind of discomfort that comes from a room that is too full. Every surface covered. Every corner occupied. No place for the eye to rest. And yet this is precisely the condition that most people, left to their own devices, tend to create — because emptiness feels like incompleteness, and incompleteness feels like failure.</p>
+<p class="art-p">The finest Indian spatial traditions understood something different. <em>Ākāśa</em> — the fifth element, the element of space — was not treated as an absence but as a presence in its own right. The courtyard at the heart of a traditional home was not wasted space. It was the breath of the building. The room breathed toward it. Everything else was arranged in relation to it.</p>
+<div class="art-pull">&ldquo;Emptiness is not absence. It is the container that gives everything else its meaning.&rdquo;</div>
+<h3 class="art-h3">What restraint actually requires</h3>
+<p class="art-p">Restraint in design is harder than abundance. To fill a room requires decisions, but they are decisions of addition — each one is a yes. To restrain a room requires a different discipline entirely: the willingness to say no, repeatedly, to things that are individually beautiful, because they do not belong here, in this room, for this person.</p>
+<p class="art-p">This is what Aucitya demands at every scale. Not merely: is this object beautiful? But: does this object earn its place in relation to everything else in this room? Does its presence make the room more itself, or does it dilute it?</p>
+<h3 class="art-h3">The practical consequence</h3>
+<p class="art-p">At Aucitya Studio, one of the most common things we do in early site visits is identify what needs to leave before we discuss what might arrive. A room that has achieved its correct degree of emptiness will often accommodate one or two precisely chosen objects with extraordinary effect. The same objects in a fuller room would be invisible.</p>
+<p class="art-p">Silence in music is not the absence of sound — it is the space that gives the notes their meaning. Empty space in a room is not decoration withheld. It is the condition that makes everything else legible.</p>
   </div>
 </section>
-
-<section id="jnl-list">
-  <div class="jnl-col">
-
-    <div class="jnl-item reveal">
-      <a href="/journal/aucitya-meaning" class="jnl-row">
-        <span class="jnl-num">01</span>
-        <span class="jnl-cat">On Philosophy</span>
-        <span class="jnl-title">What does Aucitya mean? The Sanskrit concept Western design forgot</span>
-        <span class="jnl-ex">There is a feeling you know but probably cannot name. Sanskrit has a precise word for it.</span>
-        <span class="jnl-read">Read essay</span>
-      </a>
-    </div>
-
-    <div class="jnl-item reveal">
-      <a href="/journal/vastu-aucitya" class="jnl-row">
-        <span class="jnl-num">02</span>
-        <span class="jnl-cat">On Philosophy</span>
-        <span class="jnl-title">Vastu Shastra and Aucitya &mdash; two philosophies of sacred space</span>
-        <span class="jnl-ex">India&rsquo;s design tradition is not one thing. Understanding the difference clarifies something essential.</span>
-        <span class="jnl-read">Read essay</span>
-      </a>
-    </div>
-
-    <div class="jnl-item reveal">
-      <a href="/journal/rasa-theory" class="jnl-row">
-        <span class="jnl-num">03</span>
-        <span class="jnl-cat">On Emotion</span>
-        <span class="jnl-title">Rasa theory &mdash; how to design a room that makes people feel something</span>
-        <span class="jnl-ex">Indian aesthetic philosophy has a sophisticated answer to the question Western design rarely asks.</span>
-        <span class="jnl-read">Read essay</span>
-      </a>
-    </div>
-
-    <div class="jnl-item reveal">
-      <a href="/journal/indian-homes" class="jnl-row">
-        <span class="jnl-num">04</span>
-        <span class="jnl-cat">On Tradition</span>
-        <span class="jnl-title">Why Indian homes feel different &mdash; and what the Vedas knew about it</span>
-        <span class="jnl-ex">Anyone who has spent time in old Indian homes will notice something difficult to put into words.</span>
-        <span class="jnl-read">Read essay</span>
-      </a>
-    </div>
-
-    <div class="jnl-item reveal">
-      <a href="/journal/five-elements" class="jnl-row">
-        <span class="jnl-num">05</span>
-        <span class="jnl-cat">On Elements</span>
-        <span class="jnl-title">The five elements in interior design &mdash; Pa&#xF1;cabh&#x16B;ta and how to apply them</span>
-        <span class="jnl-ex">Every material you choose for a room is a decision about which element you are inviting in.</span>
-        <span class="jnl-read">Read essay</span>
-      </a>
-    </div>
-
-    <div class="jnl-item reveal">
-      <a href="/journal/light-philosophy" class="jnl-row">
-        <span class="jnl-num">06</span>
-        <span class="jnl-cat">On Light</span>
-        <span class="jnl-title">Light as philosophy &mdash; Prak&#x101;&#x15B;a and Ch&#x101;y&#x101; in modern interiors</span>
-        <span class="jnl-ex">The four o&rsquo;clock test. What Sanskrit concepts of luminosity and shadow reveal.</span>
-        <span class="jnl-read">Read essay</span>
-      </a>
-    </div>
-
-    <div class="jnl-item reveal">
-      <a href="/journal/photographer-designer" class="jnl-row">
-        <span class="jnl-num">07</span>
-        <span class="jnl-cat">On Seeing</span>
-        <span class="jnl-title">How a photographer designs rooms differently</span>
-        <span class="jnl-ex">The first thing a photographer learns is not composition or colour &mdash; it is how to see light.</span>
-        <span class="jnl-read">Read essay</span>
-      </a>
-    </div>
-
-    <div class="jnl-item reveal">
-      <a href="/journal/design-trends" class="jnl-row">
-        <span class="jnl-num">08</span>
-        <span class="jnl-cat">On Standards</span>
-        <span class="jnl-title">The problem with interior design trends</span>
-        <span class="jnl-ex">Every few years a visual language becomes dominant. Then it passes. The spaces that last were designed to a different standard.</span>
-        <span class="jnl-read">Read essay</span>
-      </a>
-    </div>
-
-    <div class="jnl-item reveal">
-      <a href="/journal/empty-space" class="jnl-row">
-        <span class="jnl-num">09</span>
-        <span class="jnl-cat">On Space</span>
-        <span class="jnl-title">The art of empty space &mdash; designing with silence</span>
-        <span class="jnl-ex">The most considered rooms are not the fullest ones. What Indian spatial philosophy understands about restraint that contemporary design keeps forgetting.</span>
-        <span class="jnl-read">Read essay</span>
-      </a>
-    </div>
-
-    <div class="jnl-item reveal">
-      <a href="/journal/natural-materials" class="jnl-row">
-        <span class="jnl-num">10</span>
-        <span class="jnl-cat">On Material</span>
-        <span class="jnl-title">Stone, wood, clay &mdash; why natural materials change rooms</span>
-        <span class="jnl-ex">Synthetic materials are consistent. Natural materials are alive. That difference matters more than any other single decision in a room.</span>
-        <span class="jnl-read">Read essay</span>
-      </a>
-    </div>
-
-    <div class="jnl-item reveal">
-      <a href="/journal/client-brief" class="jnl-row">
-        <span class="jnl-num">11</span>
-        <span class="jnl-cat">On Process</span>
-        <span class="jnl-title">The client&rsquo;s life as design brief</span>
-        <span class="jnl-ex">A brief is not a list of preferences. It is a portrait of a life. The difference between these two things is the difference between decoration and design.</span>
-        <span class="jnl-read">Read essay</span>
-      </a>
-    </div>
-
-  </div>
-</section>
-<section style="padding:60px var(--pad-x);background:var(--bg-warm);text-align:center;">
-  <p style="font-family:var(--jost);font-size:10px;font-weight:400;letter-spacing:.38em;color:var(--accent);text-transform:uppercase;margin-bottom:16px">Begin</p>
-  <p style="font-family:var(--trajan);font-size:clamp(20px,2.5vw,30px);color:var(--text);margin-bottom:24px;letter-spacing:.04em;">Ready to start a conversation?</p>
-  <a href="/contact" style="font-family:var(--jost);font-size:10px;font-weight:400;letter-spacing:.38em;color:var(--bg);background:var(--text);text-decoration:none;padding:13px 32px;text-transform:uppercase;display:inline-block;transition:background .3s" onmouseover="this.style.background='#6d322f'" onmouseout="this.style.background='#2d2422'">Commission Enquiry</a>
-</section>
+<div class="art-nav">
+  <a href="/journal/design-trends" class="art-nav-link">&larr; Previous</a>
+  <a href="/journal" class="art-nav-link all">All Essays</a>
+  <a href="/journal/natural-materials" class="art-nav-link">Next &rarr;</a>
+</div>
 <footer>
   <div class="ft-grid">
     <div class="ft-logo-area">
@@ -487,10 +327,10 @@ footer{background:var(--nav-bg);padding:52px var(--pad-x) 28px}
     <div>
       <p class="ft-col-title">Navigate</p>
       <div class="ft-col-links">
-        <a href="/home">Home</a>
-        <a href="/studio">Studio</a>
-        <a href="/journal">Journal</a>
-        <a href="/contact">Begin</a>
+        <a href="index.html">Home</a>
+        <a href="studio.html">Studio</a>
+        <a href="journal.html">Journal</a>
+        <a href="contact.html">Begin</a>
       </div>
     </div>
     <div>
@@ -511,8 +351,8 @@ footer{background:var(--nav-bg);padding:52px var(--pad-x) 28px}
   </div>
   <div class="ft-bottom">
     <div class="ft-resources">
-      <a href="/glossary">Sanskrit &amp; Vedic Glossary</a>
-      <a href="/what-is-aucitya">What is Aucitya?</a>
+      <a href="glossary.html">Sanskrit &amp; Vedic Glossary</a>
+      <a href="what-is-aucitya.html">What is Aucitya?</a>
     </div>
     <span class="ft-copy">&copy; 2026 Aucitya Studio. All rights reserved.</span>
   </div>
@@ -530,7 +370,7 @@ if(window.matchMedia('(pointer:fine)').matches){
 const ddItem=document.querySelector('.nav-dd');
 if(ddItem){
   const ddLink=ddItem.querySelector(':scope > a');
-  /* dropdown via CSS hover on desktop */
+  ddLink.addEventListener('click',e=>{e.preventDefault();ddItem.classList.toggle('open');});
   document.addEventListener('click',e=>{if(!ddItem.contains(e.target))ddItem.classList.remove('open');});
 }
 /* Hamburger */
@@ -550,4 +390,3 @@ if(btt){
 }
 </script>
 </body>
-</html>
