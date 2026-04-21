@@ -225,37 +225,45 @@ footer{background:var(--nav-bg);padding:52px var(--pad-x) 28px}
   background:#2d2422;position:relative;overflow:hidden;}
 /* Star rotates, AU stays still — two absolute layers in a container */
 .hero-logo-wrap{
-  width:min(340px,68vw);height:min(340px,68vw);
-  position:relative;margin:0 auto 24px;
+  width:min(380px,74vw);height:min(380px,74vw);
+  position:relative;margin:0 auto 8px;
   opacity:0;animation:fadeIn 1.2s ease .2s forwards;
 }
 .hero-star-layer{
   position:absolute;inset:0;
   animation:spin 90s linear infinite;
 }
-.hero-au-layer{
+.hero-flower-layer{
   position:absolute;inset:0;
 }
 h1.hero-title{
   font-family:var(--trajan);
   font-size:clamp(48px,8.5vw,96px);
-  font-weight:600;letter-spacing:.22em;padding-right:.22em;
+  font-weight:600;letter-spacing:.22em;
   color:#c4bdb2;line-height:1;text-transform:uppercase;
-  margin-bottom:4px;
+  width:100%;text-align:center;display:block;
+  margin-bottom:6px;margin-top:-8px;
   opacity:0;animation:fadeUp 1.4s ease .5s forwards;
 }
 .hero-sub{
   font-family:var(--jost);font-size:clamp(9px,.85vw,11px);font-weight:300;
-  letter-spacing:.32em;
+  letter-spacing:.28em;
   color:rgba(196,189,178,0.5);text-transform:uppercase;
-  margin-bottom:28px;
+  width:100%;text-align:center;display:block;
+  margin-bottom:12px;
   opacity:0;animation:fadeUp 1.1s ease .8s forwards;
 }
-.hero-rule{width:36px;height:1px;background:rgba(196,189,178,0.25);margin:0 auto 16px;
+.hero-deva{font-family:var(--deva);font-size:clamp(26px,2.8vw,36px);font-weight:300;
+  letter-spacing:.08em;color:rgba(196,189,178,0.6);margin-bottom:24px;
+  opacity:0;animation:fadeUp 1s ease .95s forwards;
+  display:block;width:100%;text-align:center;}
+.hero-rule{width:36px;height:1px;background:rgba(196,189,178,0.25);
+  margin:0 auto 16px;display:block;
   opacity:0;animation:fadeIn 1s ease 1.1s forwards;}
 .hero-tagline{
   font-family:var(--jost);font-size:clamp(13px,1.4vw,17px);font-weight:200;
   font-style:italic;color:rgba(196,189,178,0.55);letter-spacing:.06em;
+  width:100%;text-align:center;display:block;
   opacity:0;animation:fadeUp 1s ease 1.3s forwards;
 }
 .hero-scroll{position:absolute;bottom:36px;left:50%;transform:translateX(-50%);
@@ -304,7 +312,7 @@ h1.hero-title{
 @media(max-width:1100px){.principle-grid{grid-template-columns:1fr;gap:40px}.p-divider{display:none}.method-steps{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:767px){
   #hero{padding:calc(var(--nav-h)+40px) 24px 120px}
-  .hero-logo-wrap{width:min(240px,64vw);height:min(240px,64vw)}
+  .hero-logo-wrap{width:min(280px,72vw);height:min(280px,72vw)}
   h1.hero-title{font-size:clamp(42px,12vw,64px)}
   .method-steps{grid-template-columns:1fr}
   .method-step{padding:24px 18px}
@@ -351,63 +359,77 @@ h1.hero-title{
 <section id="hero">
   <div class="hero-logo-wrap">
     <div class="hero-star-layer"><svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;display:block;">
-  <style>.hs{fill:none;stroke:rgba(196,189,178,0.45);stroke-width:4px;stroke-miterlimit:10;}.hs2{stroke-width:2px;}</style>
+  <defs>
+    <style>
+      .st0, .st1, .st2, .st3, .st4, .st5, .st6 { stroke-miterlimit: 10; }
+      .st0 { fill: none; stroke: #c4bdb2; stroke-width: 3px; }
+      .st1 { fill: none; stroke: #c4bdb2; stroke-width: 5px; }
+      .st2 { fill: none; stroke: #c4bdb2; stroke-width: 3px; }
+      .st3 { fill: none; stroke: rgba(196,189,178,0.55); stroke-width: 2px; }
+      .st4 { fill: none; stroke: rgba(196,189,178,0.75); stroke-width: 2px; }
+      .st5 { fill: none; stroke: #c4bdb2; stroke-width: 3px; }
+      .st6 { fill: none; stroke: #c4bdb2; stroke-width: 3px; }
+      .st7 { fill: #c4bdb2; }
+    </style>
+  </defs>
+  <circle class="st1" cx="400" cy="400" r="205.75"/>
+  <circle class="st2" cx="400" cy="400" r="119.12"/>
   <g>
-    <g>
-      <path class="hs" d="M434.53,644.01c-23.9,3.66-41.11,4.55-64.43,1.28l-6.74-.86,34.88,62.82c.07.11.23.11.29,0l36-63.24Z"/>
-      <path class="hs" d="M434.54,644.01l38.66-65.83c-.61-.17-1.25.1-1.57.64l-37.1,65.19Z"/>
-      <path class="hs" d="M324.95,577.4l38.41,67.03-36.85-66.38c-.31-.56-.95-.82-1.56-.65Z"/>
-    </g>
-    <g>
-      <path class="hs" d="M251.14,597.4c-19.48-14.31-32.29-25.85-46.46-44.65l-4.16-5.37-19.76,69.08c-.03.12.08.24.21.21l70.17-19.26Z"/>
-      <path class="hs" d="M251.16,597.41l73.89-19.21c-.31-.55-.95-.82-1.56-.65l-72.33,19.86Z"/>
-      <path class="hs" d="M220.76,472.82l-20.24,74.56,20.88-73c.18-.61-.09-1.25-.64-1.56Z"/>
-    </g>
-    <g>
-      <path class="hs" d="M154.43,434.77c-3.66-23.9-4.55-41.11-1.28-64.43l.86-6.74-62.82,34.88c-.11.07-.11.23,0,.29l63.24,36Z"/>
-      <path class="hs" d="M154.43,434.79l65.83,38.66c.17-.61-.1-1.25-.64-1.57l-65.19-37.1Z"/>
-      <path class="hs" d="M221.04,325.19l-67.03,38.41,66.38-36.85c.56-.31.82-.95.65-1.56Z"/>
-    </g>
-    <g>
-      <path class="hs" d="M201.05,251.39c14.31-19.48,25.85-32.29,44.65-46.46l5.37-4.16-69.08-19.76c-.12-.03-.24.08-.21.21l19.26,70.17Z"/>
-      <path class="hs" d="M201.04,251.4l19.21,73.89c.55-.31.82-.95.65-1.56l-19.86-72.33Z"/>
-      <path class="hs" d="M325.63,221.01l-74.56-20.24,73,20.88c.61.18,1.25-.09,1.56-.64Z"/>
-    </g>
-    <g>
-      <path class="hs" d="M363.67,154.68c23.9-3.66,41.11-4.55,64.43-1.28l6.74.86-34.88-62.82c-.07-.11-.23-.11-.29,0l-36,63.24Z"/>
-      <path class="hs" d="M363.66,154.68l-38.66,65.83c.61.17,1.25-.1,1.57-.64l37.1-65.19Z"/>
-      <path class="hs" d="M473.25,221.29l-38.41-67.03,36.85,66.38c.31.56.95.82,1.56.65Z"/>
-    </g>
-    <g>
-      <path class="hs" d="M547.05,201.29c19.48,14.31,32.29,25.85,46.46,44.65l4.16,5.37,19.76-69.08c.03-.12-.08-.24-.21-.21l-70.17,19.26Z"/>
-      <path class="hs" d="M547.04,201.28l-73.89,19.21c.31.55.95.82,1.56.65l72.33-19.86Z"/>
-      <path class="hs" d="M577.44,325.88l20.24-74.56-20.88,73c-.18.61.09,1.25.64,1.56Z"/>
-    </g>
-    <g>
-      <path class="hs" d="M643.77,363.92c3.66,23.9,4.55,41.11,1.28,64.43l-.86,6.74,62.82-34.88c.11-.07.11-.23,0-.29l-63.24-36Z"/>
-      <path class="hs" d="M643.77,363.91l-65.83-38.66c-.17.61.1,1.25.64,1.57l65.19,37.1Z"/>
-      <path class="hs" d="M577.16,473.5l67.03-38.41-66.38,36.85c-.56.31-.82.95-.65,1.56Z"/>
-    </g>
-    <g>
-      <path class="hs" d="M597.16,547.3c-14.31,19.48-25.85,32.29-44.65,46.46l-5.37,4.16,69.08,19.76c.12.03.24-.08.21-.21l-19.26-70.17Z"/>
-      <path class="hs" d="M597.17,547.29l-19.21-73.89c-.55.31-.82.95-.65,1.56l19.86,72.33Z"/>
-      <path class="hs" d="M472.57,577.69l74.56,20.24-73-20.88c-.61-.18-1.25.09-1.56.64Z"/>
-    </g>
+    <line class="st1" x1="400" y1="194.98" x2="400" y2="211.56"/>
+    <line class="st1" x1="400" y1="588.44" x2="400" y2="605.02"/>
+    <line class="st1" x1="605.02" y1="400.73" x2="588.44" y2="400.73"/>
+    <line class="st1" x1="211.56" y1="400.73" x2="194.98" y2="400.73"/>
   </g>
-  <circle id="Inner_Circle2" class="hs" cx="399.1" cy="399.35" r="327.09"/>
+  <circle class="st3" cx="400" cy="400" r="187.71"/>
+  <g>
+    <line class="st1" x1="545.49" y1="254.51" x2="533.75" y2="266.25"/>
+    <line class="st1" x1="266.77" y1="533.23" x2="255.03" y2="544.97"/>
+    <line class="st1" x1="544.97" y1="545.49" x2="533.23" y2="533.75"/>
+    <line class="st1" x1="266.25" y1="266.77" x2="254.51" y2="255.03"/>
+  </g>
+  <g>
+    <path class="st6" d="M383.73,554.88c-.92-21.58,15.07-34.18,16.25-35.07,1.14.86,17.24,13.46,16.28,35.07-.85,19.34-14.65,30.04-16.34,31.31-1.71-1.3-15.36-12.04-16.19-31.31Z"/>
+    <path class="st6" d="M278.98,498.02c14.6-15.91,34.83-13.51,36.29-13.31.2,1.41,2.67,21.7-13.28,36.31-14.28,13.07-31.61,10.88-33.69,10.58-.29-2.13-2.35-19.37,10.69-33.58Z"/>
+    <path class="st6" d="M245.12,383.73c21.58-.92,34.18,15.07,35.07,16.25-.86,1.14-13.46,17.24-35.07,16.28-19.34-.85-30.04-14.65-31.31-16.34,1.3-1.71,12.04-15.36,31.31-16.19Z"/>
+    <path class="st6" d="M301.98,278.98c15.91,14.6,13.51,34.83,13.31,36.29-1.41.2-21.7,2.67-36.31-13.28-13.07-14.28-10.88-31.61-10.58-33.69,2.13-.29,19.37-2.35,33.58,10.69Z"/>
+    <path class="st6" d="M416.27,245.12c.92,21.58-15.07,34.18-16.25,35.07-1.14-.86-17.24-13.46-16.28-35.07.85-19.34,14.65-30.04,16.34-31.31,1.71,1.3,15.36,12.04,16.19,31.31Z"/>
+    <path class="st6" d="M521.02,301.98c-14.6,15.91-34.83,13.51-36.29,13.31-.2-1.41-2.67-21.7,13.28-36.31,14.28-13.07,31.61-10.88,33.69-10.58.29,2.13,2.35,19.37-10.69,33.58Z"/>
+    <path class="st6" d="M554.88,416.27c-21.58.92-34.18-15.07-35.07-16.25.86-1.14,13.46-17.24,35.07-16.28,19.34.85,30.04,14.65,31.31,16.34-1.3,1.71-12.04,15.36-31.31,16.19Z"/>
+    <path class="st6" d="M498.02,521.02c-15.91-14.6-13.51-34.83-13.31-36.29,1.41-.2,21.7-2.67,36.31,13.28,13.07,14.28,10.88,31.61,10.58,33.69-2.13.29-19.37,2.35-33.58-10.69Z"/>
+  </g>
+  <rect class="st5" x="317.85" y="317.85" width="164.29" height="164.29"/>
+  <rect class="st0" x="317.85" y="317.85" width="164.29" height="164.29" transform="translate(400 -165.69) rotate(45)"/>
 </svg></div>
-    <div class="hero-au-layer"><svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;display:block;">
-  <style>.ha-s{fill:none;stroke:#c4bdb2;stroke-miterlimit:10;}.ha-s2{stroke-width:2px;}.ha-s3{stroke-width:6px;}.ha-f{fill:#c4bdb2;}</style>
-  <g id="AU">
-    <path class="ha-f" d="M324.47,415.89c-.66,0-.92.26-1.19,1.05l-7.11,18.83c-1.32,3.29-1.98,6.45-1.98,8.03,0,2.37,1.19,4.08,5.27,4.08h1.97c1.58,0,1.98.26,1.98,1.05,0,1.05-.79,1.32-2.24,1.32-4.21,0-9.88-.39-13.96-.39-1.45,0-8.69.39-15.54.39-1.71,0-2.5-.26-2.5-1.32,0-.79.79-1.05,1.84-1.05,1.19,0,2.77-.13,3.82-.26,6.06-.79,8.56-5.27,11.19-11.85l33.05-82.7c1.58-3.82,2.5-5.27,3.69-5.27,1.05,0,1.98,1.19,3.29,4.21,3.16,7.24,24.23,60.97,32.66,80.99,5,11.85,8.82,13.7,11.59,14.35,1.98.39,3.95.53,5.53.53,1.05,0,1.71.26,1.71,1.05,0,1.05-1.18,1.32-6.06,1.32s-15.27,0-25.81-.26c-2.37-.13-3.03-.26-3.03-1.05,0-.66.53-1.05,1.84-1.19.92-.26,1.84-1.45,1.19-3.03l-10.54-27.92c-.26-.66-.66-.92-1.32-.92h-29.37.03ZM351.43,408.89c.67,0,.8-.4.67-.8l-12-32.92c-.4-1.2-.93-1.6-1.47,0l-12.26,32.78c-.13.53,0,.93.53.93h24.53Z"/>
-    <path class="ha-f" d="M421.13,406.93c0,19.26,3.85,27.36,10.36,32.67,5.98,4.91,12.09,5.45,16.6,5.45,5.84,0,13.02-1.86,18.33-7.17,7.3-7.31,7.71-19.26,7.71-32.94v-16.05c0-20.97,0-24.83-.28-29.25-.27-4.69-1.38-6.9-5.93-7.86-1.1-.28-3.45-.42-4.97-.42s-2.34-.27-2.34-1.24.97-1.24,2.9-1.24c7.04,0,15.73.41,15.87.41,1.65,0,10.35-.41,15.73-.41,1.93,0,2.9.27,2.9,1.24s-.83,1.24-2.48,1.24c-1.52,0-2.34.14-4,.42-3.72.69-4.83,3.03-5.11,7.86-.27,4.41-.27,8.28-.27,29.25v13.53c0,14.83-1.47,30.58-12.69,40.2-9.48,8.15-19.1,9.61-27.78,9.61-7.08,0-19.9-.4-29.65-9.21-6.81-6.14-11.89-16.03-11.89-35.39v-19.48c0-20.19,0-23.9-.27-28.15-.26-4.52-1.33-6.64-5.71-7.57-1.06-.27-3.32-.4-5.18-.4-1.46,0-2.26-.26-2.26-1.2s.93-1.19,2.92-1.19c7.04,0,15.4.4,19.39.4,3.19,0,11.55-.4,16.33-.4,1.99,0,2.92.26,2.92,1.19s-.8,1.2-2.12,1.2c-1.46,0-2.26.13-3.85.4-3.59.66-4.65,2.92-4.92,7.57-.26,4.25-.26,7.97-.26,28.15v18.79h0Z"/>
-    <circle id="Inner_Circle" class="ha-s ha-s2" cx="399.1" cy="399.35" r="149.5"/>
-    <circle id="Outer_Circle" class="ha-s ha-s3" cx="399.1" cy="399.35" r="166"/>
+  <div class="hero-flower-layer"><svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;display:block;">
+  <defs>
+    <style>
+      .st0, .st1, .st2, .st3, .st4, .st5, .st6 { stroke-miterlimit: 10; }
+      .st0 { fill: none; stroke: #c4bdb2; stroke-width: 3px; }
+      .st1 { fill: none; stroke: #c4bdb2; stroke-width: 5px; }
+      .st2 { fill: none; stroke: #c4bdb2; stroke-width: 3px; }
+      .st3 { fill: none; stroke: rgba(196,189,178,0.55); stroke-width: 2px; }
+      .st4 { fill: none; stroke: rgba(196,189,178,0.75); stroke-width: 2px; }
+      .st5 { fill: none; stroke: #c4bdb2; stroke-width: 3px; }
+      .st6 { fill: none; stroke: #c4bdb2; stroke-width: 3px; }
+      .st7 { fill: #c4bdb2; }
+    </style>
+  </defs>
+  <g id="flower">
+    <path class="st4" d="M392.37,428.28c-.43-14.92,7.07-23.64,7.62-24.26.53.59,8.08,9.31,7.64,24.26-.4,13.38-6.87,20.78-7.66,21.65-.8-.9-7.2-8.32-7.59-21.65Z"/>
+    <path class="st4" d="M374.61,414.6c10.25-10.86,21.71-11.72,22.54-11.76-.04.8-.87,12.3-11.75,22.55-9.74,9.18-19.55,9.83-20.73,9.89.07-1.2.79-10.98,9.94-20.68Z"/>
+    <path class="st4" d="M371.72,392.37c14.92-.43,23.64,7.07,24.26,7.62-.59.53-9.31,8.08-24.26,7.64-13.38-.4-20.78-6.87-21.65-7.66.9-.8,8.32-7.2,21.65-7.59Z"/>
+    <path class="st4" d="M385.4,374.61c10.86,10.25,11.72,21.71,11.76,22.54-.8-.04-12.3-.87-22.55-11.75-9.18-9.74-9.83-19.55-9.89-20.73,1.2.07,10.98.79,20.68,9.94Z"/>
+    <path class="st4" d="M407.63,371.72c.43,14.92-7.07,23.64-7.62,24.26-.53-.59-8.08-9.31-7.64-24.26.4-13.38,6.87-20.78,7.66-21.65.8.9,7.2,8.32,7.59,21.65Z"/>
+    <path class="st4" d="M425.39,385.4c-10.25,10.86-21.71,11.72-22.54,11.76.04-.8.87-12.3,11.75-22.55,9.74-9.18,19.55-9.83,20.73-9.89-.07,1.2-.79,10.98-9.94,20.68Z"/>
+    <path class="st4" d="M428.28,407.63c-14.92.43-23.64-7.07-24.26-7.62.59-.53,9.31-8.08,24.26-7.64,13.38.4,20.78,6.87,21.65,7.66-.9.8-8.32,7.2-21.65,7.59Z"/>
+    <path class="st4" d="M414.6,425.39c-10.86-10.25-11.72-21.71-11.76-22.54.8.04,12.3.87,22.55,11.75,9.18,9.74,9.83,19.55,9.89,20.73-1.2-.07-10.98-.79-20.68-9.94Z"/>
   </g>
+  <circle class="st7" cx="400" cy="400" r="8.25"/>
 </svg></div>
   </div>
   <h1 class="hero-title">Aucitya</h1>
   <p class="hero-sub">Interior Design Studio</p>
+  <p class="hero-deva">&#x914;&#x91A;&#x93F;&#x924;&#x94D;&#x92F;</p>
   <div class="hero-rule"></div>
   <p class="hero-tagline">Every element, exactly right.</p>
   <div class="hero-scroll"><span>Scroll</span><div class="scroll-bar"></div></div>
