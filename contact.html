@@ -37,7 +37,7 @@
   {"@type":"City","name":"Visakhapatnam"},{"@type":"City","name":"Nagpur"},{"@type":"City","name":"Nashik"},
   {"@type":"City","name":"Shimla"},{"@type":"City","name":"Mussoorie"},{"@type":"City","name":"Lonavala"}
 ],
-"knowsAbout":["Interior Design","Sanskrit Design Philosophy","Vastu Shastra","Aucitya","Auchitya","Vedic Architecture","Rasa Theory","Indian Design Philosophy"]}
+"knowsAbout":["Interior Design","Luxury Interior Design","Residential Interior Design","Hospitality Interior Design","Commercial Interior Design","Lighting Design","Material Curation","Indian Craft and Artisan Sourcing"]}
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
@@ -60,7 +60,7 @@
 html{scroll-behavior:smooth}
 body{font-family:var(--jost);background:var(--bg);color:var(--text);font-weight:300;font-size:16px;line-height:1.75;overflow-x:hidden}
 /* Grain */
-body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:900;
+body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:10;
   background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
   background-size:200px;opacity:0.5}
 /* Cursor */
@@ -262,7 +262,7 @@ footer{background:var(--nav-bg);padding:52px var(--pad-x) 28px}
   text-transform:uppercase;color:var(--bg);background:var(--text);border:none;
   padding:14px 36px;cursor:pointer;transition:background .3s}
 .btn-submit:hover{background:var(--accent-deep)}
-#form-success{display:none;padding:44px;border:1px solid var(--rule);text-align:center;min-height:300px;display:none;align-items:center;justify-content:center;flex-direction:column}
+#form-success{display:none;padding:44px;border:1px solid var(--rule);text-align:center;min-height:300px;align-items:center;justify-content:center;flex-direction:column}
 #form-success h3{font-family:var(--trajan);font-size:26px;color:var(--text);margin-bottom:12px}
 #form-success p{font-family:var(--jost);font-size:15px;font-weight:300;line-height:1.8;color:var(--text-mid)}
 @media(max-width:1100px){#contact-page{grid-template-columns:1fr;gap:52px}.ct-info{position:static}.ct-form{padding:36px 28px}}
@@ -309,7 +309,7 @@ footer{background:var(--nav-bg);padding:52px var(--pad-x) 28px}
 <section id="contact-page">
   <div class="ct-info reveal">
     <span class="ct-eyebrow">Begin a conversation</span>
-    <h1 class="ct-heading">A limited number of commissions.<br/>A complete commitment to each.</h1>
+    <h1 class="ct-heading">A limited number of projects.<br/>A complete commitment to each.</h1>
     <p class="ct-sub">Tell us about your project. We respond to every enquiry personally.</p>
     <div class="ct-detail">
       <svg width="15" height="15" viewBox="0 0 18 18" fill="none"><rect x="2" y="4" width="14" height="10" rx="1" stroke="#8b816b" stroke-width="1.2"/><path d="M2 5l7 5 7-5" stroke="#8b816b" stroke-width="1.2"/></svg>
@@ -388,7 +388,7 @@ footer{background:var(--nav-bg);padding:52px var(--pad-x) 28px}
     </form>
     <div id="form-success">
       <h3>Thank you.</h3>
-      <p>We have received your enquiry and will be in touch.<br/>hello@aucitya.com</p>
+      <p>We read every enquiry personally and will be in touch shortly to begin the conversation.</p>
     </div>
   </div>
 </section>
