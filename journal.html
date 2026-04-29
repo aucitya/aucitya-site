@@ -302,6 +302,19 @@ footer{background:var(--nav-bg);padding:52px var(--pad-x) 28px}
   .jnl-num{margin-bottom:10px}
   .jnl-title{font-size:18px}
 }
+
+/* Desktop card grid — replaces row layout above 900px */
+@media(min-width:901px){
+  #jnl-list{padding-bottom:var(--pad-y);}
+  .jnl-col{max-width:1160px;display:grid;grid-template-columns:repeat(3,1fr);gap:28px;padding:0;}
+  .jnl-item{border-bottom:none;border:1px solid var(--rule-light);transition:box-shadow .3s,border-color .3s;background:var(--bg);}
+  .jnl-item:first-child{border-top:1px solid var(--rule-light);}
+  .jnl-item:hover{box-shadow:0 6px 28px rgba(45,36,34,0.07);border-color:var(--rule);}
+  .jnl-row{padding:32px 28px;height:100%;box-sizing:border-box;display:flex;flex-direction:column;}
+  .jnl-row:hover{padding-left:28px;}
+  .jnl-ex{max-width:100%;}
+  .jnl-read{margin-top:auto;}
+}
 </style>
 </head>
 <body>
@@ -343,8 +356,8 @@ footer{background:var(--nav-bg);padding:52px var(--pad-x) 28px}
 <section class="journal-hero">
   <div class="jnl-inner reveal">
     <span class="sec-label">The Journal</span>
-    <h1 class="sec-title">The Intersection of<br/>life and design.</h1>
-    <p class="sec-sub">Eight essays on space, philosophy, material and the question that started it all.</p>
+    <h1 class="sec-title">On space. On light.<br/>On the questions that start everything.</h1>
+    <p class="sec-sub">Essays on space, philosophy, material and the question that started it all.</p>
   </div>
 </section>
 
@@ -431,12 +444,41 @@ footer{background:var(--nav-bg);padding:52px var(--pad-x) 28px}
       </a>
     </div>
 
+    <div class="jnl-item reveal">
+      <a href="/journal/circadian-light" class="jnl-row">
+        <span class="jnl-num">09</span>
+        <span class="jnl-cat">On Innovation</span>
+        <span class="jnl-title">Circadian light — designing for the body, not just the eye</span>
+        <span class="jnl-ex">New research on how light timing affects sleep, mood, and focus is changing how considered interiors are designed.</span>
+        <span class="jnl-read">Read essay</span>
+      </a>
+    </div>
+
+    <div class="jnl-item reveal">
+      <a href="/journal/material-intelligence" class="jnl-row">
+        <span class="jnl-num">10</span>
+        <span class="jnl-cat">On Innovation</span>
+        <span class="jnl-title">The new material vocabulary — textures redefining luxury interiors</span>
+        <span class="jnl-ex">Micro-concrete, Japanese plasters, and lime finishes are doing something polished stone and marble could not.</span>
+        <span class="jnl-read">Read essay</span>
+      </a>
+    </div>
+
+    <div class="jnl-item reveal">
+      <a href="/journal/biophilic-design" class="jnl-row">
+        <span class="jnl-num">11</span>
+        <span class="jnl-cat">On Innovation</span>
+        <span class="jnl-title">Biophilic design beyond plants — what a deep connection to nature actually looks like in a room</span>
+        <span class="jnl-ex">The most powerful biophilic spaces have no visible plants at all. The connection runs deeper.</span>
+        <span class="jnl-read">Read essay</span>
+      </a>
+    </div>
   </div>
 </section>
 <section style="padding:60px var(--pad-x);background:var(--bg-warm);text-align:center;">
   <p style="font-family:var(--jost);font-size:10px;font-weight:400;letter-spacing:.38em;color:var(--accent);text-transform:uppercase;margin-bottom:16px">Begin</p>
   <p style="font-family:var(--trajan);font-size:clamp(20px,2.5vw,30px);color:var(--text);margin-bottom:24px;letter-spacing:.04em;">Ready to start a conversation?</p>
-  <a href="/contact" style="font-family:var(--jost);font-size:10px;font-weight:400;letter-spacing:.38em;color:var(--bg);background:var(--text);text-decoration:none;padding:13px 32px;text-transform:uppercase;display:inline-block;transition:background .3s" onmouseover="this.style.background='#6d322f'" onmouseout="this.style.background='#2d2422'">Commission Enquiry</a>
+  <a href="/contact" style="font-family:var(--jost);font-size:10px;font-weight:400;letter-spacing:.38em;color:var(--bg);background:var(--text);text-decoration:none;padding:13px 32px;text-transform:uppercase;display:inline-block;transition:background .3s" onmouseover="this.style.background='#6d322f'" onmouseout="this.style.background='#2d2422'">Begin Here</a>
 </section>
 <footer>
   <div class="ft-grid">

@@ -257,11 +257,7 @@ footer{background:var(--nav-bg);padding:52px var(--pad-x) 28px}
   text-transform:uppercase;color:var(--accent);cursor:pointer;background:none;border:none;
   padding:10px 0 0;display:inline-block;transition:color .3s}
 .team-btn:hover{color:var(--accent-deep)}
-.team-placeholder{border:1px dashed rgba(196,189,178,0.5);background:transparent!important}
-.team-placeholder .team-name{opacity:0.3}
-.team-placeholder .team-role{color:var(--text-light)}
-.team-placeholder .team-bio{color:var(--text-light);font-style:italic}
-.team-placeholder a{color:var(--accent);text-decoration:none;font-size:9px;letter-spacing:.25em;text-transform:uppercase;display:inline-block;margin-top:10px}
+
 @media(max-width:1100px){.about-grid{grid-template-columns:320px 1fr;gap:52px}}
 @media(max-width:900px){.about-grid{grid-template-columns:1fr}.about-img{max-height:400px;aspect-ratio:auto}.team-grid{grid-template-columns:1fr}}
 @media(max-width:600px){.team-card{padding:26px 20px}}
@@ -322,17 +318,39 @@ footer{background:var(--nav-bg);padding:52px var(--pad-x) 28px}
     <!-- Text column -->
     <div class="reveal">
       <span class="rule-line"></span>
-      <span class="sec-label">About the Founder</span>
+      <span class="sec-label">The Founding Team</span>
       <h2 class="sec-title">Multiple disciplines. One way of seeing.</h2>
       <div class="founder-card" id="fc-surbhi">
-        <p class="bio-preview"><strong>Surbhi Kaushik brings to Aucitya a way of seeing that was formed long before the studio existed.</strong> She spent a decade as a landscape and travel photographer, working across more than 25 countries to study light. She views light as a shaping force that transforms a surface, dictates the emotional temperature of a space, and makes a room at 4 PM an entirely different place from the room it was at 9 AM. That discipline of observation is patient, precise, and deeply attuned to the physical feeling of an environment.</p>
+        <p class="bio-preview"><strong>Surbhi Kaushik&rsquo;s approach to space is grounded in a discipline of observation formed long before Aucitya existed.</strong> For over a decade, she traveled across more than twenty-five countries, creating landscape photography and serving as an expert educator in the field. This experience required not just capturing light, but teaching others how to perceive its depth. She views light as a shaping force that transforms a surface, dictates the emotional temperature of a space, and makes a room at four o&rsquo;clock feel entirely different than it did at nine.</p>
         <div class="bio-hidden">
           <p class="body-p">Previously, she co-founded The Blue Hour, a home d&eacute;cor store in Bangalore selling highly curated reclaimed furniture and authentic handicrafts from artisan communities across India. Years of working directly with craftspeople cultivated a practical, hands-on knowledge of materials and making. It is an understanding of how the slight imperfections of a hand-block-printed textile breathe life into a space, and how the deep patina of reclaimed wood grounds a room. This work fostered direct relationships with makers whose materials exist outside standard trade circuits, alongside a trained eye for authentic craftsmanship.</p>
-          <p class="body-p">Her postgraduate studies in Industrial Arts and Design provided a formal framework for this hands-on expertise, evolving into a highly intentional design intelligence.</p>
-          <p class="body-p">At Aucitya, these disciplines converge. Surbhi leads every project personally from the first conversation to the moment a space is handed over. Her foundational discipline of observation drives the process. Guided by her vision, the studio approaches a room as a &lsquo;composition&rsquo;. Every texture, shadow, and object is placed with deliberate intention. A project is finished only when that quiet completeness is fully realized.</p>
+          <p class="body-p">Her postgraduate studies in Industrial Arts and Design, layered with an early foundation in literature, provided a formal, narrative framework for this hands-on expertise, evolving into a highly refined design intelligence.</p>
+          <p class="body-p">At Aucitya, these disciplines converge. Surbhi leads every project personally from the first conversation to the moment a space is handed over. Her foundational discipline of observation drives the process. Guided by her vision, the studio approaches a room as a &lsquo;composition&rsquo;. Every texture, shadow, and object is placed with absolute intentionality. A project is finished only when that quiet harmony is fully realized.</p>
         </div>
         <button class="bio-btn" onclick="expandBio('fc-surbhi',this)">Read more</button>
       </div>
+    </div>
+  </div>
+</section>
+
+<section id="bobby">
+  <div class="about-grid reveal">
+    <div style="display:flex;flex-direction:column;justify-content:center;">
+      <span class="rule-line"></span>
+      <span class="sec-label">Co-Founder</span>
+      <h2 class="sec-title" style="font-size:clamp(20px,2.2vw,30px);">Bobby Joshi</h2>
+      <p class="sec-sub" style="font-size:14px;margin-bottom:6px;">Co-Founder &amp; Head of Client Experience</p>
+      <div class="founder-card" id="fc-bobby">
+        <p class="bio-preview">Bobby Joshi anchors Aucitya by ensuring the journey of creating a space is as seamless and refined as the final design. As Co-Founder and Head of CX, he orchestrates the entire client experience, translating an extensive background in executive leadership into a transparent and highly personalised process from the very first conversation.</p>
+        <div class="bio-hidden">
+          <p class="body-p">Currently serving as CHRO at Ample Group, and having previously driven strategy for Fortune 500 enterprise brands, Bobby brings world-class operational rigour to the studio. His focus is entirely on elevating the client&rsquo;s peace of mind, ensuring that navigating a complex design project feels completely effortless and completely supported.</p>
+          <p class="body-p">His approach is deeply shaped by the visual arts. As an accomplished travel and landscape photographer, founder of GoodShotz Photography, and co-founder of The Blue Hour, he shares a profound creative history with Surbhi. His mastery of composition and personal philosophy to &ldquo;create and enhance light&rdquo; perfectly align with the studio&rsquo;s standards. Bobby ensures the experience of working with Aucitya is as carefully composed as the spaces they create.</p>
+        </div>
+        <button class="bio-btn" onclick="expandBio('fc-bobby',this)">Read more</button>
+      </div>
+    </div>
+    <div style="background:var(--bg-warm);min-height:340px;display:flex;align-items:center;justify-content:center;">
+      <p style="font-family:var(--jost);font-size:10px;letter-spacing:.35em;text-transform:uppercase;color:var(--rule);opacity:0.5;">Image coming soon</p>
     </div>
   </div>
 </section>
@@ -363,40 +381,11 @@ footer{background:var(--nav-bg);padding:52px var(--pad-x) 28px}
   </div>
 </section>
 
-<section id="team">
-  <div class="reveal">
-    <span class="rule-line"></span>
-    <span class="sec-label">Team</span>
-    <h2 class="sec-title">The people behind the practice.</h2>
-  </div>
-  <div class="team-grid">
-    <div class="team-card reveal" id="tc-surbhi">
-      <span class="team-name">Surbhi Kaushik</span>
-      <span class="team-role">Founder &amp; Principal Designer</span>
-      <p class="team-bio">Before designing spaces, Surbhi spent a decade capturing them. As a landscape photographer across 25 countries, she developed an atmospheric intuition for how light, material, and proportion create the feeling of a space.</p>
-      <div class="team-bio-full">
-        <p class="team-bio" style="margin-top:12px">Trained at Srishti Manipal Institute of Art, Design &amp; Technology (PG) and the University of Delhi, with formative years at Amazon and Gartner, and co-founder of GoodShotz Photography and The Blue Hour d&eacute;cor studio. A TEDx speaker and painter, she leads every project personally from first conversation to final detail.</p>
-      </div>
-      <button class="team-btn" onclick="expandTeam('tc-surbhi',this)">Read more</button>
-    </div>
-    <div class="team-card reveal" id="tc-bobby">
-      <span class="team-name">Bobby Joshi</span>
-      <span class="team-role">Co-Founder &amp; Head of Client Experience</span>
-      <p class="team-bio">Bobby Joshi anchors Aucitya by ensuring the journey of creating a space is as seamless and refined as the final design. As Co-Founder and Head of CX, he orchestrates the entire client experience. He translates his extensive background in executive leadership into a flawless, transparent, and highly personalized process from the very first conversation.</p>
-      <div class="team-bio-full">
-        <p class="team-bio" style="margin-top:12px">Currently serving as CHRO at Ample Group, and having previously driven strategy for Fortune 500 enterprise brands, Bobby brings world-class operational rigor to the studio. He applies this high-level strategy directly to client care. His focus is entirely on elevating the client&rsquo;s peace of mind, ensuring that navigating a complex design project feels completely effortless and completely supported.</p>
-        <p class="team-bio" style="margin-top:12px">His approach is deeply shaped by the visual arts. As an acclaimed travel and landscape photographer, founder of GoodShotz Photography, and co-founder of The Blue Hour, he shares a profound creative history with Surbhi. His mastery of composition and his personal philosophy to &ldquo;create and enhance light&rdquo; perfectly align with the studio&rsquo;s aesthetic standards. Operating at the rare intersection of artistic vision and uncompromising client excellence, Bobby ensures the experience of working with Aucitya is as beautifully composed as the spaces they create.</p>
-      </div>
-      <button class="team-btn" onclick="expandTeam('tc-bobby',this)">Read more</button>
-    </div>
-
-  </div>
-</section>
 
 <section style="padding:60px var(--pad-x);background:var(--bg-warm);text-align:center;">
   <p style="font-family:var(--jost);font-size:10px;font-weight:400;letter-spacing:.38em;color:var(--accent);text-transform:uppercase;margin-bottom:16px">Begin</p>
   <p style="font-family:var(--trajan);font-size:clamp(20px,2.5vw,30px);color:var(--text);margin-bottom:24px;letter-spacing:.04em;">Ready to start a conversation?</p>
-  <a href="/contact" style="font-family:var(--jost);font-size:10px;font-weight:400;letter-spacing:.38em;color:var(--bg);background:var(--text);text-decoration:none;padding:13px 32px;text-transform:uppercase;display:inline-block;transition:background .3s" onmouseover="this.style.background='#6d322f'" onmouseout="this.style.background='#2d2422'">Begin a Conversation</a>
+  <a href="/contact" style="font-family:var(--jost);font-size:10px;font-weight:400;letter-spacing:.38em;color:var(--bg);background:var(--text);text-decoration:none;padding:13px 32px;text-transform:uppercase;display:inline-block;transition:background .3s" onmouseover="this.style.background='#6d322f'" onmouseout="this.style.background='#2d2422'">Begin Here</a>
 </section>
 <footer>
   <div class="ft-grid">

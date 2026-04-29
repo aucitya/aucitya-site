@@ -247,6 +247,22 @@ footer{background:var(--nav-bg);padding:52px var(--pad-x) 28px}
   .article-hero,.article-body,.art-nav{padding-left:var(--pad-x);padding-right:var(--pad-x)}
   .art-nav{flex-direction:column;gap:16px;align-items:flex-start}
 }
+
+.art-section{padding:52px var(--pad-x);border-top:1px solid var(--rule-light);}
+.art-section.alt{background:var(--bg-warm);}
+.art-section-inner{max-width:680px;}
+.art-section-label{font-family:var(--jost);font-size:9px;font-weight:400;letter-spacing:.45em;text-transform:uppercase;color:var(--accent);display:block;margin-bottom:12px;}
+.art-section-title{font-family:var(--trajan);font-size:clamp(18px,2vw,24px);color:var(--text);margin-bottom:24px;letter-spacing:.03em;}
+.art-faq-item{margin-bottom:24px;padding-bottom:24px;border-bottom:1px solid var(--rule-light);}
+.art-faq-item:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0;}
+.art-faq-q{font-family:var(--jost);font-size:15px;font-weight:400;color:var(--text);margin-bottom:8px;}
+.art-faq-a{font-family:var(--jost);font-size:15px;font-weight:300;line-height:1.85;color:var(--text-mid);}
+.art-begin-cta{background:var(--bg-section);padding:44px var(--pad-x);text-align:center;border-top:1px solid var(--rule-light);}
+.art-begin-label{font-family:var(--jost);font-size:9px;letter-spacing:.45em;text-transform:uppercase;color:var(--accent);display:block;margin-bottom:14px;}
+.art-begin-text{font-family:var(--trajan);font-size:clamp(17px,1.8vw,22px);color:var(--text);margin-bottom:22px;letter-spacing:.03em;}
+.art-begin-btn{font-family:var(--jost);font-size:10px;font-weight:400;letter-spacing:.38em;color:var(--bg);background:var(--text);text-decoration:none;padding:13px 32px;text-transform:uppercase;display:inline-block;transition:background .3s;}
+.art-begin-btn:hover{background:#6d322f;}
+@media(max-width:767px){.art-section,.art-begin-cta{padding-left:24px;padding-right:24px;}}
 </style>
 </head>
 <body>
@@ -296,6 +312,37 @@ footer{background:var(--nav-bg);padding:52px var(--pad-x) 28px}
     <p class="art-p">India&rsquo;s design tradition is not one thing. It is a long conversation between philosophy, craft, and human experience.</p><p class="art-p">Vastu Shastra is a system of spatial arrangement with roots in ancient Indian texts. At its heart, it is about aligning a home with the natural world: the movement of the sun, the flow of air, the relationship between a building and its site. Before it became a checklist of rules, it was an understanding that a well-made home should work with nature rather than against it.</p><p class="art-p">Aucitya operates at a different level. Where Vastu asks &ldquo;is this correctly arranged?&rdquo;, Aucitya asks &ldquo;is this exactly right for this person?&rdquo; Vastu offers principles; Aucitya demands specific judgement.</p><p class="art-p">Both share the same conviction: that how a space is arranged matters. The placement of a room, the direction a window faces, the material a floor is made from, these decisions affect how you think, how you sleep, how you feel coming home at the end of a day.</p><p class="art-p">At Aucitya Studio, Vastu is one lens among several. Where its underlying intelligence applies, such as east-facing bedrooms that catch morning light, kitchens positioned for cross-ventilation, thresholds that create a moment of transition, we honour it. Because these things make spaces work better for the people who live in them.</p>
   </div>
 </section>
+<section class="art-section alt">
+  <div class="art-section-inner reveal">
+    <span class="art-section-label">At Aucitya</span>
+    <h2 class="art-section-title">How we apply this</h2>
+    <p class="art-p">Where Vastu&rsquo;s underlying intelligence genuinely serves a project, we honour it. East-facing bedrooms that catch morning light, kitchens positioned for cross-ventilation, living areas that connect to an outdoor view rather than sealing themselves away from it. These decisions make a real difference to how a space feels to inhabit. They are worth making regardless of their philosophical origin.</p>
+    <p class="art-p">We do not apply Vastu as a rigid rulebook. We apply the intelligence behind it: the awareness that a home should be in conversation with the natural world rather than in competition with it.</p>
+  </div>
+</section>
+<section class="art-section">
+  <div class="art-section-inner reveal">
+    <span class="art-section-label">Questions Clients Ask</span>
+    <h2 class="art-section-title">Practical answers</h2>
+      <div class="art-faq-item">
+        <p class="art-faq-q">Do you require clients to follow Vastu?</p>
+        <p class="art-faq-a">No. Vastu is one lens among several. If a client has specific Vastu requirements, we work with them. If they do not, we still bring the same spatial awareness to the orientation of rooms, the direction windows face, and the relationship between indoor and outdoor. The underlying logic is sound even when the formal framework is not followed.</p>
+      </div>
+      <div class="art-faq-item">
+        <p class="art-faq-q">Does designing for Vastu limit creative choices?</p>
+        <p class="art-faq-a">In our experience, it rarely does. Most Vastu principles, at their core, are about working with natural light, airflow, and orientation. A skilled designer is already thinking about these things. When the principles genuinely conflict with what a space needs, we have that conversation openly with the client.</p>
+      </div>
+      <div class="art-faq-item">
+        <p class="art-faq-q">Can Vastu work in a city apartment?</p>
+        <p class="art-faq-a">Some principles apply directly. The direction a bedroom or kitchen faces matters in an apartment just as it does in a house. Others need to be interpreted creatively given the fixed constraints of an existing floor plan. We think of it as applying the spirit of the principle where the letter of it is not possible.</p>
+      </div>
+  </div>
+</section>
+<div class="art-begin-cta">
+  <span class="art-begin-label">Begin</span>
+  <p class="art-begin-text">Ready to start a conversation?</p>
+  <a href="/begin" class="art-begin-btn">Begin Here</a>
+</div>
 <div class="art-nav">
   <a href="/journal/aucitya-meaning" class="art-nav-link">&larr; Previous</a>
   <a href="/journal" class="art-nav-link all">All Essays</a>

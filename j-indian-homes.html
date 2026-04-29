@@ -247,6 +247,22 @@ footer{background:var(--nav-bg);padding:52px var(--pad-x) 28px}
   .article-hero,.article-body,.art-nav{padding-left:var(--pad-x);padding-right:var(--pad-x)}
   .art-nav{flex-direction:column;gap:16px;align-items:flex-start}
 }
+
+.art-section{padding:52px var(--pad-x);border-top:1px solid var(--rule-light);}
+.art-section.alt{background:var(--bg-warm);}
+.art-section-inner{max-width:680px;}
+.art-section-label{font-family:var(--jost);font-size:9px;font-weight:400;letter-spacing:.45em;text-transform:uppercase;color:var(--accent);display:block;margin-bottom:12px;}
+.art-section-title{font-family:var(--trajan);font-size:clamp(18px,2vw,24px);color:var(--text);margin-bottom:24px;letter-spacing:.03em;}
+.art-faq-item{margin-bottom:24px;padding-bottom:24px;border-bottom:1px solid var(--rule-light);}
+.art-faq-item:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0;}
+.art-faq-q{font-family:var(--jost);font-size:15px;font-weight:400;color:var(--text);margin-bottom:8px;}
+.art-faq-a{font-family:var(--jost);font-size:15px;font-weight:300;line-height:1.85;color:var(--text-mid);}
+.art-begin-cta{background:var(--bg-section);padding:44px var(--pad-x);text-align:center;border-top:1px solid var(--rule-light);}
+.art-begin-label{font-family:var(--jost);font-size:9px;letter-spacing:.45em;text-transform:uppercase;color:var(--accent);display:block;margin-bottom:14px;}
+.art-begin-text{font-family:var(--trajan);font-size:clamp(17px,1.8vw,22px);color:var(--text);margin-bottom:22px;letter-spacing:.03em;}
+.art-begin-btn{font-family:var(--jost);font-size:10px;font-weight:400;letter-spacing:.38em;color:var(--bg);background:var(--text);text-decoration:none;padding:13px 32px;text-transform:uppercase;display:inline-block;transition:background .3s;}
+.art-begin-btn:hover{background:#6d322f;}
+@media(max-width:767px){.art-section,.art-begin-cta{padding-left:24px;padding-right:24px;}}
 </style>
 </head>
 <body>
@@ -296,6 +312,32 @@ footer{background:var(--nav-bg);padding:52px var(--pad-x) 28px}
     <p class="art-p">Anyone who has spent time in old Indian homes &mdash; the ones with thick walls and deep verandahs and inner courtyards open to the sky &mdash; will have noticed something difficult to put into words. They hold you differently.</p><h3 class="art-h3">The Thick Wall</h3><p class="art-p">Creates thermal mass, acoustic protection, and a particular quality of filtered light. Light entering a deep-set window in a thick wall has been slowed, considered, shaped. It is different from light entering a floor-to-ceiling glass panel.</p><h3 class="art-h3">The Verandah</h3><p class="art-p">The intermediate space between inside and outside is neither interior nor exterior &mdash; a zone of transition that allows the inhabitant to be simultaneously in and out. Contemporary architecture rarely creates this quality.</p><h3 class="art-h3">The Courtyard</h3><p class="art-p">Brings the Vedic element of <em>Ākāśa</em> (open space, sky) into the heart of the domestic. Every room breathes toward it. At Aucitya, we draw on this tradition not to reproduce its forms but to apply its underlying intelligence.</p>
   </div>
 </section>
+<section class="art-section alt">
+  <div class="art-section-inner reveal">
+    <span class="art-section-label">At Aucitya</span>
+    <h2 class="art-section-title">How we apply this</h2>
+    <p class="art-p">The design intelligence in old Indian homes did not come from following a rulebook. It came from understanding how people actually live in a specific climate, with specific light, over a specific daily cycle. Aucitya applies the same intelligence to contemporary briefs. We start by reading the site: how light enters, how air moves, what the space looks and feels like at different times of day. A home designed in response to those conditions will feel right in a way that a home designed from a reference board alone rarely does.</p>
+  </div>
+</section>
+<section class="art-section">
+  <div class="art-section-inner reveal">
+    <span class="art-section-label">Questions Clients Ask</span>
+    <h2 class="art-section-title">Practical answers</h2>
+      <div class="art-faq-item">
+        <p class="art-faq-q">Can this sensibility be applied to a contemporary home, not just a traditional one?</p>
+        <p class="art-faq-a">It is more relevant to contemporary homes than to traditional ones, where the sensibility was already built into the architecture. In a contemporary apartment or villa, those qualities have often been designed out. Bringing them back, through material choice, orientation, thresholds, and light strategy, is exactly what considered design does.</p>
+      </div>
+      <div class="art-faq-item">
+        <p class="art-faq-q">What is the single most common thing missing in modern Indian homes?</p>
+        <p class="art-faq-a">The transition. Old Indian homes had thresholds, courtyards, verandahs, spaces between outside and inside that allowed the body to adjust. Contemporary homes often move directly from front door to living room with no pause. Designing that moment back in, even in a small way, changes how the entire home feels to arrive at.</p>
+      </div>
+  </div>
+</section>
+<div class="art-begin-cta">
+  <span class="art-begin-label">Begin</span>
+  <p class="art-begin-text">Ready to start a conversation?</p>
+  <a href="/begin" class="art-begin-btn">Begin Here</a>
+</div>
 <div class="art-nav">
   <a href="/journal/rasa-theory" class="art-nav-link">&larr; Previous</a>
   <a href="/journal" class="art-nav-link all">All Essays</a>

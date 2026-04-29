@@ -247,6 +247,22 @@ footer{background:var(--nav-bg);padding:52px var(--pad-x) 28px}
   .article-hero,.article-body,.art-nav{padding-left:var(--pad-x);padding-right:var(--pad-x)}
   .art-nav{flex-direction:column;gap:16px;align-items:flex-start}
 }
+
+.art-section{padding:52px var(--pad-x);border-top:1px solid var(--rule-light);}
+.art-section.alt{background:var(--bg-warm);}
+.art-section-inner{max-width:680px;}
+.art-section-label{font-family:var(--jost);font-size:9px;font-weight:400;letter-spacing:.45em;text-transform:uppercase;color:var(--accent);display:block;margin-bottom:12px;}
+.art-section-title{font-family:var(--trajan);font-size:clamp(18px,2vw,24px);color:var(--text);margin-bottom:24px;letter-spacing:.03em;}
+.art-faq-item{margin-bottom:24px;padding-bottom:24px;border-bottom:1px solid var(--rule-light);}
+.art-faq-item:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0;}
+.art-faq-q{font-family:var(--jost);font-size:15px;font-weight:400;color:var(--text);margin-bottom:8px;}
+.art-faq-a{font-family:var(--jost);font-size:15px;font-weight:300;line-height:1.85;color:var(--text-mid);}
+.art-begin-cta{background:var(--bg-section);padding:44px var(--pad-x);text-align:center;border-top:1px solid var(--rule-light);}
+.art-begin-label{font-family:var(--jost);font-size:9px;letter-spacing:.45em;text-transform:uppercase;color:var(--accent);display:block;margin-bottom:14px;}
+.art-begin-text{font-family:var(--trajan);font-size:clamp(17px,1.8vw,22px);color:var(--text);margin-bottom:22px;letter-spacing:.03em;}
+.art-begin-btn{font-family:var(--jost);font-size:10px;font-weight:400;letter-spacing:.38em;color:var(--bg);background:var(--text);text-decoration:none;padding:13px 32px;text-transform:uppercase;display:inline-block;transition:background .3s;}
+.art-begin-btn:hover{background:#6d322f;}
+@media(max-width:767px){.art-section,.art-begin-cta{padding-left:24px;padding-right:24px;}}
 </style>
 </head>
 <body>
@@ -296,6 +312,37 @@ footer{background:var(--nav-bg);padding:52px var(--pad-x) 28px}
     <p class="art-p">The building is not the thing lit. The building is the instrument through which light becomes meaningful.</p><p class="art-p">Shadow is not the absence of light. It is its complement. A room without shadow has no depth, no mood, no sense of life in its corners. The best spaces use both with intention.</p><p class="art-p">The four o&rsquo;clock test is the simplest way to understand this. At four in the afternoon, when the sun is low and warm and revealing, what does your room do? Does the light fall across a wall and reveal texture and warmth? Does it create a pool of gold on the floor that pulls you toward a chair? Or does it wash everything flat?</p><p class="art-p">A room that passes the four o&rsquo;clock test has been designed for light, not just for photographs. A room designed only for photographs will look beautiful in the listing and feel wrong the first week you live in it.</p><p class="art-p">Surbhi spent a decade as a photographer studying exactly this: how the quality of light changes not just how a space looks, but how it makes you feel. That discipline is the foundation of how she approaches every room she designs.</p>
   </div>
 </section>
+<section class="art-section alt">
+  <div class="art-section-inner reveal">
+    <span class="art-section-label">At Aucitya</span>
+    <h2 class="art-section-title">How we apply this</h2>
+    <p class="art-p">The four o&rsquo;clock test is a real part of how we analyse a new site. Before any design decisions are made, we read the space across different times of day. We note where light enters, how it moves across surfaces, where shadow gathers, what the room looks and feels like in the morning versus the evening. A lighting strategy that works at noon and fails at six o&rsquo;clock has not been fully designed.</p>
+    <p class="art-p">Our material selections are also light decisions. A rough-textured plaster reads completely differently in raking afternoon light than in flat midday light. We make those choices knowing what the light in that specific room, at that specific orientation, will do to the surface. Surbhi&rsquo;s decade as a photographer means she makes these calculations instinctively, before any specification is written.</p>
+  </div>
+</section>
+<section class="art-section">
+  <div class="art-section-inner reveal">
+    <span class="art-section-label">Questions Clients Ask</span>
+    <h2 class="art-section-title">Practical answers</h2>
+      <div class="art-faq-item">
+        <p class="art-faq-q">What is the most common lighting mistake in Indian homes?</p>
+        <p class="art-faq-a">A single light source at the centre of the ceiling, usually a cool white LED. It flattens the entire room, eliminates shadow, and makes the space feel institutional regardless of how well everything else is designed. The fix is layering: ambient, task, and accent light at different heights and temperatures, giving the room depth and the ability to change with the time of day.</p>
+      </div>
+      <div class="art-faq-item">
+        <p class="art-faq-q">How do I improve the lighting in my current home without a full renovation?</p>
+        <p class="art-faq-a">Start by removing the overhead light from your evening routine entirely. Use floor lamps and table lamps with warm bulbs instead. Notice how different the room feels. That difference is what layered light design achieves by default in a well-planned space.</p>
+      </div>
+      <div class="art-faq-item">
+        <p class="art-faq-q">Should I choose warm or cool light?</p>
+        <p class="art-faq-a">For living spaces: warm, always. Cool light (above 4000K) is appropriate for task-specific areas like a kitchen counter or a study desk. For every other space in a home, warmth creates the quality of light that makes a room feel inhabited rather than illuminated.</p>
+      </div>
+  </div>
+</section>
+<div class="art-begin-cta">
+  <span class="art-begin-label">Begin</span>
+  <p class="art-begin-text">Ready to start a conversation?</p>
+  <a href="/begin" class="art-begin-btn">Begin Here</a>
+</div>
 <div class="art-nav">
   <a href="/journal/five-elements" class="art-nav-link">&larr; Previous</a>
   <a href="/journal" class="art-nav-link all">All Essays</a>

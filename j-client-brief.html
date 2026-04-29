@@ -247,6 +247,22 @@ footer{background:var(--nav-bg);padding:52px var(--pad-x) 28px}
   .article-hero,.article-body,.art-nav{padding-left:var(--pad-x);padding-right:var(--pad-x)}
   .art-nav{flex-direction:column;gap:16px;align-items:flex-start}
 }
+
+.art-section{padding:52px var(--pad-x);border-top:1px solid var(--rule-light);}
+.art-section.alt{background:var(--bg-warm);}
+.art-section-inner{max-width:680px;}
+.art-section-label{font-family:var(--jost);font-size:9px;font-weight:400;letter-spacing:.45em;text-transform:uppercase;color:var(--accent);display:block;margin-bottom:12px;}
+.art-section-title{font-family:var(--trajan);font-size:clamp(18px,2vw,24px);color:var(--text);margin-bottom:24px;letter-spacing:.03em;}
+.art-faq-item{margin-bottom:24px;padding-bottom:24px;border-bottom:1px solid var(--rule-light);}
+.art-faq-item:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0;}
+.art-faq-q{font-family:var(--jost);font-size:15px;font-weight:400;color:var(--text);margin-bottom:8px;}
+.art-faq-a{font-family:var(--jost);font-size:15px;font-weight:300;line-height:1.85;color:var(--text-mid);}
+.art-begin-cta{background:var(--bg-section);padding:44px var(--pad-x);text-align:center;border-top:1px solid var(--rule-light);}
+.art-begin-label{font-family:var(--jost);font-size:9px;letter-spacing:.45em;text-transform:uppercase;color:var(--accent);display:block;margin-bottom:14px;}
+.art-begin-text{font-family:var(--trajan);font-size:clamp(17px,1.8vw,22px);color:var(--text);margin-bottom:22px;letter-spacing:.03em;}
+.art-begin-btn{font-family:var(--jost);font-size:10px;font-weight:400;letter-spacing:.38em;color:var(--bg);background:var(--text);text-decoration:none;padding:13px 32px;text-transform:uppercase;display:inline-block;transition:background .3s;}
+.art-begin-btn:hover{background:#6d322f;}
+@media(max-width:767px){.art-section,.art-begin-cta{padding-left:24px;padding-right:24px;}}
 </style>
 </head>
 <body>
@@ -303,6 +319,37 @@ footer{background:var(--nav-bg);padding:52px var(--pad-x) 28px}
 <p class="art-p">The result is always entirely particular — a space that could not belong to anyone else, because it was built from the inside out. That is what we mean when we say Aucitya demands better decisions.</p>
   </div>
 </section>
+<section class="art-section alt">
+  <div class="art-section-inner reveal">
+    <span class="art-section-label">At Aucitya</span>
+    <h2 class="art-section-title">How we apply this</h2>
+    <p class="art-p">The best briefs we have received were not the most detailed. They were the most honest. A client who says &ldquo;I want a room that feels like the one I had as a child, without knowing exactly why&rdquo; is giving us something to work with. A client who specifies twenty reference images without any sense of what they are looking for is not. We spend considerable time at the start of every project finding the real brief underneath the stated one.</p>
+    <p class="art-p">The questions that get to it: what does this space need to give you every day? What is wrong with it right now? What will you do differently in this room than you do in any other? Those answers tell us more than any mood board.</p>
+  </div>
+</section>
+<section class="art-section">
+  <div class="art-section-inner reveal">
+    <span class="art-section-label">Questions Clients Ask</span>
+    <h2 class="art-section-title">Practical answers</h2>
+      <div class="art-faq-item">
+        <p class="art-faq-q">What if I don't know what I want?</p>
+        <p class="art-faq-a">That is a perfectly reasonable starting point. Most people have a clear sense of what they do not want, and a feeling about what they do, without the vocabulary to articulate it precisely. We find that feeling first, and then work backwards to the decisions that create it.</p>
+      </div>
+      <div class="art-faq-item">
+        <p class="art-faq-q">How detailed should my brief be before I approach you?</p>
+        <p class="art-faq-a">The essential information is: what the space is, how you use it currently, what is not working about it, and roughly what the scope of work might be. Beyond that, we will develop the brief together. We do not expect clients to arrive with a complete design brief. That is our job.</p>
+      </div>
+      <div class="art-faq-item">
+        <p class="art-faq-q">What makes a project a good fit for Aucitya?</p>
+        <p class="art-faq-a">A client who wants the space to be right for them specifically, and who is willing to be part of the process of discovering what that means. The projects that go best are the ones where the client trusts us to ask the right questions and has the willingness to answer them honestly.</p>
+      </div>
+  </div>
+</section>
+<div class="art-begin-cta">
+  <span class="art-begin-label">Begin</span>
+  <p class="art-begin-text">Ready to start a conversation?</p>
+  <a href="/begin" class="art-begin-btn">Begin Here</a>
+</div>
 <div class="art-nav">
   <a href="/journal/natural-materials" class="art-nav-link">&larr; Previous</a>
   <a href="/journal" class="art-nav-link all">All Essays</a>

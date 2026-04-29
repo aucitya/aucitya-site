@@ -247,6 +247,22 @@ footer{background:var(--nav-bg);padding:52px var(--pad-x) 28px}
   .article-hero,.article-body,.art-nav{padding-left:var(--pad-x);padding-right:var(--pad-x)}
   .art-nav{flex-direction:column;gap:16px;align-items:flex-start}
 }
+
+.art-section{padding:52px var(--pad-x);border-top:1px solid var(--rule-light);}
+.art-section.alt{background:var(--bg-warm);}
+.art-section-inner{max-width:680px;}
+.art-section-label{font-family:var(--jost);font-size:9px;font-weight:400;letter-spacing:.45em;text-transform:uppercase;color:var(--accent);display:block;margin-bottom:12px;}
+.art-section-title{font-family:var(--trajan);font-size:clamp(18px,2vw,24px);color:var(--text);margin-bottom:24px;letter-spacing:.03em;}
+.art-faq-item{margin-bottom:24px;padding-bottom:24px;border-bottom:1px solid var(--rule-light);}
+.art-faq-item:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0;}
+.art-faq-q{font-family:var(--jost);font-size:15px;font-weight:400;color:var(--text);margin-bottom:8px;}
+.art-faq-a{font-family:var(--jost);font-size:15px;font-weight:300;line-height:1.85;color:var(--text-mid);}
+.art-begin-cta{background:var(--bg-section);padding:44px var(--pad-x);text-align:center;border-top:1px solid var(--rule-light);}
+.art-begin-label{font-family:var(--jost);font-size:9px;letter-spacing:.45em;text-transform:uppercase;color:var(--accent);display:block;margin-bottom:14px;}
+.art-begin-text{font-family:var(--trajan);font-size:clamp(17px,1.8vw,22px);color:var(--text);margin-bottom:22px;letter-spacing:.03em;}
+.art-begin-btn{font-family:var(--jost);font-size:10px;font-weight:400;letter-spacing:.38em;color:var(--bg);background:var(--text);text-decoration:none;padding:13px 32px;text-transform:uppercase;display:inline-block;transition:background .3s;}
+.art-begin-btn:hover{background:#6d322f;}
+@media(max-width:767px){.art-section,.art-begin-cta{padding-left:24px;padding-right:24px;}}
 </style>
 </head>
 <body>
@@ -296,6 +312,37 @@ footer{background:var(--nav-bg);padding:52px var(--pad-x) 28px}
     <p class="art-p">Most design conversations begin with aesthetics. Warm tones or cool? Modern or traditional? Minimal or layered?</p><p class="art-p">These are useful questions. The first question is simpler and harder: when you close the door and you are finally home, what do you want to feel?</p><p class="art-p">Indian aesthetic philosophy understood this thousands of years ago. It held that any well-made thing, a piece of music, a painting, a building, should evoke a specific emotional state in the person who experiences it. Deliberately. Through specific choices of material, proportion, light, and space.</p><p class="art-p">Serenity is created by materials that absorb rather than reflect, proportions that do not compress the body, light that is soft and directional, and the absence of visual noise. Warmth and belonging come from materials that carry the evidence of human hands, wood, woven textile, clay, and light that is amber rather than white.</p><p class="art-p">These are emotional decisions expressed through physical things.</p><p class="art-p">The question we begin with at Aucitya Studio is not &ldquo;what style do you like?&rdquo; It is: what do you need this room to give you, every single day? From there, every decision, material, proportion, light, emptiness, follows.</p>
   </div>
 </section>
+<section class="art-section alt">
+  <div class="art-section-inner reveal">
+    <span class="art-section-label">At Aucitya</span>
+    <h2 class="art-section-title">How we apply this</h2>
+    <p class="art-p">The opening question of every Aucitya brief is not &ldquo;what style do you like?&rdquo; It is: when you close the door and you are finally home, what do you want to feel? And then: what does that feeling ask of the room? Sometimes it asks for materials that absorb and hold warmth. Sometimes it asks for height and openness. Sometimes it asks for a single, well-placed lamp and nothing else.</p>
+    <p class="art-p">The answers to those questions drive the design. Style is a consequence, not a starting point.</p>
+  </div>
+</section>
+<section class="art-section">
+  <div class="art-section-inner reveal">
+    <span class="art-section-label">Questions Clients Ask</span>
+    <h2 class="art-section-title">Practical answers</h2>
+      <div class="art-faq-item">
+        <p class="art-faq-q">What if I am not sure how I want the room to feel?</p>
+        <p class="art-faq-a">That is more common than you might expect. Most people have never been asked. We find that showing specific reference spaces and asking how they make you feel, rather than whether you like them aesthetically, gets to the answer quickly. The feeling question bypasses taste and gets to something more fundamental.</p>
+      </div>
+      <div class="art-faq-item">
+        <p class="art-faq-q">How do you create different feelings in adjacent rooms?</p>
+        <p class="art-faq-a">Through the specific manipulation of light quality, ceiling height, material texture, and the amount of visible floor. A room that feels intimate sits lower, warmer, with more material surface and less visible sky. A room that feels expansive does the opposite. The transition between them, the threshold, is as important as either room.</p>
+      </div>
+      <div class="art-faq-item">
+        <p class="art-faq-q">Is this approach more expensive than designing to a style reference?</p>
+        <p class="art-faq-a">Not inherently. A considered design brief is not about spending more. It is about spending accurately. Knowing precisely what a room needs to achieve means fewer costly revisions and materials chosen for their contribution to the whole rather than their price.</p>
+      </div>
+  </div>
+</section>
+<div class="art-begin-cta">
+  <span class="art-begin-label">Begin</span>
+  <p class="art-begin-text">Ready to start a conversation?</p>
+  <a href="/begin" class="art-begin-btn">Begin Here</a>
+</div>
 <div class="art-nav">
   <a href="/journal/vastu-aucitya" class="art-nav-link">&larr; Previous</a>
   <a href="/journal" class="art-nav-link all">All Essays</a>

@@ -247,6 +247,22 @@ footer{background:var(--nav-bg);padding:52px var(--pad-x) 28px}
   .article-hero,.article-body,.art-nav{padding-left:var(--pad-x);padding-right:var(--pad-x)}
   .art-nav{flex-direction:column;gap:16px;align-items:flex-start}
 }
+
+.art-section{padding:52px var(--pad-x);border-top:1px solid var(--rule-light);}
+.art-section.alt{background:var(--bg-warm);}
+.art-section-inner{max-width:680px;}
+.art-section-label{font-family:var(--jost);font-size:9px;font-weight:400;letter-spacing:.45em;text-transform:uppercase;color:var(--accent);display:block;margin-bottom:12px;}
+.art-section-title{font-family:var(--trajan);font-size:clamp(18px,2vw,24px);color:var(--text);margin-bottom:24px;letter-spacing:.03em;}
+.art-faq-item{margin-bottom:24px;padding-bottom:24px;border-bottom:1px solid var(--rule-light);}
+.art-faq-item:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0;}
+.art-faq-q{font-family:var(--jost);font-size:15px;font-weight:400;color:var(--text);margin-bottom:8px;}
+.art-faq-a{font-family:var(--jost);font-size:15px;font-weight:300;line-height:1.85;color:var(--text-mid);}
+.art-begin-cta{background:var(--bg-section);padding:44px var(--pad-x);text-align:center;border-top:1px solid var(--rule-light);}
+.art-begin-label{font-family:var(--jost);font-size:9px;letter-spacing:.45em;text-transform:uppercase;color:var(--accent);display:block;margin-bottom:14px;}
+.art-begin-text{font-family:var(--trajan);font-size:clamp(17px,1.8vw,22px);color:var(--text);margin-bottom:22px;letter-spacing:.03em;}
+.art-begin-btn{font-family:var(--jost);font-size:10px;font-weight:400;letter-spacing:.38em;color:var(--bg);background:var(--text);text-decoration:none;padding:13px 32px;text-transform:uppercase;display:inline-block;transition:background .3s;}
+.art-begin-btn:hover{background:#6d322f;}
+@media(max-width:767px){.art-section,.art-begin-cta{padding-left:24px;padding-right:24px;}}
 </style>
 </head>
 <body>
@@ -296,6 +312,37 @@ footer{background:var(--nav-bg);padding:52px var(--pad-x) 28px}
     <p class="art-p">Every few years, a visual language becomes dominant. For a period, it seems like the only possible way for a contemporary space to look. Then it passes. The spaces designed to embody it are left looking dated &mdash; not gracefully aged but specifically, uncomfortably of a moment.</p><p class="art-p">This is the essential problem with designing to a trend: a trend is a collective aesthetic preference, not a response to a specific person&rsquo;s life.</p><div class="art-pull">The terrazzo floor that appears because terrazzo is fashionable, and the terrazzo floor that appears because its thermal mass keeps the floor cool and it will look better in thirty years &mdash; these are materially identical but philosophically opposite.</div><p class="art-p">The best design is not timeless in the sense of ignoring time. It is timeless in the sense of not being enslaved to a particular moment&rsquo;s preferences. It makes decisions that will still be right in twenty years. That is Aucitya.</p>
   </div>
 </section>
+<section class="art-section alt">
+  <div class="art-section-inner reveal">
+    <span class="art-section-label">At Aucitya</span>
+    <h2 class="art-section-title">How we apply this</h2>
+    <p class="art-p">When a client comes to us with a reference board built from recent design media, we do not decline the reference. We read it differently. We ask: what specifically in these images appeals to you? What feeling are they creating? Almost always, the answer is something more specific than the trend itself. They want warmth, or a sense of calm, or a particular quality of light. Those are achievable with materials and proportions that will still read well in ten years.</p>
+    <p class="art-p">The brief is never &ldquo;make it look like this.&rdquo; The brief is: help us understand what this image is giving you, and then give you that through decisions that are specifically right for your space and your life.</p>
+  </div>
+</section>
+<section class="art-section">
+  <div class="art-section-inner reveal">
+    <span class="art-section-label">Questions Clients Ask</span>
+    <h2 class="art-section-title">Practical answers</h2>
+      <div class="art-faq-item">
+        <p class="art-faq-q">Does this mean you won't design something contemporary or fashionable?</p>
+        <p class="art-faq-a">No. Contemporary and fashionable are not the same thing. There are design choices being made right now that are contemporary because they respond to how people actually live and work today. Those choices age well. Choices made because they are currently popular in design media do not. We make the former kind.</p>
+      </div>
+      <div class="art-faq-item">
+        <p class="art-faq-q">How long do your designs last?</p>
+        <p class="art-faq-a">The spaces we aim to design should be right for the client for as long as their life in that space is essentially the same. That is usually a decade or more. The test is not longevity for its own sake. It is whether the design was specific enough to the person to remain right as the world around it changes.</p>
+      </div>
+      <div class="art-faq-item">
+        <p class="art-faq-q">What if I want a specific look I've seen and love?</p>
+        <p class="art-faq-a">Bring it. A reference is not a constraint. We will look at what you love about it, understand what it is doing, and find a way to give you that quality through decisions that are right for your specific site, your light, your brief. The result will look like you, not like the reference.</p>
+      </div>
+  </div>
+</section>
+<div class="art-begin-cta">
+  <span class="art-begin-label">Begin</span>
+  <p class="art-begin-text">Ready to start a conversation?</p>
+  <a href="/begin" class="art-begin-btn">Begin Here</a>
+</div>
 <div class="art-nav">
   <a href="/journal/photographer-designer" class="art-nav-link">&larr; Previous</a>
   <a href="/journal" class="art-nav-link all">All Essays</a>

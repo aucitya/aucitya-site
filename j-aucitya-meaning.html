@@ -247,6 +247,22 @@ footer{background:var(--nav-bg);padding:52px var(--pad-x) 28px}
   .article-hero,.article-body,.art-nav{padding-left:var(--pad-x);padding-right:var(--pad-x)}
   .art-nav{flex-direction:column;gap:16px;align-items:flex-start}
 }
+
+.art-section{padding:52px var(--pad-x);border-top:1px solid var(--rule-light);}
+.art-section.alt{background:var(--bg-warm);}
+.art-section-inner{max-width:680px;}
+.art-section-label{font-family:var(--jost);font-size:9px;font-weight:400;letter-spacing:.45em;text-transform:uppercase;color:var(--accent);display:block;margin-bottom:12px;}
+.art-section-title{font-family:var(--trajan);font-size:clamp(18px,2vw,24px);color:var(--text);margin-bottom:24px;letter-spacing:.03em;}
+.art-faq-item{margin-bottom:24px;padding-bottom:24px;border-bottom:1px solid var(--rule-light);}
+.art-faq-item:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0;}
+.art-faq-q{font-family:var(--jost);font-size:15px;font-weight:400;color:var(--text);margin-bottom:8px;}
+.art-faq-a{font-family:var(--jost);font-size:15px;font-weight:300;line-height:1.85;color:var(--text-mid);}
+.art-begin-cta{background:var(--bg-section);padding:44px var(--pad-x);text-align:center;border-top:1px solid var(--rule-light);}
+.art-begin-label{font-family:var(--jost);font-size:9px;letter-spacing:.45em;text-transform:uppercase;color:var(--accent);display:block;margin-bottom:14px;}
+.art-begin-text{font-family:var(--trajan);font-size:clamp(17px,1.8vw,22px);color:var(--text);margin-bottom:22px;letter-spacing:.03em;}
+.art-begin-btn{font-family:var(--jost);font-size:10px;font-weight:400;letter-spacing:.38em;color:var(--bg);background:var(--text);text-decoration:none;padding:13px 32px;text-transform:uppercase;display:inline-block;transition:background .3s;}
+.art-begin-btn:hover{background:#6d322f;}
+@media(max-width:767px){.art-section,.art-begin-cta{padding-left:24px;padding-right:24px;}}
 </style>
 </head>
 <body>
@@ -296,6 +312,37 @@ footer{background:var(--nav-bg);padding:52px var(--pad-x) 28px}
     <p class="art-p">There is a feeling you know but probably cannot name.</p><p class="art-p">You walk into a room, perhaps a friend&rsquo;s home, perhaps a hotel lobby, and something in you settles. Nothing announces itself. And yet within moments of crossing the threshold, you feel you could stay here. Then you walk into another room, more expensive, more carefully decorated, and nothing happens.</p><p class="art-p"><em>Aucitya</em> (औचित्य) is the word for what you felt in the first room. It is an 11th-century Sanskrit concept meaning the exact rightness of things: the quality of a space where everything is precisely as it should be, and could not be otherwise. A precise word for a feeling that is immediately understood and almost impossible to describe.</p><p class="art-p">What makes a room feel right has nothing to do with how much it cost. A lime-washed wall, a window placed exactly where morning light should enter, a wooden shelf at the exact height a hand reaches without thinking. These things have Aucitya.</p><p class="art-p">This is the standard we design to. The room that is exactly right for the life being lived inside it.</p>
   </div>
 </section>
+<section class="art-section alt">
+  <div class="art-section-inner reveal">
+    <span class="art-section-label">At Aucitya</span>
+    <h2 class="art-section-title">How we apply this</h2>
+    <p class="art-p">Every project at Aucitya begins with a single question: what does this space need to give this person, every single day? Before we discuss materials, proportions, or palettes, we spend time understanding how someone actually lives. The habits, the rhythms, the things they do without thinking. That understanding is where the design standard of aucitya is applied. It is specific to one client, one brief, one site. And that is why no two Aucitya projects look alike.</p>
+    <p class="art-p">When a project is finished, we do not ask whether it looks the way we imagined. We ask whether it feels right for the person who lives there. That is the only test that matters.</p>
+  </div>
+</section>
+<section class="art-section">
+  <div class="art-section-inner reveal">
+    <span class="art-section-label">Questions Clients Ask</span>
+    <h2 class="art-section-title">Practical answers</h2>
+      <div class="art-faq-item">
+        <p class="art-faq-q">What makes aucitya different from general good design?</p>
+        <p class="art-faq-a">Good design is often judged against a universal standard: proportion, material quality, spatial balance. Aucitya is judged against a personal one. A space has aucitya when it is exactly right for this specific client, in this specific context. A room can be technically well-designed and still feel wrong for the person who lives there. Aucitya closes that gap.</p>
+      </div>
+      <div class="art-faq-item">
+        <p class="art-faq-q">How do you know when a space has achieved it?</p>
+        <p class="art-faq-a">The simplest test: does the person who lives there stop noticing the design and start simply living? A room that keeps drawing attention to itself has not fully achieved aucitya. A room that settles into the background of daily life, supporting it rather than performing for it, has.</p>
+      </div>
+      <div class="art-faq-item">
+        <p class="art-faq-q">Can aucitya be applied to commercial spaces too?</p>
+        <p class="art-faq-a">Completely. A well-designed office or restaurant applies the same logic. What does this space need to give the people who work in it, or visit it, every day? The brief is different. The principle is identical.</p>
+      </div>
+  </div>
+</section>
+<div class="art-begin-cta">
+  <span class="art-begin-label">Begin</span>
+  <p class="art-begin-text">Ready to start a conversation?</p>
+  <a href="/begin" class="art-begin-btn">Begin Here</a>
+</div>
 <div class="art-nav">
   <span></span>
   <a href="/journal" class="art-nav-link all">All Essays</a>

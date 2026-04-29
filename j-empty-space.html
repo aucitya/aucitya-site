@@ -247,6 +247,22 @@ footer{background:var(--nav-bg);padding:52px var(--pad-x) 28px}
   .article-hero,.article-body,.art-nav{padding-left:var(--pad-x);padding-right:var(--pad-x)}
   .art-nav{flex-direction:column;gap:16px;align-items:flex-start}
 }
+
+.art-section{padding:52px var(--pad-x);border-top:1px solid var(--rule-light);}
+.art-section.alt{background:var(--bg-warm);}
+.art-section-inner{max-width:680px;}
+.art-section-label{font-family:var(--jost);font-size:9px;font-weight:400;letter-spacing:.45em;text-transform:uppercase;color:var(--accent);display:block;margin-bottom:12px;}
+.art-section-title{font-family:var(--trajan);font-size:clamp(18px,2vw,24px);color:var(--text);margin-bottom:24px;letter-spacing:.03em;}
+.art-faq-item{margin-bottom:24px;padding-bottom:24px;border-bottom:1px solid var(--rule-light);}
+.art-faq-item:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0;}
+.art-faq-q{font-family:var(--jost);font-size:15px;font-weight:400;color:var(--text);margin-bottom:8px;}
+.art-faq-a{font-family:var(--jost);font-size:15px;font-weight:300;line-height:1.85;color:var(--text-mid);}
+.art-begin-cta{background:var(--bg-section);padding:44px var(--pad-x);text-align:center;border-top:1px solid var(--rule-light);}
+.art-begin-label{font-family:var(--jost);font-size:9px;letter-spacing:.45em;text-transform:uppercase;color:var(--accent);display:block;margin-bottom:14px;}
+.art-begin-text{font-family:var(--trajan);font-size:clamp(17px,1.8vw,22px);color:var(--text);margin-bottom:22px;letter-spacing:.03em;}
+.art-begin-btn{font-family:var(--jost);font-size:10px;font-weight:400;letter-spacing:.38em;color:var(--bg);background:var(--text);text-decoration:none;padding:13px 32px;text-transform:uppercase;display:inline-block;transition:background .3s;}
+.art-begin-btn:hover{background:#6d322f;}
+@media(max-width:767px){.art-section,.art-begin-cta{padding-left:24px;padding-right:24px;}}
 </style>
 </head>
 <body>
@@ -303,6 +319,37 @@ footer{background:var(--nav-bg);padding:52px var(--pad-x) 28px}
 <p class="art-p">Silence in music is not the absence of sound — it is the space that gives the notes their meaning. Empty space in a room is not decoration withheld. It is the condition that makes everything else legible.</p>
   </div>
 </section>
+<section class="art-section alt">
+  <div class="art-section-inner reveal">
+    <span class="art-section-label">At Aucitya</span>
+    <h2 class="art-section-title">How we apply this</h2>
+    <p class="art-p">In every project, there is a moment where the instinct is to add something to a corner that feels bare, or to a wall that feels plain. We have learned to pause at that moment and ask whether the emptiness is actually a problem. Often it is not. The plain wall gives the textured one something to rest against. The bare corner gives the furnished one room to breathe.</p>
+    <p class="art-p">Editing is one of the hardest disciplines in interior design because it requires resisting completion. A room that is almost right but holds something back is often more powerful than one that has been finished to the last detail. We consider the project complete when adding anything more would take something away.</p>
+  </div>
+</section>
+<section class="art-section">
+  <div class="art-section-inner reveal">
+    <span class="art-section-label">Questions Clients Ask</span>
+    <h2 class="art-section-title">Practical answers</h2>
+      <div class="art-faq-item">
+        <p class="art-faq-q">How do I know if my space has too much in it?</p>
+        <p class="art-faq-a">Stand at the entrance and look across the room. If the eye cannot find a clear place to rest, there is likely too much. A well-edited space gives the eye one or two points of interest and clean pathways between them. If everything is competing for attention, nothing is being seen properly.</p>
+      </div>
+      <div class="art-faq-item">
+        <p class="art-faq-q">Doesn't empty space feel cold or unfinished?</p>
+        <p class="art-faq-a">Only when it is the wrong kind of emptiness. Bare space with warm material surfaces, considered light, and one or two well-chosen objects does not feel cold. It feels resolved. The coldness people associate with minimal spaces usually comes from an absence of warmth in materials and light, not from an absence of objects.</p>
+      </div>
+      <div class="art-faq-item">
+        <p class="art-faq-q">How do you help clients who want to keep existing pieces they love?</p>
+        <p class="art-faq-a">We start by understanding what each piece means to them. Attachment to an object is always worth respecting. Then we work out what it asks of the room around it: what material quality, what scale, what light. The best inherited or loved pieces often anchor the design rather than complicating it.</p>
+      </div>
+  </div>
+</section>
+<div class="art-begin-cta">
+  <span class="art-begin-label">Begin</span>
+  <p class="art-begin-text">Ready to start a conversation?</p>
+  <a href="/begin" class="art-begin-btn">Begin Here</a>
+</div>
 <div class="art-nav">
   <a href="/journal/design-trends" class="art-nav-link">&larr; Previous</a>
   <a href="/journal" class="art-nav-link all">All Essays</a>
