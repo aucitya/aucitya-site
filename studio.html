@@ -221,6 +221,7 @@ footer{background:var(--nav-bg);padding:52px var(--pad-x) 28px}
 /* About */
 #about{padding:var(--pad-y) var(--pad-x);background:var(--bg);}
 .about-grid{display:grid;grid-template-columns:380px 1fr;gap:72px;align-items:start;}
+.founders-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start;max-width:100%;}
 .about-img{width:100%;aspect-ratio:3/4;object-fit:cover;object-position:center top;display:block;}
 .about-img-cap{font-family:var(--jost);font-size:9px;letter-spacing:.2em;
   color:var(--text-light);text-transform:uppercase;margin-top:10px}
@@ -258,8 +259,8 @@ footer{background:var(--nav-bg);padding:52px var(--pad-x) 28px}
   padding:10px 0 0;display:inline-block;transition:color .3s}
 .team-btn:hover{color:var(--accent-deep)}
 
-@media(max-width:1100px){.about-grid{grid-template-columns:320px 1fr;gap:52px}}
-@media(max-width:900px){.about-grid{grid-template-columns:1fr}.about-img{max-height:400px;aspect-ratio:auto}.team-grid{grid-template-columns:1fr}}
+@media(max-width:1100px){.about-grid{grid-template-columns:320px 1fr;gap:52px}.founders-grid{gap:40px;}}
+@media(max-width:900px){.about-grid{grid-template-columns:1fr}.about-img{max-height:400px;aspect-ratio:auto}.team-grid{grid-template-columns:1fr}.founders-grid{grid-template-columns:1fr;gap:48px;}}
 @media(max-width:600px){.team-card{padding:26px 20px}}
 </style>
 </head>
@@ -309,21 +310,20 @@ footer{background:var(--nav-bg);padding:52px var(--pad-x) 28px}
 </section>
 
 <section id="about">
-  <div class="about-grid">
-    <!-- Image column — stays fixed when bio expands -->
-    <div class="reveal">
-      <img class="about-img" src="surbhi.jpg" alt="Surbhi Kaushik — Founder & Principal Designer, Aucitya Studio" loading="lazy"/>
+  <!-- Full-width Surbhi with image -->
+  <div class="about-grid reveal">
+    <div>
+      <img class="about-img" src="surbhi.jpg" alt="Surbhi Kaushik — Founder &amp; Principal Designer, Aucitya Studio" loading="lazy"/>
       <p class="about-img-cap">Surbhi Kaushik &mdash; Founder &amp; Principal Designer</p>
     </div>
-    <!-- Text column -->
-    <div class="reveal">
+    <div>
       <span class="rule-line"></span>
       <span class="sec-label">The Founding Team</span>
       <h2 class="sec-title">Multiple disciplines. One way of seeing.</h2>
       <div class="founder-card" id="fc-surbhi">
-        <p class="bio-preview"><strong>Surbhi Kaushik&rsquo;s approach to space is grounded in a discipline of observation formed long before Aucitya existed.</strong> For over a decade, she traveled across more than twenty-five countries, creating landscape photography and serving as an expert educator in the field. This experience required not just capturing light, but teaching others how to perceive its depth. She views light as a shaping force that transforms a surface, dictates the emotional temperature of a space, and makes a room at four o&rsquo;clock feel entirely different than it did at nine.</p>
+        <p class="bio-preview"><strong>Surbhi Kaushik&rsquo;s approach to space is grounded in a discipline of observation formed long before Aucitya existed.</strong> For over a decade, she traveled across more than twenty-five countries, creating breathtaking landscape photography and serving as an expert educator in the field. This experience required not just capturing light, but teaching others how to perceive its depth. She views light as a shaping force that transforms a surface, dictates the emotional temperature of a space, and makes a room at four o&rsquo;clock feel entirely different than it did at nine.</p>
         <div class="bio-hidden">
-          <p class="body-p">Previously, she co-founded The Blue Hour, a home d&eacute;cor store in Bangalore selling highly curated reclaimed furniture and authentic handicrafts from artisan communities across India. Years of working directly with craftspeople cultivated a practical, hands-on knowledge of materials and making. It is an understanding of how the slight imperfections of a hand-block-printed textile breathe life into a space, and how the deep patina of reclaimed wood grounds a room. This work fostered direct relationships with makers whose materials exist outside standard trade circuits, alongside a trained eye for authentic craftsmanship.</p>
+          <p class="body-p">Previously, she co-founded The Blue Hour, a home d&eacute;cor store in Bangalore offering highly curated reclaimed furniture and authentic handicrafts from artisan communities across India. Years of working directly with craftspeople cultivated a practical, hands-on knowledge of materials and making. It is an understanding of how the slight imperfections of a hand-block-printed textile breathe life into a space, and how the deep patina of reclaimed wood grounds a room. This work fostered direct relationships with makers whose materials exist outside standard trade circuits, alongside a trained eye for authentic craftsmanship.</p>
           <p class="body-p">Her postgraduate studies in Industrial Arts and Design, layered with an early foundation in literature, provided a formal, narrative framework for this hands-on expertise, evolving into a highly refined design intelligence.</p>
           <p class="body-p">At Aucitya, these disciplines converge. Surbhi leads every project personally from the first conversation to the moment a space is handed over. Her foundational discipline of observation drives the process. Guided by her vision, the studio approaches a room as a &lsquo;composition&rsquo;. Every texture, shadow, and object is placed with absolute intentionality. A project is finished only when that quiet harmony is fully realized.</p>
         </div>
@@ -331,15 +331,18 @@ footer{background:var(--nav-bg);padding:52px var(--pad-x) 28px}
       </div>
     </div>
   </div>
-</section>
 
-<section id="bobby">
-  <div class="about-grid reveal">
-    <div style="display:flex;flex-direction:column;justify-content:center;">
-      <span class="rule-line"></span>
+  <!-- Bobby — text only, sits in a two-column row next to a visual weight column -->
+  <div class="founders-grid reveal" style="margin-top:64px;padding-top:56px;border-top:1px solid var(--rule-light);">
+    <!-- Left: decorative balance column with vertical rule and label -->
+    <div style="display:flex;flex-direction:column;justify-content:flex-start;padding-top:4px;">
+      <span class="rule-line" style="margin-left:0;"></span>
       <span class="sec-label">Co-Founder</span>
-      <h2 class="sec-title" style="font-size:clamp(20px,2.2vw,30px);">Bobby Joshi</h2>
-      <p class="sec-sub" style="font-size:14px;margin-bottom:6px;">Co-Founder &amp; Head of Client Experience</p>
+      <p style="font-family:var(--trajan);font-size:clamp(22px,2.8vw,34px);color:var(--text);letter-spacing:.04em;line-height:1.15;margin-bottom:8px;">Bobby<br>Joshi</p>
+      <p style="font-family:var(--jost);font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--text-mid);font-weight:300;">Head of Client Experience</p>
+    </div>
+    <!-- Right: Bobby bio text -->
+    <div>
       <div class="founder-card" id="fc-bobby">
         <p class="bio-preview">Bobby Joshi anchors Aucitya by ensuring the journey of creating a space is as seamless and refined as the final design. As Co-Founder and Head of CX, he orchestrates the entire client experience, translating an extensive background in executive leadership into a transparent and highly personalised process from the very first conversation.</p>
         <div class="bio-hidden">
@@ -348,9 +351,6 @@ footer{background:var(--nav-bg);padding:52px var(--pad-x) 28px}
         </div>
         <button class="bio-btn" onclick="expandBio('fc-bobby',this)">Read more</button>
       </div>
-    </div>
-    <div style="background:var(--bg-warm);min-height:340px;display:flex;align-items:center;justify-content:center;">
-      <p style="font-family:var(--jost);font-size:10px;letter-spacing:.35em;text-transform:uppercase;color:var(--rule);opacity:0.5;">Image coming soon</p>
     </div>
   </div>
 </section>
