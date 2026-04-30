@@ -63,6 +63,22 @@
     {
       "source": "/journal/client-brief",
       "destination": "/j-client-brief.html"
+    },
+    {
+      "source": "/begin",
+      "destination": "/begin.html"
+    },
+    {
+      "source": "/journal/circadian-light",
+      "destination": "/j-circadian-light.html"
+    },
+    {
+      "source": "/journal/material-intelligence",
+      "destination": "/j-material-intelligence.html"
+    },
+    {
+      "source": "/journal/biophilic-design",
+      "destination": "/j-biophilic-design.html"
     }
   ],
   "redirects": [
