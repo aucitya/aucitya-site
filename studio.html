@@ -262,6 +262,10 @@ footer{background:var(--nav-bg);padding:52px var(--pad-x) 28px}
 @media(max-width:1100px){.about-grid{grid-template-columns:320px 1fr;gap:52px}.founders-grid{gap:40px;}}
 @media(max-width:900px){.about-grid{grid-template-columns:1fr}.about-img{max-height:400px;aspect-ratio:auto}.team-grid{grid-template-columns:1fr}.founders-grid{grid-template-columns:1fr;gap:48px;}}
 @media(max-width:600px){.team-card{padding:26px 20px}}
+
+/* Consistent content widths — matches journal page */
+.sec-wrap{max-width:1160px;margin:0 auto;}
+.hero-wrap{max-width:1160px;margin:0 auto;}
 </style>
 </head>
 <body>
@@ -296,7 +300,7 @@ footer{background:var(--nav-bg);padding:52px var(--pad-x) 28px}
 </div>
 
 <section class="page-hero">
-  <div class="reveal">
+  <div class="hero-wrap reveal">
     <span class="sec-label">The Studio</span>
     <h1 class="sec-title">A practice built on attention.</h1>
     <p class="sec-sub">Aucitya was founded on the belief that design is a discipline of intent, not just decoration. A truly resolved space possesses an absoluteness, where every detail and material is in harmony. We hold our work to this exact standard.</p>
@@ -304,6 +308,7 @@ footer{background:var(--nav-bg);padding:52px var(--pad-x) 28px}
 </section>
 
 <section id="about">
+  <div class="sec-wrap">
   <!-- Full-width Surbhi with image -->
   <div class="about-grid reveal">
     <div>
@@ -315,9 +320,9 @@ footer{background:var(--nav-bg);padding:52px var(--pad-x) 28px}
       <span class="sec-label">The Founding Team</span>
       <h2 class="sec-title">Multiple disciplines.<br>One way of seeing.</h2>
       <div class="founder-card" id="fc-surbhi">
-        <p class="bio-preview"><strong>Surbhi Kaushik&rsquo;s approach to spaces is grounded in a discipline of observation formed long before Aucitya was conceived.</strong> For over a decade, she traveled across more than twenty-five countries as a landscape photographer and visual educator. Co-founding GoodShotz Photography, she led workshops around the globe, mentoring on how to perceive depth, scale, and composition. These years spent framing the world instilled a profound understanding of light as a shaping force, one that dictates the emotional temperature of any environment.</p>
+        <p class="bio-preview"><strong><a href="https://surbhikaushik.com" target="_blank" rel="noopener" style="color:inherit;border-bottom:1px solid var(--rule);text-decoration:none;">Surbhi Kaushik</a>&rsquo;s approach to spaces is grounded in a discipline of observation formed long before Aucitya was conceived.</strong> For over a decade, she traveled across more than twenty-five countries as a landscape photographer and visual educator. Co-founding <a href="https://goodshotz.com" target="_blank" rel="noopener" style="color:inherit;border-bottom:1px solid var(--rule);text-decoration:none;">GoodShotz Photography</a>, she led workshops around the globe, mentoring on how to perceive depth, scale, and composition. These years spent framing the world instilled a profound understanding of light as a shaping force, one that dictates the emotional temperature of any environment.</p>
         <div class="bio-hidden">
-          <p class="body-p">This visual intuition is anchored by a highly structured professional background. Early in her career, Surbhi held roles within the design departments of global leaders like Amazon and Gartner, developing a rigorous, client-centric approach to complex projects. She later applied this strategic discipline to tangible design by co-founding The Blue Hour, a curated home decor store in Bangalore. Sourcing handcrafted furniture, reclaimed vintage pieces, and authentic Indian handicrafts allowed her to build direct, lasting relationships with artisan communities. More importantly, it was through The Blue Hour that she first began taking on full-scale residential renovations, turning a passion for curation into a dedicated practice of spatial design.</p>
+          <p class="body-p">This visual intuition is anchored by a highly structured professional background. Early in her career, Surbhi held roles within the design departments of global leaders like Amazon and Gartner, developing a rigorous, client-centric approach to complex projects. She later applied this strategic discipline to tangible design by co-founding <a href="https://instagram.com/thebluehour.in" target="_blank" rel="noopener" style="color:inherit;border-bottom:1px solid var(--rule);text-decoration:none;">The Blue Hour</a>, a curated home decor store in Bangalore. Sourcing handcrafted furniture, reclaimed vintage pieces, and authentic Indian handicrafts allowed her to build direct, lasting relationships with artisan communities. More importantly, it was through The Blue Hour that she first began taking on full-scale residential renovations, turning a passion for curation into a dedicated practice of spatial design.</p>
           <p class="body-p">Her hands-on experience is backed by formal training, including a diploma in interior design and postgraduate studies in Industrial Arts and Design at Srishti Manipal in Bangalore, where she immersed herself in the mechanics of materiality and the physical act of making. Layered with an early foundation in literature and fine arts, this multidisciplinary education gives her work a distinct narrative depth. Drawing heavily from global travel, cultural heritage, and the natural world, her designs result in homes with profound personal resonance. For Surbhi, excellent design must also be responsible, maintaining a steadfast respect for authentic materials, the artists who shape them, and the lasting impact of the work itself.</p>
           <p class="body-p">Today, these diverse paths converge at Aucitya. Surbhi personally leads every project from the first conversation to the final handover. Guided by her trained eye, the practice treats every space as a deliberate composition. Rather than chasing fleeting trends, the focus is entirely on an enduring, long-term vision for the client. At Aucitya, a dedicated team of senior designers, project managers, procurement and execution specialists ensures that the artistic vision is matched by uncompromising execution and a highly process-driven experience.</p>
         </div>
@@ -342,12 +347,13 @@ footer{background:var(--nav-bg);padding:52px var(--pad-x) 28px}
         <p class="bio-preview">Bobby Joshi anchors Aucitya by ensuring the journey of creating a space is as seamless and refined as the final design. As Co-Founder and Head of CX, he orchestrates the entire client experience, translating an extensive background in executive leadership into a transparent and highly personalised process from the very first conversation.</p>
         <div class="bio-hidden">
           <p class="body-p">Currently serving as CHRO at Ample Group, and having previously driven strategy for Fortune 500 enterprise brands, Bobby brings world-class operational rigour to the practice. His focus is entirely on elevating the client&rsquo;s peace of mind, ensuring that navigating a complex design project feels completely effortless and completely supported.</p>
-          <p class="body-p">His approach is deeply shaped by the visual arts. As an accomplished travel and landscape photographer, founder of GoodShotz Photography, and co-founder of The Blue Hour, he shares a profound creative history with Surbhi. His mastery of composition and his personal philosophy to create and enhance light perfectly align with the practice&rsquo;s standards. Bobby ensures the experience of working with Aucitya is as carefully composed as the spaces they create.</p>
+          <p class="body-p">His approach is deeply shaped by the visual arts. As an accomplished <a href="https://www.instagram.com/bobbyjoshii" target="_blank" rel="noopener" style="color:inherit;border-bottom:1px solid var(--rule);text-decoration:none;">travel and landscape photographer</a>, founder of <a href="https://goodshotz.com" target="_blank" rel="noopener" style="color:inherit;border-bottom:1px solid var(--rule);text-decoration:none;">GoodShotz Photography</a>, and co-founder of <a href="https://instagram.com/thebluehour.in" target="_blank" rel="noopener" style="color:inherit;border-bottom:1px solid var(--rule);text-decoration:none;">The Blue Hour</a>, he shares a profound creative history with Surbhi. His mastery of composition and his personal philosophy to create and enhance light perfectly align with the practice&rsquo;s standards. Bobby ensures the experience of working with Aucitya is as carefully composed as the spaces they create.</p>
         </div>
         <button class="bio-btn" onclick="expandBio('fc-bobby',this)">Read more</button>
       </div>
     </div>
   </div>
+  </div><!-- /sec-wrap -->
 </section>
 
 <section id="philosophy">
