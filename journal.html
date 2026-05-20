@@ -58,7 +58,7 @@
   --nav-h:72px;
 }
 html{scroll-behavior:smooth}
-body{font-family:var(--jost);background:var(--bg);color:var(--text);font-weight:300;font-size:19px;line-height:1.8;overflow-x:hidden}
+body{font-family:var(--jost);background:var(--bg);color:var(--text);font-weight:300;font-size:17px;line-height:1.8;overflow-x:hidden}
 /* Grain */
 body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:10;
   background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
@@ -144,8 +144,8 @@ nav{
   color:var(--accent);text-transform:uppercase;display:block;margin-bottom:18px}
 .sec-title{font-family:var(--trajan);font-size:clamp(26px,3vw,40px);font-weight:400;
   color:var(--text);line-height:1.18;letter-spacing:.04em;margin-bottom:20px}
-.sec-sub{font-family:var(--jost);font-size:16px;font-weight:300;line-height:1.85;color:var(--text-mid)}
-.body-p{font-family:var(--jost);font-size:15.5px;font-weight:300;line-height:1.85;
+.sec-sub{font-family:var(--jost);font-size:17px;font-weight:300;line-height:1.85;color:var(--text-mid)}
+.body-p{font-family:var(--jost);font-size:17px;font-weight:300;line-height:1.85;
   color:var(--text);opacity:0.82;margin-bottom:18px}
 .body-p em{color:var(--accent-deep);font-style:italic}
 .body-p strong{font-weight:400;color:var(--text)}
@@ -223,15 +223,14 @@ footer{background:var(--nav-bg);padding:52px var(--pad-x) 28px}
   padding:calc(var(--nav-h) + 80px) var(--pad-x) 64px;
   background:var(--bg-warm);
 }
-.journal-hero .jnl-inner{max-width:760px;margin:0 auto}
+.journal-hero .jnl-inner{max-width:100%;}
 
 #jnl-list{
   background:var(--bg);
   padding:60px var(--pad-x) var(--pad-y);
 }
 .jnl-col{
-  max-width:760px;
-  margin:0 auto;
+  max-width:100%;
 }
 
 /* Each entry */
@@ -297,8 +296,8 @@ footer{background:var(--nav-bg);padding:52px var(--pad-x) 28px}
 
 @media(max-width:900px){.jnl-col{max-width:100%}.journal-hero .jnl-inner{max-width:100%}}
 @media(max-width:767px){
-  .journal-hero{padding:calc(var(--nav-h) + 56px) 24px 48px}
-  #jnl-list{padding:0 24px 64px}
+  .journal-hero{padding:calc(var(--nav-h) + 56px) var(--pad-x) 48px}
+  #jnl-list{padding:0 var(--pad-x) 64px}
   .jnl-row{padding:28px 0}
   .jnl-num{margin-bottom:10px}
   .jnl-title{font-size:18px}
@@ -307,12 +306,12 @@ footer{background:var(--nav-bg);padding:52px var(--pad-x) 28px}
 /* Desktop card grid, replaces row layout above 900px */
 @media(min-width:901px){
   #jnl-list{padding-bottom:var(--pad-y);}
-  .jnl-col{max-width:1160px;display:grid;grid-template-columns:repeat(3,1fr);gap:28px;padding:0;}
-  .jnl-item{border-bottom:none;border:1px solid var(--rule-light);transition:box-shadow .3s,border-color .3s;background:var(--bg);}
-  .jnl-item:first-child{border-top:1px solid var(--rule-light);}
-  .jnl-item:hover{box-shadow:0 6px 28px rgba(45,36,34,0.07);border-color:var(--rule);}
-  .jnl-row{padding:32px 28px;height:100%;box-sizing:border-box;display:flex;flex-direction:column;}
-  .jnl-row:hover{padding-left:28px;}
+  .jnl-col{max-width:100%;display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--rule-light);}
+  .jnl-item{border:none;background:var(--bg);transition:background .3s;}
+  .jnl-item:first-child{border-top:none;}
+  .jnl-item:hover{background:var(--bg-warm);}
+  .jnl-row{padding:36px 32px;height:100%;box-sizing:border-box;display:flex;flex-direction:column;}
+  .jnl-row:hover{padding-left:32px;}
   .jnl-ex{max-width:100%;}
   .jnl-read{margin-top:auto;}
 }
@@ -335,7 +334,7 @@ footer{background:var(--nav-bg);padding:52px var(--pad-x) 28px}
   </a>
   <ul class="nav-links">
     <li><a href="/home">Home</a></li>
-    <li><a href="/studio">Studio</a></li>
+    <li><a href="/studio">Our Story</a></li>
     <li><a href="/journal" class="active">Journal</a></li>
     <li><a href="/contact" class="nav-cta">Begin</a></li>
   </ul>
@@ -343,7 +342,7 @@ footer{background:var(--nav-bg);padding:52px var(--pad-x) 28px}
 </nav>
 <div class="nav-drawer" id="navDrawer">
   <a href="/home" class="drw-link">Home</a>
-  <a href="/studio" class="drw-link">Studio</a>
+  <a href="/studio" class="drw-link">Our Story</a>
   <a href="/journal" class="drw-link active">Journal</a>
   <hr/>
   <a href="/contact" class="drw-link" style="color:var(--accent)">Begin</a>
@@ -495,7 +494,7 @@ footer{background:var(--nav-bg);padding:52px var(--pad-x) 28px}
       <p class="ft-col-title">Navigate</p>
       <div class="ft-col-links">
         <a href="/home">Home</a>
-        <a href="/studio">Studio</a>
+        <a href="/studio">Our Story</a>
         <a href="/journal">Journal</a>
         <a href="/contact">Begin</a>
       </div>

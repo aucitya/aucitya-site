@@ -55,7 +55,7 @@
   --nav-h:72px;
 }
 html{scroll-behavior:smooth}
-body{font-family:var(--jost);background:var(--bg);color:var(--text);font-weight:300;font-size:16px;line-height:1.75;overflow-x:hidden}
+body{font-family:var(--jost);background:var(--bg);color:var(--text);font-weight:300;font-size:17px;line-height:1.8;overflow-x:hidden}
 /* Grain */
 body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:10;
   background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
@@ -140,8 +140,8 @@ nav{
   color:var(--accent);text-transform:uppercase;display:block;margin-bottom:18px}
 .sec-title{font-family:var(--trajan);font-size:clamp(26px,3vw,40px);font-weight:400;
   color:var(--text);line-height:1.18;letter-spacing:.04em;margin-bottom:20px}
-.sec-sub{font-family:var(--jost);font-size:16px;font-weight:300;line-height:1.85;color:var(--text-mid)}
-.body-p{font-family:var(--jost);font-size:15.5px;font-weight:300;line-height:1.85;
+.sec-sub{font-family:var(--jost);font-size:17px;font-weight:300;line-height:1.85;color:var(--text-mid)}
+.body-p{font-family:var(--jost);font-size:17px;font-weight:300;line-height:1.85;
   color:var(--text);opacity:0.82;margin-bottom:18px}
 .body-p em{color:var(--accent-deep);font-style:italic}
 .body-p strong{font-weight:400;color:var(--text)}
@@ -215,6 +215,7 @@ footer{background:var(--nav-bg);padding:52px var(--pad-x) 28px}
 }
 
 .article-hero{padding:calc(var(--nav-h) + 56px) var(--pad-x) 52px;background:var(--bg-warm);}
+.article-hero .article-inner{max-width:720px;margin:0 auto;}
 .article-back{font-family:var(--jost);font-size:9.5px;font-weight:400;letter-spacing:.3em;
   color:var(--text-mid);text-decoration:none;text-transform:uppercase;
   display:inline-flex;align-items:center;gap:8px;margin-bottom:32px;
@@ -226,8 +227,8 @@ footer{background:var(--nav-bg);padding:52px var(--pad-x) 28px}
 .article-title{font-family:var(--trajan);font-size:clamp(26px,3.2vw,42px);
   color:var(--text);line-height:1.18;letter-spacing:.04em;margin-bottom:0;font-weight:400}
 .article-body{padding:var(--pad-y) var(--pad-x);background:var(--bg);}
-.article-inner{max-width:680px;}
-.art-p{font-family:var(--jost);font-size:16px;font-weight:300;line-height:1.9;
+.article-inner{max-width:720px;margin:0 auto;}
+.art-p{font-family:var(--jost);font-size:17px;font-weight:300;line-height:1.9;
   color:var(--text);opacity:0.84;margin-bottom:20px}
 .art-p em{color:var(--accent-deep);font-style:italic}
 .art-p strong{font-weight:400;color:var(--text)}
@@ -250,7 +251,7 @@ footer{background:var(--nav-bg);padding:52px var(--pad-x) 28px}
 
 .art-section{padding:52px var(--pad-x);border-top:1px solid var(--rule-light);}
 .art-section.alt{background:var(--bg-warm);}
-.art-section-inner{max-width:680px;}
+.art-section-inner{max-width:720px;margin:0 auto;}
 .art-section-label{font-family:var(--jost);font-size:9px;font-weight:400;letter-spacing:.45em;text-transform:uppercase;color:var(--accent);display:block;margin-bottom:12px;}
 .art-section-title{font-family:var(--trajan);font-size:clamp(18px,2vw,24px);color:var(--text);margin-bottom:24px;letter-spacing:.03em;}
 .art-faq-item{margin-bottom:24px;padding-bottom:24px;border-bottom:1px solid var(--rule-light);}
@@ -264,9 +265,9 @@ footer{background:var(--nav-bg);padding:52px var(--pad-x) 28px}
 .art-begin-btn:hover{background:#6d322f;}
 @media(max-width:767px){.art-section,.art-begin-cta{padding-left:24px;padding-right:24px;}}
 
-.article-inner{max-width:700px;margin:0 auto;}
+.article-inner{max-width:720px;margin:0 auto;}
 .article-body{padding-left:var(--pad-x);padding-right:var(--pad-x);}
-.art-section-inner{max-width:700px;margin:0 auto;}
+.art-section-inner{max-width:720px;margin:0 auto;}
 </style>
 </head>
 <body>
@@ -286,7 +287,7 @@ footer{background:var(--nav-bg);padding:52px var(--pad-x) 28px}
   </a>
   <ul class="nav-links">
     <li><a href="/">Home</a></li>
-    <li><a href="/studio">Studio</a></li>
+    <li><a href="/studio">Our Story</a></li>
     <li><a href="/journal" class="active">Journal</a></li>
     <li><a href="/contact" class="nav-cta">Begin</a></li>
   </ul>
@@ -294,16 +295,18 @@ footer{background:var(--nav-bg);padding:52px var(--pad-x) 28px}
 </nav>
 <div class="nav-drawer" id="navDrawer">
   <a href="/" class="drw-link">Home</a>
-  <a href="/studio" class="drw-link">Studio</a>
+  <a href="/studio" class="drw-link">Our Story</a>
   <a href="/journal" class="drw-link active">Journal</a>
   <hr/>
   <a href="/contact" class="drw-link" style="color:var(--accent)">Begin</a>
 </div>
 
 <section class="article-hero">
+  <div class="article-inner">
   <a href="/journal" class="article-back">Journal</a>
   <span class="article-cat">On Emotion</span>
-  <h1 class="article-title">How do you want this room to make you feel?</h1>
+  <h1 class="article-title" style="margin-bottom:0">How do you want this room to make you feel?</h1>
+  </div>
 </section>
 <section class="article-body">
   <div class="article-inner">
@@ -367,7 +370,7 @@ footer{background:var(--nav-bg);padding:52px var(--pad-x) 28px}
       <p class="ft-col-title">Navigate</p>
       <div class="ft-col-links">
         <a href="/">Home</a>
-        <a href="/studio">Studio</a>
+        <a href="/studio">Our Story</a>
         <a href="/journal">Journal</a>
         <a href="/contact">Begin</a>
       </div>
